@@ -2,7 +2,6 @@ import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import React from "react";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import {BsFillTelephoneFill} from "react-icons/bs";
-import {GE, GB, RU} from 'country-flag-icons/react/3x2';
 
 export default function TopNavbar (){
 
@@ -27,7 +26,7 @@ export default function TopNavbar (){
                 <Nav>
                     <NavDropdown title="ქართული" >
                         <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Русский  </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Русский</NavDropdown.Item>
                     </NavDropdown>
 
                  <Nav.Link className="mx-2">ცხელი ხაზი  <BsFillTelephoneFill/> 2 991 991</Nav.Link>

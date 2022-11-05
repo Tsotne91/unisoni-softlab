@@ -8,7 +8,7 @@ export default function TopNavbar (){
 
     return (
         <Navbar bg="dark" variant="dark" className="py-0">
-            <Container>
+            <Container style={{fontSize: "0.7vw"}}>
                 <Nav className="me-auto">
                     <Nav.Link href="#home">მთავარი</Nav.Link>
                     <Nav.Link href="#aboutus">ჩვენს შესახებ</Nav.Link>
@@ -16,7 +16,7 @@ export default function TopNavbar (){
                     <Nav.Link href="#partners">პარტნიორები</Nav.Link>
                     <Nav.Link href="#contact">კონტაქტი</Nav.Link>
                     <div className="sosDropdown">
-                        <button  className="text-center  m-2 px-3 sosButton">SOS</button>
+                        <button className="text-center m-2 px-2 w-100 sosButton">SOS</button>
                         <div className="sosDropdown-content">
                             <a href="#">მოხდა სადაზღვევო შემთხვევა</a>
                             <a href="#">შემთხვევის სტატუსის შემოწმება</a>

@@ -1,13 +1,17 @@
 .sosButton {
     background-color: #DC3545;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     border: none;
     color: white;
 }
 
 .sosDropdown-content {
     display: none;
+    border-radius: 0.3rem;
+    border: none;
     position: absolute;
+    top: 1.9rem;
+    left: 43rem;
     background-color: #DC3545;
     min-width: 5rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -22,7 +26,7 @@
     margin: 0.5rem;
 }
 
-.sosDropdown-content a:hover {background-color: #ee5f6a;}
+.sosDropdown-content a:hover {background-color: #ee5f6a; }
 
 .sosDropdown:hover .sosDropdown-content{display: block;}
 

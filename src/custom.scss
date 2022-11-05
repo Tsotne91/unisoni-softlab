@@ -1,5 +1,5 @@
-$theme-colors: (
-  "primary": #006a9f
-);
 
-@import "~bootstrap/dist/css/bootstrap.min.css";
+ $primary: #006a9f;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

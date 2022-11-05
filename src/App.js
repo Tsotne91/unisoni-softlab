@@ -1,6 +1,5 @@
 import React from "react";
 import TopNavbar from "./TopNavbar"
-//import "bootstrap/dist/css/bootstrap.min.css";
 import './custom.scss';
 import "./app.css";
 import MainNavbar from "./MainNavbar";
@@ -12,7 +11,7 @@ return (
     <>
         <TopNavbar/>
         <MainNavbar/>
-        {/*<ImageSlider/>*/}
+        <ImageSlider/>
     </>
     )
 }

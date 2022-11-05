@@ -1,75 +1,54 @@
 import React, {useState} from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import image1 from './img/slider/1.jpg';
-import image2 from './img/slider/2.jpg';
-import image3 from './img/slider/3.jpg';
-import image4 from './img/slider/4.jpg';
-import image5 from './img/slider/5.jpg';
 
 
 export default function ImageSlider(){
-    const [index, setIndex] = useState(0);
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-    };
-
-    const sliders = [image1, image2, image3, image4, image5];
+    // const [index, setIndex] = useState(0);
+    // const handleSelect = (selectedIndex, e) => {
+    //     setIndex(selectedIndex);
+    // };
+    //
+    // const sliders = [image1, image2, image3, image4, image5];
 
 
     return (
 
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
+        <Carousel >
+            <Carousel.Item style={{height:"20rem"}}>
                 <img
-                    className="d-block w-100 h-75"
-                    src="./img/slider/1.jpg"
+                    className="d-block w-75 h-100"
+                    src="./slider/1.jpg"
                     alt="First slide"
                 />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item style={{height:"20rem"}}>
                 <img
-                    className="d-block w-100 h-75"
-                    src="./img/slider/2.jpg"
+                    className="d-block w-75 h-100"
+                    src="./slider/2.jpg"
                     alt="Second slide"
                 />
-
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item style={{height:"20rem"}}>
                 <img
-                    className="d-block w-100 h-75"
-                    src="./img/slider/3.jpg"
+                    className="d-block w-75 h-100"
+                    src="./slider/3.jpg"
                     alt="Third slide"
                 />
-
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100 h-75"
-                    src="./img/slider/4.jpg"
-                    alt="Fourth slide"
-                />
+            {/*<Carousel.Item>*/}
+            {/*    <img*/}
+            {/*        className="d-block w-100 h-75"*/}
+            {/*        src="../public/slider/4.jpg"*/}
+            {/*        alt="Fourth slide"*/}
+            {/*    />*/}
 
-                <Carousel.Caption>
-                    <h3>Fourth slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
+            {/*    <Carousel.Caption>*/}
+            {/*        <h3>Fourth slide label</h3>*/}
+            {/*        <p>*/}
+            {/*            Praesent commodo cursus magna, vel scelerisque nisl consectetur.*/}
+            {/*        </p>*/}
+            {/*    </Carousel.Caption>*/}
+            {/*</Carousel.Item>*/}
         </Carousel>
     )
 }

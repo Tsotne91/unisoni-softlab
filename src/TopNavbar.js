@@ -24,7 +24,7 @@ export default function TopNavbar (){
                     </div>
                 </Nav>
                 <Nav>
-                    <NavDropdown title="ქართული" >
+                   <NavDropdown title="ქართული" >
                         <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Русский</NavDropdown.Item>
                     </NavDropdown>

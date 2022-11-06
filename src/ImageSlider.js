@@ -13,42 +13,56 @@ export default function ImageSlider(){
 
     return (
 
-        <Carousel >
-            <Carousel.Item style={{height:"20rem"}}>
+        <Carousel>
+            <Carousel.Item style={{height:"32rem"}}>
                 <img
-                    className="d-block w-75 h-100"
+                    className="d-block w-100 h-100"
                     src="./slider/1.jpg"
                     alt="First slide"
                 />
+                <Carousel.Caption>
+                    <h1 className="my-4">ქონების დაზღვევა</h1>
+                    <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
+                    <img src="./img/Image42.png" className="position-relative opacity-50" style={{top: "9rem"}}/>
+                    <p>შეიძინე ონლაინ</p>
+                    <img src="./img/Path398.svg"/>
+                </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item style={{height:"20rem"}}>
+            {/*<Carousel.Item style={{height:"32rem"}}>*/}
+            {/*    <img*/}
+            {/*        className="d-block w-100 h-100"*/}
+            {/*        src="./slider/2.jpg"*/}
+            {/*        alt="Second slide"*/}
+            {/*    />*/}
+            {/*</Carousel.Item>*/}
+            <Carousel.Item style={{height:"32rem"}}>
                 <img
-                    className="d-block w-75 h-100"
-                    src="./slider/2.jpg"
-                    alt="Second slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item style={{height:"20rem"}}>
-                <img
-                    className="d-block w-75 h-100"
+                    className="d-block w-100 h-100"
                     src="./slider/3.jpg"
                     alt="Third slide"
                 />
+                <Carousel.Caption>
+                    <h1 className="my-4">ქონების დაზღვევა</h1>
+                    <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
+                    <img src="./img/Image42.png" className="position-relative opacity-50" style={{top: "9rem"}}/>
+                    <p>შეიძინე ონლაინ</p>
+                    <img src="./img/Path398.svg"/>
+                </Carousel.Caption>
             </Carousel.Item>
-            {/*<Carousel.Item>*/}
-            {/*    <img*/}
-            {/*        className="d-block w-100 h-75"*/}
-            {/*        src="../public/slider/4.jpg"*/}
-            {/*        alt="Fourth slide"*/}
-            {/*    />*/}
-
-            {/*    <Carousel.Caption>*/}
-            {/*        <h3>Fourth slide label</h3>*/}
-            {/*        <p>*/}
-            {/*            Praesent commodo cursus magna, vel scelerisque nisl consectetur.*/}
-            {/*        </p>*/}
-            {/*    </Carousel.Caption>*/}
-            {/*</Carousel.Item>*/}
+            <Carousel.Item style={{height:"32rem"}}>
+                <img
+                    className="d-block w-100 h-100"
+                    src="./slider/4.jpg"
+                    alt="Fourth slide"
+                />
+                <Carousel.Caption>
+                    <h1 className="my-4">ქონების დაზღვევა</h1>
+                    <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
+                    <img src="./img/Image42.png" className="position-relative opacity-50" style={{top: "9rem"}}/>
+                    <p className="text-dark">შეიძინე ონლაინ</p>
+                    <img src="./img/Path398.svg"/>
+                </Carousel.Caption>
+            </Carousel.Item>
         </Carousel>
     )
 }

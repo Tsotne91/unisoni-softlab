@@ -1,6 +1,5 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
 import React from "react";
-import logo from "./img/Logo.svg"
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import {RiAccountCircleFill} from "react-icons/ri"
 //import "./custom.scss";
@@ -13,7 +12,7 @@ export default function MainNavbar() {
                 <Nav className="mx-5">
                     <Navbar.Brand href="#home">
                         {/*temporary img, SVG is needed here*/}
-                        <img src={logo}
+                        <img src="./img/Logo.svg"
                              width="150"
                              height="60"
                              className="d-inline-block align-top"

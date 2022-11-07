@@ -1,18 +1,18 @@
 import React from "react";
-import TopNavbar from "./TopNavbar"
 import './custom.scss';
 import "./app.css";
-import MainNavbar from "./MainNavbar";
-import ImageSlider from "./ImageSlider";
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import MainPage from "./MainPage";
+
 
 
 function App() {
-return (
-    <>
-        <TopNavbar/>
-        <MainNavbar/>
-        <ImageSlider/>
-    </>
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path={"/"} element={<MainPage/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
 

@@ -1,40 +1,32 @@
-import {Container, Nav, Navbar, NavDropdown, Overlay, OverlayTrigger} from "react-bootstrap";
+import {Container, Nav, Navbar, NavDropdown, Overlay, Tooltip} from "react-bootstrap";
 import React, {useRef, useState} from "react";
 import {BsFillTelephoneFill} from "react-icons/bs";
 import Button from "react-bootstrap/Button";
-// import "bootstrap/dist/css/bootstrap-grid.min.css";
-// import "custom.scss";
 
-export default function TopNavbar (){
+
+export default function TopNavbar() {
     const [show, setShow] = useState(false);
     const target = useRef(null);
 
 
     return (
         <Navbar bg="dark" variant="dark" className="py-0">
-            <Container style={{fontSize: "0.7vw"}}>
-                <Nav className="me-auto">
+            <Container style={{fontSize: "0.8rem"}}>
+                <Nav className="px-5">
                     <Nav.Link href="#home">მთავარი</Nav.Link>
                     <Nav.Link href="#aboutus">ჩვენს შესახებ</Nav.Link>
                     <Nav.Link href="#news">სიახლეები</Nav.Link>
                     <Nav.Link href="#partners">პარტნიორები</Nav.Link>
                     <Nav.Link href="#contact">კონტაქტი</Nav.Link>
-                    {/*<div className="sosDropdown">*/}
-                    {/*    <button className="text-center m-2 px-2 w-100 sosButton">SOS</button>*/}
-                    {/*    <div className="sosDropdown-content">*/}
-                    {/*        <a href="#">მოხდა სადაზღვევო შემთხვევა</a>*/}
-                    {/*        <a href="#">შემთხვევის სტატუსის შემოწმება</a>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
-                    <Button variant="danger"
+                    <Button variant="danger" className="text-light mx-4 my-1 px-4 py-0"
                             ref={target}
-                            onMouseOver={()=>setShow(!show)}>
-                    SOS</Button>
+                            onMouseOver={() => setShow(!show)}>
+                        SOS</Button>
                     <Overlay
                         target={target.current}
                         show={show}
                         placement='bottom'
-                      >
+                    >
                         {
                             ({show: _show, popper, ...props}) =>
                                 (
@@ -42,15 +34,19 @@ export default function TopNavbar (){
                                         {...props}
                                         style={{
                                             position: 'absolute',
-                                            backgroundColor: 'danger',
-                                            padding: '2px 10px',
+                                            right: '5rem',
+                                            width: '18rem',
+                                            backgroundColor: '#EE313C',
+                                            textAlign: 'center',
+                                            fontSize: "0.8rem",
+                                            padding: '0.4rem 1rem',
                                             color: 'white',
-                                            borderRadius: 4,
+                                            borderRadius: 5,
                                             ...props.style,
                                         }}
-                                        >
-                                        Simple Tooltip
-
+                                    >
+                                        <div className="py-2"><a style={{textDecoration:"none"}}>მოხდა სადაზღვევო შემთხვევა</a></div>
+                                        <div className="py-2"><a style={{textDecoration:"none"}}>შემთხვევის სტატუსის შემოწმება</a></div>
                                     </div>
                                 )
                         }
@@ -59,12 +55,12 @@ export default function TopNavbar (){
                     </Overlay>
                 </Nav>
                 <Nav>
-                   <NavDropdown title="ქართული" >
+                    <NavDropdown title="ქართული">
                         <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Русский</NavDropdown.Item>
                     </NavDropdown>
 
-                 <Nav.Link className="mx-2">ცხელი ხაზი  <BsFillTelephoneFill/> 2 991 991</Nav.Link>
+                    <Nav.Link className="mx-2">ცხელი ხაზი <BsFillTelephoneFill/> 2 991 991</Nav.Link>
 
                 </Nav>
             </Container>

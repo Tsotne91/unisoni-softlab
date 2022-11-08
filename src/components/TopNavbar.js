@@ -28,7 +28,7 @@ export default function TopNavbar() {
                         placement='bottom'
                     >
                         {
-                            ({show: _show, popper, ...props}) =>
+                            ({placement, scheduleUpdate, arrowProps, outOfBoundaries, show, ...props}) =>
                                 (
                                     <div
                                         {...props}

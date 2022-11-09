@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Carousel from 'react-bootstrap/Carousel';
+import '../custom.scss';
 
 
 export default function ImageSlider(){

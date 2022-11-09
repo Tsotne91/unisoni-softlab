@@ -10,15 +10,15 @@ export default function TopNavbar() {
 
 
     return (
-        <Navbar bg="dark" variant="dark" className="py-0">
+        <Navbar bg="dark" variant="dark" className="d-none d-md-flex py-md-0">
             <Container style={{fontSize: "0.8rem"}}>
-                <Nav className="px-5">
+                <Nav className="px-lg-5 px-md-0 ">
                     <Nav.Link href="#home">მთავარი</Nav.Link>
                     <Nav.Link href="#aboutus">ჩვენს შესახებ</Nav.Link>
                     <Nav.Link href="#news">სიახლეები</Nav.Link>
                     <Nav.Link href="#partners">პარტნიორები</Nav.Link>
                     <Nav.Link href="#contact">კონტაქტი</Nav.Link>
-                    <Button variant="danger" className="text-light mx-4 my-1 px-4 py-0"
+                    <Button variant="danger" className="text-light mx-4 my-1 px-4"
                             ref={target}
                             onMouseOver={() => setShow(!show)}>
                         SOS</Button>
@@ -54,7 +54,7 @@ export default function TopNavbar() {
 
                     </Overlay>
                 </Nav>
-                <Nav>
+                <Nav className="mx-0">
                     <NavDropdown title="ქართული">
                         <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Русский</NavDropdown.Item>

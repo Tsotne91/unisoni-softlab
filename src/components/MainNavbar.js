@@ -9,11 +9,11 @@ export default function MainNavbar() {
     // const target = useRef(null);
 
     return (
-        <Navbar bg="primary" variant="primary" className="px-lg-5 px-md-3 px-sm-1">
-            <Container  className="mx-lg-5 mx-md-3 mx-sm-1 justify-content-center">
-                <Nav className="px-5 w-75">
+        <>
+        <Navbar bg="primary"  className="d-none d-sm-flex px-lg-5 px-md-3 px-sm-1">
+            <Container  className="mx-lg-3 mx-md-1 mx-sm-0 justify-content-md-center justify-content-sm-start">
+                <Nav className="px-lg-4 px-md-0 w-75">
                     <Navbar.Brand href="#home">
-                        {/*temporary img, SVG is needed here*/}
                         <img src="./img/Logo.svg"
                              width="150"
                              height="60"
@@ -23,7 +23,7 @@ export default function MainNavbar() {
                     </Navbar.Brand>
                     <Nav.Link
                         // ref={target} onMouseOver={() => setShow(!show)}
-                              href="#physical" className="mx-3 px-3 text-light ">ფიზიკური პირებისთვის</Nav.Link>
+                              href="#physical" className="mx-lg-3 px-lg-3 mx-sm-0 px-sm-0 text-light">ფიზიკური პირებისთვის</Nav.Link>
                     {/*<Overlay target={target.current} show={show} placement='bottom'> {*/}
                     {/*    ({show, scheduleUpdate, arrowProps, outOfBoundaries, placement, popper, ...props}) => (*/}
                     {/*        <div*/}
@@ -52,15 +52,25 @@ export default function MainNavbar() {
 
 
                     {/*</Overlay>*/}
-
                     <Nav.Link href="#judicial" className="mx-3 px-3 text-light ">იურიდიული პირებისთვის</Nav.Link>
                     <Nav.Link href="#obligatory" className="mx-3 px-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
                 </Nav>
             </Container>
-                <Nav className="mx-lg-5">
-                    <RiAccountCircleFill size="4em" className="text-light"/>
-                <Nav.Link href="#myaccount" className="text-light">ჩემი კაბინეტი</Nav.Link>
+                <Nav className="mx-md-1 d-none d-md-flex">
+                    <RiAccountCircleFill size="4rem" className="text-light"/>
+                <Nav.Link href="#myaccount" className="text-light d-none d-md-flex">ჩემი კაბინეტი</Nav.Link>
                </Nav>
         </Navbar>
+        <Navbar bg="light" className="d-sm-flex d-sm-none">
+            <Navbar.Brand href="#home">
+                <img src="./img/Group334.svg"
+                     width="150"
+                     height="60"
+                     className="d-inline-block align-top"
+                     alt="Unison Logo"
+                />
+            </Navbar.Brand>
+        </Navbar>
+        </>
     )
 }

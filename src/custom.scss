@@ -1,13 +1,28 @@
+$primary: #1d5370;
+$danger: #EE313C;
 
- $primary: #1d5370;
- $danger: #EE313C;
-
- .py-2:hover  {
+.py-2:hover {
   background-color: #ee5f6a;
   cursor: pointer;
- }
+}
 
+.carousel-indicators {
+  display: flex;
+  position: absolute;
+  right: 25rem;
+  border-color: white;
+  border-width: 0.4rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
 
-
+//.carousel-indicators button {
+//  border-width: 0.4rem;
+//  border-radius: 50%;
+//  height: 3rem;
+//  width: 3rem;
+//
+//}
 
 @import "../node_modules/bootstrap/scss/bootstrap";

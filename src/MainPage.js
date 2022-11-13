@@ -3,6 +3,7 @@ import MainNavbar from "./components/MainNavbar";
 import ImageSlider from "./components/ImageSlider";
 import React from "react";
 import './custom.scss';
+import InsuranceCards from "./components/InsuranceCards";
 
 export default function MainPage(){
     return (
@@ -10,6 +11,7 @@ export default function MainPage(){
             <TopNavbar/>
             <MainNavbar/>
             <ImageSlider/>
+            <InsuranceCards/>
         </>
     )
 

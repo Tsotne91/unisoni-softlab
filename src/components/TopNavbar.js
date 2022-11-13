@@ -11,14 +11,14 @@ export default function TopNavbar() {
 
     return (
         <Navbar bg="dark" variant="dark" className="d-none d-md-flex py-md-0">
-            <Container style={{fontSize: "0.8rem"}}>
+            <Container style={{fontSize: "0.8rem"}} className="px-md-0 px-lg-1 px-xl-2">
                 <Nav className="px-lg-5 px-md-0 ">
                     <Nav.Link href="#home">მთავარი</Nav.Link>
                     <Nav.Link href="#aboutus">ჩვენს შესახებ</Nav.Link>
                     <Nav.Link href="#news">სიახლეები</Nav.Link>
                     <Nav.Link href="#partners">პარტნიორები</Nav.Link>
                     <Nav.Link href="#contact">კონტაქტი</Nav.Link>
-                    <Button variant="danger" className="text-light mx-4 my-1 px-4"
+                    <Button variant="danger" className="text-light mx-4 my-1 px-4 py-0"
                             ref={target}
                             onMouseOver={() => setShow(!show)}>
                         SOS</Button>
@@ -60,7 +60,7 @@ export default function TopNavbar() {
                         <NavDropdown.Item href="#action/3.2">Русский</NavDropdown.Item>
                     </NavDropdown>
 
-                    <Nav.Link className="mx-2">ცხელი ხაზი <BsFillTelephoneFill/> 2 991 991</Nav.Link>
+                    <Nav.Link className="d-none d-lg-flex mx-2">ცხელი ხაზი <BsFillTelephoneFill/> 2 991 991</Nav.Link>
 
                 </Nav>
             </Container>

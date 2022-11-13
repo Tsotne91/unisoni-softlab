@@ -10,7 +10,7 @@ export default function MainNavbar() {
 
     return (
         <>
-        <Navbar bg="primary"  className="d-none d-sm-flex px-lg-5 px-md-3 px-sm-1">
+        <Navbar bg="primary"  className="d-none d-md-flex px-lg-5 px-md-3 px-sm-1">
             <Container  className="mx-lg-3 mx-md-1 mx-sm-0 justify-content-md-center justify-content-sm-start">
                 <Nav className="px-lg-4 px-md-0 w-75">
                     <Navbar.Brand href="#home">
@@ -58,10 +58,10 @@ export default function MainNavbar() {
             </Container>
                 <Nav className="mx-md-1 d-none d-md-flex">
                     <RiAccountCircleFill size="4rem" className="text-light"/>
-                <Nav.Link href="#myaccount" className="text-light d-none d-md-flex">ჩემი კაბინეტი</Nav.Link>
+                <Nav.Link href="#myaccount" className="text-light d-none d-lg-flex">ჩემი კაბინეტი</Nav.Link>
                </Nav>
         </Navbar>
-        <Navbar bg="light" className="d-sm-flex d-sm-none">
+        <Navbar bg="light" className="d-md-flex d-md-none">
             <Navbar.Brand href="#home">
                 <img src="./img/Group334.svg"
                      width="150"

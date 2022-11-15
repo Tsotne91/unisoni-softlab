@@ -17,20 +17,24 @@ export default function ImageSlider(){
         top: "7rem",
         opacity: "0.7",
         zIndex: "10"
-
     }
 
     const textStyle = {
         zIndex: "12",
         position: "relative",
         top: "0.5rem"
+    }
 
+    const captionStyle = {
+        fontFamily: "ExtraSquare",
+        position: "relative",
+        top: "7rem"
     }
 
 
     return (
 
-        <Carousel interval={3000}>
+        <Carousel interval={50000}>
             <Carousel.Item style={{height:"25rem"}}>
                 <img
                     className="d-block w-100 h-100"
@@ -38,8 +42,8 @@ export default function ImageSlider(){
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h1 className="my-4">ქონების დაზღვევა</h1>
-                    <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
+                    <h1 className="my-4" style={captionStyle}>ქონების დაზღვევა</h1>
+                    <h5 className="my-4" style={{position: "relative", top: "7rem"}}>ყველაზე ხელსაყრელი პირობებით</h5>
                     <img src="./img/Image42.png" style={imgStyle}/>
                     <p style={textStyle}>შეიძინე ონლაინ</p>
                     <img src="./img/Path398.svg"/>
@@ -52,8 +56,8 @@ export default function ImageSlider(){
                     alt="Second slide"
                 />
                 <Carousel.Caption>
-                    <h1 className="my-4 text-dark">ქონების დაზღვევა</h1>
-                    <h5 className="my-4 text-dark">ყველაზე ხელსაყრელი პირობებით</h5>
+                    <h1 className="my-4 text-dark" style={captionStyle}>ქონების დაზღვევა</h1>
+                    <h5 className="my-4" style={{position: "relative", top: "7rem"}}>ყველაზე ხელსაყრელი პირობებით</h5>
                     <img src="./img/Image42.png" style={imgStyle}/>
                     <p  style={textStyle}>შეიძინე ონლაინ</p>
                     <img src="./img/Path398.svg"/>
@@ -66,8 +70,8 @@ export default function ImageSlider(){
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <h1 className="my-4">ქონების დაზღვევა</h1>
-                    <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
+                    <h1 className="my-4" style={captionStyle}>ქონების დაზღვევა</h1>
+                    <h5 className="my-4" style={{position: "relative", top: "7rem"}}>ყველაზე ხელსაყრელი პირობებით</h5>
                     <img src="./img/Image42.png" style={imgStyle}/>
                     <p  style={textStyle}>შეიძინე ონლაინ</p>
                     <img src="./img/Path398.svg"/>
@@ -80,8 +84,8 @@ export default function ImageSlider(){
                     alt="Fourth slide"
                 />
                 <Carousel.Caption>
-                    <h1 className="my-4">ქონების დაზღვევა</h1>
-                    <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
+                    <h1 className="my-4" style={captionStyle}>ქონების დაზღვევა</h1>
+                    <h5 className="my-4" style={{position: "relative", top: "7rem"}}>ყველაზე ხელსაყრელი პირობებით</h5>
                     <img src="./img/Image42.png" style={imgStyle}/>
                     <p  style={textStyle}>შეიძინე ონლაინ</p>
                     <img src="./img/Path398.svg"/>

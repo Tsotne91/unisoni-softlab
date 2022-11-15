@@ -12,6 +12,7 @@ export default function MainPage(){
             <MainNavbar/>
             <ImageSlider/>
             <InsuranceCards/>
+
         </>
     )
 

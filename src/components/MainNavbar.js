@@ -58,7 +58,7 @@ export default function MainNavbar() {
             </Container>
                 <Nav className="mx-md-1 d-none d-md-flex">
                     <RiAccountCircleFill size="4rem" className="text-light"/>
-                <Nav.Link href="#myaccount" className="text-light d-none d-lg-flex">ჩემი კაბინეტი</Nav.Link>
+                <Nav.Link href="#myaccount" className="text-light d-none d-lg-flex w-75">ჩემი კაბინეტი</Nav.Link>
                </Nav>
         </Navbar>
         <Navbar bg="light" className="d-md-flex d-md-none">

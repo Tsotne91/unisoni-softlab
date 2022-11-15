@@ -1,56 +1,74 @@
 import React from 'react';
 import {Card, Container, Row} from "react-bootstrap";
-import {MdOutlineHouse} from 'react-icons/md';
-import {RiShieldCrossLine} from "react-icons/ri";
-import {BiCar} from 'react-icons/bi';
-import {BsPersonCheck} from 'react-icons/bs';
-import {GiAirplaneDeparture} from 'react-icons/gi';
+import house from "./icons/house.svg";
+import health from "./icons/health_and_safety_black_48dp.svg";
+import car from "./icons/directions_car_filled_black_48dp.svg";
+import responsibility from "./icons/how_to_reg_black_24dp.svg";
+import flight from "./icons/flight_takeoff_black_48dp.svg";
+import basket from "./icons/Path 218.svg"
 
 export default function InsuranceCards() {
     const cardStyle = {
         width: "12rem",
         height: "10rem",
-        marginRight: "2rem",
-        padding: "2rem"
+        fontSize: "1rem",
+        textAlign: "center",
+        alignItems: "center",
+        marginRight: "0.8rem",
+        marginBottom: "1rem",
+        paddingTop: "0.7rem",
+        position: "relative",
+        borderRadius: "10px",
+        boxShadow: "5px 10px 8px #e1e1ea",
+        bottom: "2rem",
+        fontFamily: "ExtraSquare",
     }
 
     const iconStyle = {
-        fontSize: "2rem",
+        width: "2.5rem",
+        paddingBottom: "0.4rem"
     }
 
     return (
-        <Container className="d-flex justify-content-center">
+        <Container className="d-flex justify-content-center"> {/* this needs to be adjusted for mobile*/}
             <Row>
                     <Card style={cardStyle}>
-                        <MdOutlineHouse style={iconStyle}/>
-                        <span>ქონების
+                        <img src={house} style={iconStyle}/>
+                        <span>ქონების<br/>
                      დაზღვევა</span>
                     </Card>
                     <Card style={cardStyle}>
-                        <RiShieldCrossLine/>
+                        <img src={health} style={iconStyle}/>
                         <span>ჯანმრთელობის<br/>
                 დაზღვევა</span>
                     </Card>
                     <Card style={cardStyle}>
-                        <BiCar style={iconStyle}/>
+                        <img src={car} style={iconStyle}/>
                         <span>ავტომობილის<br/>
                     დაზღვევა
                 </span>
                     </Card>
                     <Card style={cardStyle}>
-                        <BsPersonCheck style={iconStyle}/>
+                        <img src={responsibility} style={iconStyle}/>
                         <span>პასუხისმგებლობის<br/>
                     დაზღვევა
                 </span>
                     </Card>
                     <Card style={cardStyle}>
-                        <GiAirplaneDeparture style={iconStyle}/>
-                        <span>პასუხისმგებლობის<br/>
+                        <img src={flight} style={iconStyle}/>
+                        <span>სამოგზაურო<br/>
                     დაზღვევა
                 </span>
                     </Card>
-
+                <Card style={cardStyle} className="d-flex d-md-none">
+                    <img src={basket} style={iconStyle}/>
+                    <span>შეიძინე<br/>
+                    ონლაინ
+                </span>
+                </Card>
+                {/*<Button variant="danger" className="w-100">SOS</Button>*/}
             </Row>
+
         </Container>
     )
 }

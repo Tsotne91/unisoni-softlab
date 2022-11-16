@@ -1,9 +1,14 @@
-$primary: #1d5370;
+$mainColor: #006A9F;
 $danger: #EE313C;
 
 @font-face {
   font-family: 'ExtraSquare';
-  src: local('ExtraSquare'), url("components/bpg_extrasquare_mtavruli_2009.ttf") format('truetype');
+  src: local('ExtraSquare'), url("components/fonts/bpg_extrasquare_mtavruli_2009.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "BPGArial";
+  src: local("BPGArial"), url("components/fonts/bpg_arial_2009.ttf") format('truetype');
 }
 
 .py-2:hover {

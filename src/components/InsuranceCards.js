@@ -31,18 +31,19 @@ export default function InsuranceCards() {
     }
 
     const advantagesStyle = {
-        width: "9.5rem",
+        width: "10rem",
         margin: "1rem",
         padding: "0.7rem",
-        fontSize: "0.7rem",
+        fontSize: "0.8rem",
+        fontFamily: "BPGArial",
         textAlign: "center",
         border: "none"
     }
 
     return (
         <>
-            <Container className="d-flex justify-content-center"> {/* this needs to be adjusted for mobile*/}
-                <Row>
+            <Container className="d-flex justify-content-center">
+                <Row className="justify-content-center">
                     <Card style={cardStyle}>
                         <img src={house} style={iconStyle}/>
                         <span>ქონების<br/>
@@ -78,59 +79,75 @@ export default function InsuranceCards() {
                 </span>
                     </Card>
                     <Button variant="danger"
-                            className="w-100 d-md-none d-flex text-light justify-content-center">SOS</Button>
+                            className="w-75 my-3 py-2 fs-3 d-md-none d-flex text-light justify-content-center">SOS</Button>
                 </Row>
             </Container>
             <Container className="d-none d-md-flex">
                 <Col className="d-md-inline-block border border-0">
 
-                    <h2 style={{fontFamily: "ExtraSquare", textAlign: "center", marginTop: "2rem"}}>უპირატესობები</h2>
+                    <h2 style={{fontFamily: "ExtraSquare", textAlign: "center", marginTop: "3rem"}}>უპირატესობები</h2>
                     <Row className="d-flex justify-content-center">
                         <Card style={advantagesStyle}>
                             <img src="./img/advantagesIcons/consumer.svg"
-                                 style={{width: "2.5rem", marginLeft: "2.5rem"}}/><br/>
+                                 style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>მომხმარებლის კმაყოფილების 96%-იანი დონე</span>
                         </Card>
                         <Card style={advantagesStyle}>
-                            <img src="./img/advantagesIcons/stars.svg" style={{width: "2.5rem", marginLeft: "2.5rem"}}/><br/>
+                            <img src="./img/advantagesIcons/stars.svg"
+                                 style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>მაღალრეიტინგული გადამზღვევი კომპანიები</span>
                         </Card>
                         <Card style={advantagesStyle}>
                             <img src="./img/advantagesIcons/touch_app_black_24dp.svg"
-                                 style={{width: "2.5rem", marginLeft: "2.5rem"}}/><br/>
+                                 style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>თანამედროვე ელექტრონული სერვისები</span>
                         </Card>
                         <Card style={advantagesStyle}>
                             <img src="./img/advantagesIcons/timer_black_24dp.svg"
-                                 style={{width: "2.5rem", marginLeft: "2.5rem"}}/><br/>
+                                 style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>ზარალის დარეგულირების უმოკლესი ვადები</span>
                         </Card>
                         <Card style={advantagesStyle}>
                             <img src="./img/advantagesIcons/people_outline_black_24dp.svg"
-                                 style={{width: "2.5rem", marginLeft: "2.5rem"}}/><br/>
+                                 style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>კორპორატიული კლიენტების ფართო სპექტრი</span>
                         </Card>
                         <Card style={advantagesStyle}>
-                            <img src="./img/advantagesIcons/stars.svg" style={{width: "2.5rem", marginLeft: "2.5rem"}}/><br/>
+                            <img src="./img/advantagesIcons/auto_awesome_black_24dp.svg"
+                                 style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>გუნდის პროფესიონალიზმი და მრავალწლიანი გამოცდილება</span>
                         </Card>
                     </Row>
                 </Col>
             </Container>
-            <Container className="d-flex d-md-none">
+            <Container className="d-flex d-md-none text-center">
                 <Row>
-                    <Card className="w-50">
+                    <hr className="w-50 m-auto my-4"/>
+                    <h4 style={{fontFamily: "ExtraSquare", fontSize: "2rem"}}>უპირატესობები</h4>
+                    <Card className="w-50 py-2 align-items-center border-0">
                         <img src="./img/advantagesIcons/consumer.svg"
-                             style={{width: "5rem", marginLeft: "2.5rem"}}/><br/>
+                             style={{width: "4rem"}}/>
+                        <span className="text-primary fw-bold fs-3">32067</span>
                         <span>კმაყოფილი მომხმარებელი</span>
                     </Card>
-                    <Card className="w-50">
-                    <img src="./img/advantagesIcons/business_black_24dp.svg"
-                         style={{width: "5rem", marginLeft: "2.5rem"}}/><br/>
+                    <Card className="w-50 py-2 align-items-center border-0">
+                        <img src="./img/advantagesIcons/business_black_24dp.svg"
+                             style={{width: "4rem"}}/>
+                        <span className="text-primary fw-bold fs-3">5</span>
+                        <span>ფილიალი საქართველოში</span>
                     </Card>
-                </Row>
-                <Row>
-
+                    <Card className="w-50 py-2 align-items-center border-0">
+                        <img src="./img/advantagesIcons/payments_black_24dp.svg"
+                             style={{width: "4rem"}}/>
+                        <span className="text-primary fw-bold fs-3">2’800’843 ₾</span>
+                        <span>ანაზღაურებული თანხა</span>
+                    </Card>
+                    <Card className="w-50 py-2 align-items-center border-0">
+                        <img src="./img/advantagesIcons/date_range_black_24dp.svg"
+                             style={{width: "4rem"}}/>
+                        <span className="text-primary fw-bold fs-3">12</span>
+                        <span>წარმატებული წელი</span>
+                    </Card>
                 </Row>
 
             </Container>

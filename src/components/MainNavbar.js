@@ -1,7 +1,6 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
 import React from "react";
-import "bootstrap/dist/css/bootstrap-grid.min.css";
-import {RiAccountCircleFill} from "react-icons/ri"
+import {RiAccountCircleFill} from "react-icons/ri";
 
 
 export default function MainNavbar() {

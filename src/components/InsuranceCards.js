@@ -1,4 +1,3 @@
-import React from 'react';
 import {Card, Col, Container, Row} from "react-bootstrap";
 import house from "./icons/insuranceIcons/house.svg";
 import health from "./icons/insuranceIcons/health_and_safety_black_48dp.svg";
@@ -10,8 +9,8 @@ import Button from "react-bootstrap/Button";
 
 export default function InsuranceCards() {
     const cardStyle = {
-        width: "12rem",
-        height: "10rem",
+        width: "10rem",
+        height: "9rem",
         fontSize: "1rem",
         textAlign: "center",
         alignItems: "center",
@@ -82,7 +81,7 @@ export default function InsuranceCards() {
                             className="w-75 my-3 py-2 fs-3 d-md-none d-flex text-light justify-content-center">SOS</Button>
                 </Row>
             </Container>
-            <Container className="d-none d-md-flex">
+            <Container className="d-none d-md-flex" fluid>
                 <Col className="d-md-inline-block border border-0">
 
                     <h2 style={{fontFamily: "ExtraSquare", textAlign: "center", marginTop: "3rem"}}>უპირატესობები</h2>
@@ -124,30 +123,31 @@ export default function InsuranceCards() {
                 <Row>
                     <hr className="w-50 m-auto my-4"/>
                     <h4 style={{fontFamily: "ExtraSquare", fontSize: "2rem"}}>უპირატესობები</h4>
-                    <Card className="w-50 py-2 align-items-center border-0">
+                    <Card className="w-50 p-2 align-items-center border-0">
                         <img src="./img/advantagesIcons/consumer.svg"
                              style={{width: "4rem"}}/>
-                        <span className="text-primary fw-bold fs-3">32067</span>
+                        <span className="text-primary fw-bold fs-2">32067</span>
                         <span>კმაყოფილი მომხმარებელი</span>
                     </Card>
-                    <Card className="w-50 py-2 align-items-center border-0">
+                    <Card className="w-50 p-2 align-items-center border-0">
                         <img src="./img/advantagesIcons/business_black_24dp.svg"
                              style={{width: "4rem"}}/>
-                        <span className="text-primary fw-bold fs-3">5</span>
+                        <span className="text-primary fw-bold fs-2">5</span>
                         <span>ფილიალი საქართველოში</span>
                     </Card>
-                    <Card className="w-50 py-2 align-items-center border-0">
+                    <Card className="w-50 p-2 align-items-center border-0">
                         <img src="./img/advantagesIcons/payments_black_24dp.svg"
                              style={{width: "4rem"}}/>
-                        <span className="text-primary fw-bold fs-3">2’800’843 ₾</span>
+                        <span className="text-primary fw-bold fs-2">2’800’843 ₾</span>
                         <span>ანაზღაურებული თანხა</span>
                     </Card>
-                    <Card className="w-50 py-2 align-items-center border-0">
+                    <Card className="w-50 p-2 align-items-center border-0">
                         <img src="./img/advantagesIcons/date_range_black_24dp.svg"
                              style={{width: "4rem"}}/>
-                        <span className="text-primary fw-bold fs-3">12</span>
+                        <span className="text-primary fw-bold fs-2">12</span>
                         <span>წარმატებული წელი</span>
                     </Card>
+                    <hr className="w-50 m-auto my-4"/>
                 </Row>
 
             </Container>

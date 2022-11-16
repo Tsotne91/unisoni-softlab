@@ -1,4 +1,4 @@
-$mainColor: #006A9F;
+$primary: #006A9F;
 $danger: #EE313C;
 
 @font-face {
@@ -11,10 +11,11 @@ $danger: #EE313C;
   src: local("BPGArial"), url("components/fonts/bpg_arial_2009.ttf") format('truetype');
 }
 
-.py-2:hover {
+.sosButton:hover, .sosButton>div>a:hover {
   background-color: #ee5f6a;
   cursor: pointer;
 }
+
 
 .carousel-indicators {
   border-color: black;
@@ -32,6 +33,5 @@ $danger: #EE313C;
   height: 3rem;
   width: 3rem;
 }
-
 
 @import "../node_modules/bootstrap/scss/bootstrap";

@@ -1,11 +1,12 @@
-import {Container, Nav, Navbar, NavDropdown, Overlay} from "react-bootstrap";
-import React, {useRef, useState} from "react";
+import {Container, Dropdown, Nav, Navbar, NavDropdown, Overlay} from "react-bootstrap";
+import {useRef, useState} from "react";
 import {BsFillTelephoneFill} from "react-icons/bs";
 import Button from "react-bootstrap/Button";
+import './Navbar.css';
 
 
 export default function TopNavbar() {
-    const [show, setShow] = useState(false);
+    const [sosOverlayShow, setSosOverlayShow] = useState(false);
     const target = useRef(null);
 
 
@@ -20,39 +21,29 @@ export default function TopNavbar() {
                     <Nav.Link href="#contact">კონტაქტი</Nav.Link>
                     <Button variant="danger" className="text-light mx-4 my-1 px-4 py-0"
                             ref={target}
-                            onMouseOver={() => setShow(!show)}>
+                            onMouseOver={() => setSosOverlayShow(!sosOverlayShow)}>
                         SOS</Button>
                     <Overlay
                         target={target.current}
-                        show={show}
+                        show={sosOverlayShow}
                         placement='bottom'
                     >
                         {
-                            ({placement, scheduleUpdate, arrowProps, outOfBoundaries, show, ...props}) =>
+                            ({placement, scheduleUpdate, arrowProps, outOfBoundaries, show: sosOverlayShow , ...props}) =>
                                 (
                                     <div
                                         {...props}
-                                        style={{
-                                            position: 'absolute',
-                                            right: '5rem',
-                                            width: '18rem',
-                                            backgroundColor: '#EE313C',
-                                            textAlign: 'center',
-                                            fontSize: "0.8rem",
-                                            padding: '0.4rem 1rem',
-                                            color: 'white',
-                                            borderRadius: 5,
-                                            ...props.style,
-                                        }}
+                                        className="sosButtonOverlay px-0"
+                                        style={{...props.style}}
                                     >
-                                        <div className="py-2"><a style={{textDecoration:"none"}}>მოხდა სადაზღვევო შემთხვევა</a></div>
-                                        <div className="py-2"><a style={{textDecoration:"none"}}>შემთხვევის სტატუსის შემოწმება</a></div>
+                                        <div className="p-2"><a>მოხდა სადაზღვევო შემთხვევა</a></div>
+                                        <div className="p-2"><a>შემთხვევის სტატუსის შემოწმება</a></div>
                                     </div>
                                 )
                         }
-
-
                     </Overlay>
+
+
                 </Nav>
                 <Nav className="mx-0">
                     <NavDropdown title="ქართული">

@@ -1,10 +1,4 @@
 import {Card, Col, Container, Row} from "react-bootstrap";
-import house from "./icons/insuranceIcons/house.svg";
-import health from "./icons/insuranceIcons/health_and_safety_black_48dp.svg";
-import car from "./icons/insuranceIcons/directions_car_filled_black_48dp.svg";
-import responsibility from "./icons/how_to_reg_black_24dp.svg";
-import flight from "./icons/insuranceIcons/flight_takeoff_black_48dp.svg";
-import basket from "./icons/insuranceIcons/Path 218.svg";
 import Button from "react-bootstrap/Button";
 
 export default function InsuranceCards() {
@@ -44,35 +38,35 @@ export default function InsuranceCards() {
             <Container className="d-flex justify-content-center">
                 <Row className="justify-content-center">
                     <Card style={cardStyle}>
-                        <img src={house} style={iconStyle}/>
+                        <img src="img/insuranceIcons/house.svg" style={iconStyle}/>
                         <span>ქონების<br/>
                      დაზღვევა</span>
                     </Card>
                     <Card style={cardStyle}>
-                        <img src={health} style={iconStyle}/>
+                        <img src="img/insuranceIcons/health_and_safety_black_48dp.svg" style={iconStyle}/>
                         <span>ჯანმრთელობის<br/>
                      დაზღვევა</span>
                     </Card>
                     <Card style={cardStyle}>
-                        <img src={car} style={iconStyle}/>
+                        <img src="img/insuranceIcons/directions_car_filled_black_48dp.svg" style={iconStyle}/>
                         <span>ავტომობილის<br/>
                     დაზღვევა
                 </span>
                     </Card>
                     <Card style={cardStyle}>
-                        <img src={responsibility} style={iconStyle}/>
+                        <img src="img/insuranceIcons/how_to_reg_black_24dp.svg" style={iconStyle}/>
                         <span>პასუხისმგებლობის<br/>
                     დაზღვევა
                 </span>
                     </Card>
                     <Card style={cardStyle}>
-                        <img src={flight} style={iconStyle}/>
+                        <img src="img/insuranceIcons/flight_takeoff_black_48dp.svg" style={iconStyle}/>
                         <span>სამოგზაურო<br/>
                     დაზღვევა
                 </span>
                     </Card>
                     <Card style={cardStyle} className="d-flex d-md-none">
-                        <img src={basket} style={iconStyle}/>
+                        <img src="../../public/img/insuranceIcons/Path 218.svg" style={iconStyle}/>
                         <span>შეიძინე<br/>
                     ონლაინ
                 </span>

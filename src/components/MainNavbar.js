@@ -33,12 +33,12 @@ export default function MainNavbar() {
                                 (
                                     <div
                                         {...props}
-                                        className="mainNavbarOverlay p-4"
+                                        className="mainNavbarOverlay py-3"
                                     >
-                                        <div className="p-2"><a>ინდივიდუალური ჯანმრთელობის დაზღვევა</a></div>
-                                        <div className="p-2"><a>ავტოდაზღვევა - პაკეტები</a></div>
-                                        <div className="p-2"><a>მძღოლის პასუხისმგებლობის დაზღვევა</a></div>
-                                        <div className="p-2"><a>სამოგზაურო დაზღვევა</a></div>
+                                        <div className="px-3 py-1"><a>ინდივიდუალური ჯანმრთელობის დაზღვევა</a></div>
+                                        <div className="px-3 py-1"><a>ავტოდაზღვევა - პაკეტები</a></div>
+                                        <div className="px-3 py-1"><a>მძღოლის პასუხისმგებლობის დაზღვევა</a></div>
+                                        <div className="px-3 py-1"><a>სამოგზაურო დაზღვევა</a></div>
                                     </div>
                                 )
                         }

@@ -2,7 +2,6 @@ import {Container, Dropdown, Nav, Navbar, NavDropdown, Overlay} from "react-boot
 import {useRef, useState} from "react";
 import {BsFillTelephoneFill} from "react-icons/bs";
 import Button from "react-bootstrap/Button";
-import './Navbar.css';
 
 
 export default function TopNavbar() {
@@ -29,7 +28,9 @@ export default function TopNavbar() {
                         placement='bottom'
                     >
                         {
-                            ({placement, scheduleUpdate, arrowProps, outOfBoundaries, show: sosOverlayShow , ...props}) =>
+                            ({placement, scheduleUpdate,
+                                 arrowProps,
+                                 outOfBoundaries, show: sosOverlayShow , ...props}) =>
                                 (
                                     <div
                                         {...props}

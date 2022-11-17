@@ -1,5 +1,6 @@
 $primary: #006A9F;
 $danger: #EE313C;
+$sosOnHover: #ee5f6a;
 
 @font-face {
   font-family: 'ExtraSquare';
@@ -12,10 +13,49 @@ $danger: #EE313C;
 }
 
 .sosButton:hover, .sosButton>div>a:hover {
-  background-color: #ee5f6a;
+  background-color: $sosOnHover;
   cursor: pointer;
 }
 
+
+.sosButtonOverlay {
+  position: absolute;
+  right: 5rem;
+  top: 10rem;
+  background-color: $danger;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.4rem 1rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.sosButtonOverlay div:hover {
+  cursor: pointer;
+  background-color: $sosOnHover;
+}
+
+.sosButtonOverlay a {
+  text-decoration: none;
+}
+
+.mainNavbarOverlay {
+  position: absolute;
+  top: 1rem !important;
+  left: 7rem !important;
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.mainNavbarOverlay div {
+  cursor: pointer;
+}
+
+.mainNavbarOverlay div:hover {
+  background-color: $danger;
+  color: white;
+}
 
 .carousel-indicators {
   border-color: black;

@@ -1,7 +1,6 @@
 import {Container, Nav, Navbar, Overlay} from "react-bootstrap";
 import {RiAccountCircleFill} from "react-icons/ri";
 import {useRef, useState} from "react";
-import './Navbar.css';
 
 export default function MainNavbar() {
     const [overlayShow, setOverlayShow] = useState(false);
@@ -23,20 +22,23 @@ export default function MainNavbar() {
                     </Navbar.Brand>
                     <Nav.Link href="#physical"
                               className="mx-lg-3 px-lg-3 mx-sm-0 px-sm-0 text-light"
+                              ref={target}
                     onMouseOver={()=>setOverlayShow(!overlayShow)}
                     >ფიზიკური პირებისთვის</Nav.Link>
-                    {/*overlay not working*/}
                     <Overlay target={target.current} show={overlayShow} placement="bottom">
                         {
-                            ({placement, scheduleUpdate, arrowProps, outOfBoundaries, show: overlayShow , ...props}) =>
+                            ({placement, scheduleUpdate,
+                                 arrowProps, outOfBoundaries,
+                                 show: overlayShow , ...props}) =>
                                 (
                                     <div
                                         {...props}
-                                        className="mainNavbarOverlay px-0"
-                                        style={{...props.style}}
+                                        className="mainNavbarOverlay p-4"
                                     >
-                                        <div className="p-2"><a>მოხდა სადაზღვევო შემთხვევა</a></div>
-                                        <div className="p-2"><a>შემთხვევის სტატუსის შემოწმება</a></div>
+                                        <div className="p-2"><a>ინდივიდუალური ჯანმრთელობის დაზღვევა</a></div>
+                                        <div className="p-2"><a>ავტოდაზღვევა - პაკეტები</a></div>
+                                        <div className="p-2"><a>მძღოლის პასუხისმგებლობის დაზღვევა</a></div>
+                                        <div className="p-2"><a>სამოგზაურო დაზღვევა</a></div>
                                     </div>
                                 )
                         }

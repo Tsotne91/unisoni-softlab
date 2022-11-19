@@ -2,6 +2,36 @@ $primary: #006A9F;
 $danger: #EE313C;
 $sosOnHover: #ee5f6a;
 
+@mixin overlay() {
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  div {
+    cursor: pointer;
+    &:hover {
+      background-color: $danger;
+      color: white;
+    }
+  }
+}
+
+.mainNavbarOverlay {
+  @include overlay();
+  position: absolute;
+  top: 1rem !important;
+  left: 7rem !important;
+  img {
+    width: 1rem;
+    margin-right: 2rem;
+  }
+}
+
+.additionalOverlay {
+  @include overlay();
+  position: absolute;
+  top: 1.5rem !important;
+}
+
 @font-face {
   font-family: 'ExtraSquare';
   src: local('ExtraSquare'), url("components/fonts/bpg_extrasquare_mtavruli_2009.ttf") format('truetype');
@@ -12,7 +42,7 @@ $sosOnHover: #ee5f6a;
   src: local("BPGArial"), url("components/fonts/bpg_arial_2009.ttf") format('truetype');
 }
 
-.sosButton:hover, .sosButton>div>a:hover {
+.sosButton:hover, .sosButton > div > a:hover {
   background-color: $sosOnHover;
   cursor: pointer;
 }
@@ -28,33 +58,14 @@ $sosOnHover: #ee5f6a;
   padding: 0.4rem 1rem;
   color: white;
   border-radius: 5px;
+  a {
+    text-decoration: none;
+  }
 }
 
 .sosButtonOverlay div:hover {
   cursor: pointer;
   background-color: $sosOnHover;
-}
-
-.sosButtonOverlay a {
-  text-decoration: none;
-}
-
-.mainNavbarOverlay {
-  position: absolute;
-  top: 1rem !important;
-  left: 7rem !important;
-  background-color: white;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-
-.mainNavbarOverlay div {
-  cursor: pointer;
-}
-
-.mainNavbarOverlay div:hover {
-  background-color: $danger;
-  color: white;
 }
 
 .carousel-indicators {
@@ -65,13 +76,13 @@ $sosOnHover: #ee5f6a;
   right: 30rem;
   height: 3rem;
   width: 3rem;
-}
 
-.carousel-indicators button{
-  border-width: 0.4rem;
-  border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
+  button {
+    border-width: 0.4rem;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+  }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

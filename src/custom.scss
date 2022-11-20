@@ -1,41 +1,7 @@
 $primary: #006A9F;
 $danger: #EE313C;
 $sosOnHover: #ee5f6a;
-
-@mixin overlay() {
-  background-color: white;
-  font-size: 1rem;
-  border-radius: 5px;
-  div {
-    cursor: pointer;
-    &:hover {
-      background-color: $danger;
-      color: white;
-    }
-  }
-}
-
-.mainNavbarOverlay {
-  @include overlay();
-  position: absolute;
-  top: 1rem !important;
-  left: 7rem !important;
-  div>img {
-    width: 1rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-  }
-}
-
-.rightArrow {
-  margin-left: 4rem;
-}
-
-.additionalOverlay {
-  @include overlay();
-  position: absolute;
-  top: 1.5rem !important;
-}
+$mainNavbarHeight: 7rem;
 
 @font-face {
   font-family: 'ExtraSquare';
@@ -47,11 +13,76 @@ $sosOnHover: #ee5f6a;
   src: local("BPGArial"), url("components/fonts/bpg_arial_2009.ttf") format('truetype');
 }
 
+@mixin overlay() {
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  div {
+    cursor: pointer;
+    &:hover {
+      background-color: $danger;
+      color: white;
+      .overlayIcons {
+        fill: white;
+      }
+    }
+  }
+  a {
+    margin-left: 1rem;
+  }
+}
+
+.callAgentFixed {
+  border-radius: 10px 0 0 10px;
+  margin-top: 6rem;
+  position: fixed;
+  font-size: xx-small;
+  width: 7rem;
+  height: 6rem;
+  right: 0;
+  z-index: 12;
+  div {
+    position: relative;
+    top: 2.5rem;
+    right: 1rem;
+  }
+  &:hover {
+    cursor: pointer;
+    width: 7.5rem;
+  }
+}
+
+.overlayIcons {
+  margin-left: 2rem;
+}
+
+.mainNavbar {
+  height: $mainNavbarHeight;
+}
+
+.mainNavbarOverlay {
+  @include overlay();
+  position: absolute;
+  top: 0 !important;
+  left: 7rem !important;
+}
+
+.rightArrow {
+  margin-left: 12rem;
+}
+
+.additionalOverlay {
+  @include overlay();
+  position: absolute;
+  top: 1rem !important;
+}
+
+
+
 .sosButton:hover, .sosButton > div > a:hover {
   background-color: $sosOnHover;
   cursor: pointer;
 }
-
 
 .sosButtonOverlay {
   position: absolute;
@@ -71,6 +102,32 @@ $sosOnHover: #ee5f6a;
 .sosButtonOverlay div:hover {
   cursor: pointer;
   background-color: $sosOnHover;
+}
+
+.carouselItem {
+  height: 25rem;
+  h1 {
+    font-family: ExtraSquare;
+    position: relative;
+    top: 7rem;
+  }
+  h5{
+    position: relative;
+    top: 7rem;
+  }
+  p {
+    z-index: 12;
+    position: relative;
+    top: 0.5rem;
+  }
+
+}
+
+.redImage {
+  width: 22rem;
+  position: relative;
+  top: 7rem;
+  z-ndex: 10;
 }
 
 .carousel-indicators {

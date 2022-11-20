@@ -1,7 +1,7 @@
 import React from "react";
 import "./app.css";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import MainPage from "./MainPage";
+import MainPage from "./pages/MainPage";
 
 
 

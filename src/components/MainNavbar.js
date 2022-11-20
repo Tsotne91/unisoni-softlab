@@ -1,6 +1,7 @@
 import {Container, Nav, Navbar, Overlay} from "react-bootstrap";
 import {useRef, useState} from "react";
 import {GoThreeBars} from "react-icons/go";
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import {ReactComponent as Health} from "./insuranceIcons/health_and_safety_black_48dp.svg";
 import {ReactComponent as Car} from "./insuranceIcons/directions_car_filled_black_48dp.svg";
 import {ReactComponent as Person} from "./insuranceIcons/Component 8 – 17.svg";
@@ -11,8 +12,12 @@ import {ReactComponent as Account} from "./insuranceIcons/Component8-11.svg";
 export default function MainNavbar() {
     const [overlayShow, setOverlayShow] = useState(false);
     const [smallOverlayShow, setSmallOverlayShow] = useState(false);
+    const [showFirstCanvas, setShowFirstCanvas] = useState(false);
     const target1 = useRef(null);
-    const target2 = useRef(null)
+    const target2 = useRef(null);
+
+    const handleCloseCanvas = () => setShowFirstCanvas(false);
+    const handleShowCanvas = () => setShowFirstCanvas(true);
 
 
     return (
@@ -115,14 +120,21 @@ export default function MainNavbar() {
                     </Navbar.Brand>
                     <GoThreeBars
                         fill="#EE313C"
-                        style={{
-                            width: "2.5rem",
-                            height: "2.5rem",
-                            position: "absolute",
-                            right: "2rem",
-                            alignSelf: "center",
-                        }}/>
+                        className="burgerButton"
+                        onTouchEnd={handleShowCanvas}
+                       />
                 </Nav>
+                <Offcanvas show={showFirstCanvas} onHide={handleCloseCanvas} placement="end" className="w-100">
+                    <Offcanvas.Header closeButton>
+                        <Offcanvas.Title>
+                            <img src="img/insuranceIcons/Group2.svg"/>
+                        </Offcanvas.Title>
+                    </Offcanvas.Header>
+                    <Offcanvas.Body>
+
+
+                    </Offcanvas.Body>
+                </Offcanvas>
             </Navbar>
         </>
     )

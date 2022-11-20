@@ -66,7 +66,7 @@ export default function InsuranceCards() {
                 </span>
                     </Card>
                     <Card style={cardStyle} className="d-flex d-md-none">
-                        <img src="../../public/img/insuranceIcons/Path 218.svg" style={iconStyle}/>
+                        <img src="img/insuranceIcons/Path 218.svg" style={iconStyle}/>
                         <span>შეიძინე<br/>
                     ონლაინ
                 </span>

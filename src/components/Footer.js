@@ -40,21 +40,20 @@ export default function Footer() {
                 </Row>
 
             </Container>
-            <Container className="d-flex d-md-none justify-content-center">
+            <Container className="d-flex my-3 d-md-none">
                 <Row>
-                    <Col className="border border-2">
+                    <Col md={6} className="border border-2">
                         <img className="w-50" src="/img/footerIcons/LogoFooter.svg"/>
-                        <p>ჩვენს შესახებ</p>
-                        <p>პარტნიორები</p>
-                        <p>კარიერა</p>
+                        <a>ჩვენს შესახებ</a>
+                        <a>პარტნიორები</a>
+                        <a>კარიერა</a>
                     </Col>
-                    <Col>
-                        <p className="fw-bold">ინფორმაცია</p>
-                        <p>სიახლეები</p>
-                        <p>საინფორმაციო ფურცელი</p>
-                        <p>სამედიცინო პროვაიდერები</p>
-                        <p>ხელშეკრეულებები</p>
-
+                    <Col md={6}>
+                        <h6 className="fw-bold">ინფორმაცია</h6>
+                        <a>სიახლეები</a>
+                        <a>საინფორმაციო ფურცელი</a>
+                        <a>სამედიცინო პროვაიდერები</a>
+                        <a>ხელშეკრულებები</a>
                     </Col>
                 </Row>
             </Container>

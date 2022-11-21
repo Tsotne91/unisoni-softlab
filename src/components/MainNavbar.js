@@ -1,4 +1,4 @@
-import {Container, Nav, Navbar, Overlay, Button, Offcanvas} from "react-bootstrap";
+import {Container, Nav, Navbar, Overlay, Button, Offcanvas, Row, Col} from "react-bootstrap";
 import {useRef, useState} from "react";
 import {GoThreeBars} from "react-icons/go";
 import {ReactComponent as Health} from "./insuranceIcons/health_and_safety_black_48dp.svg";
@@ -161,10 +161,23 @@ export default function MainNavbar() {
                                 <Arrow/>
                             </div>
                         </div>
-                        <Button variant="danger" className="text-light px-4 py-3 w-100">
-                            <MobileCallAgent className="h-100"/>
-                            <span style={{fontFamily: "ExtraSquare"}} className="mx-3 h-100 w-25">აგენტთან დაკავშირება</span>
+                        <Button variant="danger" className="text-light px-4 w-100 d-flex justify-content-center">
+                            <MobileCallAgent width="4rem" className="h-100 py-2"/>
+                            <span style={{fontFamily: "ExtraSquare"}}
+                                  className="w-50 my-1 px-3 d-flex align-items-center fs-6">აგენტთან დაკავშირება</span>
                         </Button>
+                        <footer className="d-flex my-4">
+                            <Row>
+                                <Col md={6} className="py-3 d-flex justify-content-between">
+                                <a className="w-50 text-decoration-none text-secondary">ჩვენს შესახებ</a>
+                                <a className="w-50 text-decoration-none text-secondary">სიახლეები</a>
+                                </Col>
+                                <Col md={6} className="py-3 d-flex justify-content-between">
+                                <a className="w-50 text-decoration-none text-secondary">პარტნიორები</a>
+                                <a className="w-50 text-decoration-none text-secondary">კონტაქტი</a>
+                                </Col>
+                            </Row>
+                        </footer>
 
 
                     </Offcanvas.Body>

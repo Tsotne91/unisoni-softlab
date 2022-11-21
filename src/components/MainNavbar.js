@@ -1,13 +1,18 @@
-import {Container, Nav, Navbar, Overlay} from "react-bootstrap";
+import {Container, Nav, Navbar, Overlay, Button, Offcanvas} from "react-bootstrap";
 import {useRef, useState} from "react";
 import {GoThreeBars} from "react-icons/go";
-import Offcanvas from 'react-bootstrap/Offcanvas';
 import {ReactComponent as Health} from "./insuranceIcons/health_and_safety_black_48dp.svg";
 import {ReactComponent as Car} from "./insuranceIcons/directions_car_filled_black_48dp.svg";
 import {ReactComponent as Person} from "./insuranceIcons/Component 8 – 17.svg";
 import {ReactComponent as Plane} from "./insuranceIcons/flight_takeoff_black_48dp.svg";
 import {ReactComponent as CallAgent} from "./insuranceIcons/Path236.svg";
 import {ReactComponent as Account} from "./insuranceIcons/Component8-11.svg";
+import {ReactComponent as MobileAccount} from "./insuranceIcons/mobile/Component8-11Mobile.svg";
+import {ReactComponent as MobilePhysical} from "./insuranceIcons/mobile/Path234.svg";
+import {ReactComponent as Arrow} from "./insuranceIcons/mobile/Path230.svg";
+import {ReactComponent as MobileJudicial} from "./insuranceIcons/mobile/Path233.svg";
+import {ReactComponent as MobileObligatory} from "./insuranceIcons/mobile/Union5.svg";
+import {ReactComponent as MobileCallAgent} from "./insuranceIcons/mobile/CallAgent.svg";
 
 export default function MainNavbar() {
     const [overlayShow, setOverlayShow] = useState(false);
@@ -122,15 +127,44 @@ export default function MainNavbar() {
                         fill="#EE313C"
                         className="burgerButton"
                         onTouchEnd={handleShowCanvas}
-                       />
+                    />
                 </Nav>
-                <Offcanvas show={showFirstCanvas} onHide={handleCloseCanvas} placement="end" className="w-100">
+                <Offcanvas show={showFirstCanvas} onHide={handleCloseCanvas} placement="end" className="w-100 p-3">
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title>
                             <img src="img/insuranceIcons/Group2.svg"/>
                         </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
+                        <Navbar className="mx-md-1 my-0 px-2 d-flex justify-content-between">
+                            <Nav.Link href="#myaccount" className="text-secondary d-flex align-items-center py-0 w-50">
+                                <MobileAccount height="4rem" fill="white" className="h-100"/>
+                                <a className="d-flex align-items-center my-1 px-3 text-decoration-none text-secondary"> ჩემი
+                                    კაბინეტი </a>
+                            </Nav.Link>
+                            <Button variant="danger" className="text-light py-3 rounded-3 fw-bold ">SOS</Button>
+                        </Navbar>
+                        <div className="my-4 mx-1 fs-5 text-secondary" style={{fontFamily: "BPGArial"}}>
+                            <div className="d-flex align-items-center justify-content-between py-3">
+                                <MobilePhysical/>
+                                <span className="px-3">ფიზიკური პირებისთვის</span>
+                                <Arrow/>
+                            </div>
+                            <div className="d-flex align-items-center justify-content-between py-3">
+                                <MobileJudicial/>
+                                <span className="px-3">იურიდიული პირებისთვის</span>
+                                <Arrow/>
+                            </div>
+                            <div className="d-flex align-items-center justify-content-between py-3">
+                                <MobileObligatory/>
+                                <span className="px-3">სავალდებულო დაზღვევა</span>
+                                <Arrow/>
+                            </div>
+                        </div>
+                        <Button variant="danger" className="text-light px-4 py-3 w-100">
+                            <MobileCallAgent className="h-100"/>
+                            <span style={{fontFamily: "ExtraSquare"}} className="mx-3 h-100 w-25">აგენტთან დაკავშირება</span>
+                        </Button>
 
 
                     </Offcanvas.Body>

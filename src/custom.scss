@@ -126,8 +126,8 @@ $mainNavbarHeight: 7rem;
     position: relative;
     top: 0.5rem;
   }
-
 }
+
 
 .redImage {
   width: 22rem;
@@ -151,6 +151,26 @@ $mainNavbarHeight: 7rem;
     height: 3rem;
     width: 3rem;
   }
+}
+
+footer {
+  a  {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .copyright {
+    font-size: small;
+  }
+}
+
+.mobFooterPhoneNumber {
+  color: $danger;
+  margin-left: 1rem;
+  position: relative;
+  top: 0.2rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-family: BPGArial, sans-serif;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

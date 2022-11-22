@@ -13,17 +13,29 @@ import {ReactComponent as Arrow} from "./insuranceIcons/mobile/Path230.svg";
 import {ReactComponent as MobileJudicial} from "./insuranceIcons/mobile/Path233.svg";
 import {ReactComponent as MobileObligatory} from "./insuranceIcons/mobile/Union5.svg";
 import {ReactComponent as MobileCallAgent} from "./insuranceIcons/mobile/CallAgent.svg";
+import {ReactComponent as PhoneNumber} from "./insuranceIcons/mobile/Subtraction7.svg";
 
 export default function MainNavbar() {
     const [overlayShow, setOverlayShow] = useState(false);
     const [smallOverlayShow, setSmallOverlayShow] = useState(false);
     const [showFirstCanvas, setShowFirstCanvas] = useState(false);
+    const [showSecondCanvas, setShowSecondCanvas] = useState(false);
+    // const [languageState, setLanguageState] = useState('geo');
     const target1 = useRef(null);
     const target2 = useRef(null);
 
-    const handleCloseCanvas = () => setShowFirstCanvas(false);
-    const handleShowCanvas = () => setShowFirstCanvas(true);
+    const handleShowFirstCanvas = () => setShowFirstCanvas(true);
+    const handleCloseFirstCanvas = () => setShowFirstCanvas(false);
 
+    const handleShowSecondCanvas = () => setShowSecondCanvas(true);
+    const handleCloseSecondCanvas = () => setShowSecondCanvas(false);
+
+
+    // const languages = [
+    //     { code: 'geo', name: 'ქართული'},
+    //     { code: 'eng', name: 'English'},
+    //     { code: 'rus', name: 'Русский'}
+    // ]
 
     return (
         <>
@@ -126,10 +138,10 @@ export default function MainNavbar() {
                     <GoThreeBars
                         fill="#EE313C"
                         className="burgerButton"
-                        onTouchEnd={handleShowCanvas}
+                        onTouchEnd={handleShowFirstCanvas}
                     />
                 </Nav>
-                <Offcanvas show={showFirstCanvas} onHide={handleCloseCanvas} placement="end" className="w-100 p-3">
+                <Offcanvas show={showFirstCanvas} onHide={handleCloseFirstCanvas} placement="end">
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title>
                             <img src="img/insuranceIcons/Group2.svg"/>
@@ -139,25 +151,25 @@ export default function MainNavbar() {
                         <Navbar className="mx-md-1 my-0 px-2 d-flex justify-content-between">
                             <Nav.Link href="#myaccount" className="text-secondary d-flex align-items-center py-0 w-50">
                                 <MobileAccount height="4rem" fill="white" className="h-100"/>
-                                <a className="d-flex align-items-center my-1 px-3 text-decoration-none text-secondary"> ჩემი
-                                    კაბინეტი </a>
+                                <span className="d-flex align-items-center my-1 px-3 text-decoration-none text-secondary"> ჩემი
+                                    კაბინეტი </span>
                             </Nav.Link>
                             <Button variant="danger" className="text-light py-3 rounded-3 fw-bold ">SOS</Button>
                         </Navbar>
                         <div className="my-4 mx-1 fs-5 text-secondary" style={{fontFamily: "BPGArial"}}>
-                            <div className="d-flex align-items-center justify-content-between py-3">
+                            <div className="d-flex align-items-center justify-content-between py-3" onTouchEnd={handleShowSecondCanvas}>
                                 <MobilePhysical/>
-                                <span className="px-3">ფიზიკური პირებისთვის</span>
+                                <span>ფიზიკური პირებისთვის</span>
                                 <Arrow/>
                             </div>
                             <div className="d-flex align-items-center justify-content-between py-3">
                                 <MobileJudicial/>
-                                <span className="px-3">იურიდიული პირებისთვის</span>
+                                <span>იურიდიული პირებისთვის</span>
                                 <Arrow/>
                             </div>
                             <div className="d-flex align-items-center justify-content-between py-3">
                                 <MobileObligatory/>
-                                <span className="px-3">სავალდებულო დაზღვევა</span>
+                                <span>სავალდებულო დაზღვევა</span>
                                 <Arrow/>
                             </div>
                         </div>
@@ -168,18 +180,62 @@ export default function MainNavbar() {
                         </Button>
                         <footer className="d-flex my-4">
                             <Row>
-                                <Col md={6} className="py-3 d-flex justify-content-between">
-                                <a className="w-50 text-decoration-none text-secondary">ჩვენს შესახებ</a>
-                                <a className="w-50 text-decoration-none text-secondary">სიახლეები</a>
+                                <Col sm={6} className="py-3 d-flex justify-content-between">
+                                    <a className="w-50 text-decoration-none text-secondary">ჩვენს შესახებ</a>
+                                    <a className="w-50 text-decoration-none text-secondary">სიახლეები</a>
                                 </Col>
-                                <Col md={6} className="py-3 d-flex justify-content-between">
-                                <a className="w-50 text-decoration-none text-secondary">პარტნიორები</a>
-                                <a className="w-50 text-decoration-none text-secondary">კონტაქტი</a>
+                                <Col sm={6} className="py-2 d-flex justify-content-between">
+                                    <a className="w-50 text-decoration-none text-secondary">პარტნიორები</a>
+                                    <a className="w-50 text-decoration-none text-secondary">კონტაქტი</a>
                                 </Col>
                             </Row>
                         </footer>
+                        <Row className="d-flex">
+                            <Col sm={6} className="py-3 w-50 d-flex justify-content-start">
+                                <div> {/*need to add a switcher here*/}
+                                    <p><a>ქართული</a></p>
+                                    <p><a>English</a></p>
+                                    <p><a>Русский</a></p>
+                                </div>
+                            </Col>
+                            <Col sm={6} className="py-3 w-50 d-flex justify-content-end align-items-end">
+                                <Row className="align-items-center d-flex">
+                                <div className="justify-content-end"><span>ცხელი ხაზი</span></div>
+                                <div><PhoneNumber/><span className="mobFooterPhoneNumber">2 991 991</span> </div>
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Offcanvas.Body>
+                </Offcanvas>
+                <Offcanvas show={showSecondCanvas} onHide={handleCloseSecondCanvas} placement="end">
+                    <Offcanvas.Header closeButton className="justify-content-end m-3">
 
 
+                    </Offcanvas.Header>
+                    <Offcanvas.Body>
+                        <div className="my-5 mx-4 text-secondary" style={{fontFamily: "BPGArial"}}>
+                            <div className="d-flex align-items-start my-3">
+                                <img src="/img/mobileOffcanvasIcons/Group33.svg" className="mx-4"/>
+                                <p className="d-inline-block w-50">ქონების დაზღვევა</p>
+                            </div>
+                            <div className="d-flex align-items-start my-3">
+                                <img src="/img/mobileOffcanvasIcons/Path30.svg" className="mx-4"/>
+                                <p className="d-inline-block w-50">ინდივიდუალური ჯანმრთელობის დაზღვევა</p>
+                            </div>
+                            <div className="d-flex align-items-start my-3">
+                                <img src="/img/mobileOffcanvasIcons/Group12.svg" className="mx-4"/>
+                                <p className="d-inline-block w-50">ავტოდაზღვევა - პაკეტები</p>
+                            </div>
+                            <div className="d-flex align-items-start my-3">
+                                <img src="/img/mobileOffcanvasIcons/Path 36.svg" className="mx-4"/>
+                                <p className="d-inline-block w-50">მძღოლის პასუხისმგებლობის დაზღვევა</p>
+                                <Arrow className="align-self-center"/>
+                            </div>
+                            <div className="d-flex align-items-start my-3">
+                                <img src="/img/mobileOffcanvasIcons/Path 29.svg" className="mx-4"/>
+                                <p className="d-inline-block w-50">სამოგზაურო დაზღვევა</p>
+                            </div>
+                        </div>
                     </Offcanvas.Body>
                 </Offcanvas>
             </Navbar>

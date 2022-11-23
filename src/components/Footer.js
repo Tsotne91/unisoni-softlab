@@ -4,30 +4,30 @@ import "../custom.scss";
 export default function Footer() {
     return (
         <>
-            <Container className="d-none d-md-flex justify-content-center">
+            <Container className="footerDesktop d-none d-md-flex justify-content-center text-secondary">
                 <Row className="w-100 justify-content-center py-3 fs-6">
                     <Col md={3} className="py-3 my-4">
                         <img src="/img/footerIcons/LogoFooter.svg"/>
-                        <p style={{marginTop: "3rem"}}>ჩვენს შესახებ</p>
-                        <p>კარიერა</p>
-                        <p>პარტნიორები</p>
+                        <a style={{marginTop: "3rem"}}>ჩვენს შესახებ</a>
+                        <a>კარიერა</a>
+                        <a>პარტნიორები</a>
                         <img className="d-inline my-2" src="/img/footerIcons/AppStoreLogo.svg"/>
-                        <img className="d-inline m2" src="/img/footerIcons/google-play-badge.png"/>
+                        <img className="d-inline m-2" src="/img/footerIcons/google-play-badge.png"/>
                     </Col>
                     <Col md={3} className="py-3 my-4">
                         <p className="fw-bold">ინფორმაცია</p>
-                        <p>სიახლეები</p>
-                        <p>საინფორმაციო ფურცელი</p>
-                        <p>სამედიცინო პროვაიდერები</p>
-                        <p>ხელშეკრეულებები</p>
+                        <a>სიახლეები</a>
+                        <a>საინფორმაციო ფურცელი</a>
+                        <a>სამედიცინო პროვაიდერები</a>
+                       <a href="/contracts"> ხელშეკრულებები</a>
                         <p style={{marginTop: "3rem", fontSize: "0.7rem"}}>უნისონი © ყველა უფლება დაცულია 2021</p>
                     </Col>
                     <Col md={3} className="py-3 my-4">
                         <p className="fw-bold">დახმარება</p>
-                        <p>კონტაქტი</p>
-                        <p>მომხმარებლის ხმა</p>
-                        <p>ხშირად დასმული კითხვები</p>
-                        <p>მონაცემთა დაცვა</p>
+                        <a>კონტაქტი</a>
+                        <a>მომხმარებლის ხმა</a>
+                        <a>ხშირად დასმული კითხვები</a>
+                        <a>მონაცემთა დაცვა</a>
                     </Col>
                     <Col md={3} className="p-3 my-4">
                         <h6 className="fw-bold fs-6">სოციალური ქსელები</h6>
@@ -64,7 +64,7 @@ export default function Footer() {
                             <a>საინფორმაციო ფურცელი</a>
                         </Col>
                         <Col xs={6} className="w-50">
-                            <a>ხელშეკრულებები</a>
+                           <a>ხელშეკრულებები</a>
                             <a>სამედიცინო პროვაიდერები</a>
                         </Col>
                         <h6 className="fw-bold my-2">დახმარება</h6>

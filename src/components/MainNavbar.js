@@ -15,7 +15,7 @@ import {ReactComponent as MobileObligatory} from "./insuranceIcons/mobile/Union5
 import {ReactComponent as MobileCallAgent} from "./insuranceIcons/mobile/CallAgent.svg";
 import {ReactComponent as PhoneNumber} from "./insuranceIcons/mobile/Subtraction7.svg";
 
-export default function MainNavbar() {
+export default function MainNavbar({showButton}) {
     const [overlayShow, setOverlayShow] = useState(false);
     const [smallOverlayShow, setSmallOverlayShow] = useState(false);
     const [showFirstCanvas, setShowFirstCanvas] = useState(false);
@@ -116,15 +116,21 @@ export default function MainNavbar() {
                         <Nav.Link href="#obligatory" className="mx-3 p-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
                     </Nav>
                 </Container>
-                <Nav className="mx-md-1 d-none d-lg-flex">
+                    {
+                        showButton ? <Button variant="danger"
+                                          className="text-light justify-content-center mx-3 px-2 w-25">
+                        <img src="/img/footerIcons/shopping_cart_black_24dp.svg" className="mx-2"/>შეიძინე ონლაინ</Button> : null
+                    }
+                <Nav className="mx-md-2 d-none d-lg-flex w-50">
                     <Account width="3rem" fill="#707070"/>
-                    <Nav.Link href="#myaccount" className="text-light w-50">ჩემი კაბინეტი</Nav.Link>
+                    <Nav.Link href="#myaccount" className="text-light w-25 px-3">ჩემი კაბინეტი</Nav.Link>
                 </Nav>
                 <Nav className="callAgentFixed bg-danger d-none d-md-flex py-2 px-3 justify-content-center">
                     <CallAgent width="4em"/>
                     <div><a className="text-light text-decoration-none">აგენტთან დაკავშირება</a></div>
                 </Nav>
             </Navbar>
+
             <Navbar bg="light" className="d-md-flex d-md-none justify-content-center">
                 <Nav>
                     <Navbar.Brand href="#home">
@@ -151,13 +157,15 @@ export default function MainNavbar() {
                         <Navbar className="mx-md-1 my-0 px-2 d-flex justify-content-between">
                             <Nav.Link href="#myaccount" className="text-secondary d-flex align-items-center py-0 w-50">
                                 <MobileAccount height="4rem" fill="white" className="h-100"/>
-                                <span className="d-flex align-items-center my-1 px-3 text-decoration-none text-secondary"> ჩემი
+                                <span
+                                    className="d-flex align-items-center my-1 px-3 text-decoration-none text-secondary"> ჩემი
                                     კაბინეტი </span>
                             </Nav.Link>
                             <Button variant="danger" className="text-light py-3 rounded-3 fw-bold ">SOS</Button>
                         </Navbar>
                         <div className="my-4 mx-1 fs-5 text-secondary" style={{fontFamily: "BPGArial"}}>
-                            <div className="d-flex align-items-center justify-content-between py-3" onTouchEnd={handleShowSecondCanvas}>
+                            <div className="d-flex align-items-center justify-content-between py-3"
+                                 onTouchEnd={handleShowSecondCanvas}>
                                 <MobilePhysical/>
                                 <span>ფიზიკური პირებისთვის</span>
                                 <Arrow/>
@@ -200,18 +208,15 @@ export default function MainNavbar() {
                             </Col>
                             <Col sm={6} className="py-3 w-50 d-flex justify-content-end align-items-end">
                                 <Row className="align-items-center d-flex">
-                                <div className="justify-content-end"><span>ცხელი ხაზი</span></div>
-                                <div><PhoneNumber/><span className="mobFooterPhoneNumber">2 991 991</span> </div>
+                                    <div className="justify-content-end"><span>ცხელი ხაზი</span></div>
+                                    <div><PhoneNumber/><span className="mobFooterPhoneNumber">2 991 991</span></div>
                                 </Row>
                             </Col>
                         </Row>
                     </Offcanvas.Body>
                 </Offcanvas>
                 <Offcanvas show={showSecondCanvas} onHide={handleCloseSecondCanvas} placement="end">
-                    <Offcanvas.Header closeButton className="justify-content-end m-3">
-
-
-                    </Offcanvas.Header>
+                    <Offcanvas.Header closeButton className="justify-content-end m-3"></Offcanvas.Header>
                     <Offcanvas.Body>
                         <div className="my-5 mx-4 text-secondary" style={{fontFamily: "BPGArial"}}>
                             <div className="d-flex align-items-start my-3">

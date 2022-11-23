@@ -1,4 +1,4 @@
-import {Container, Dropdown, Nav, Navbar, NavDropdown, Overlay} from "react-bootstrap";
+import {Container, Nav, Navbar, NavDropdown, Overlay} from "react-bootstrap";
 import {useRef, useState} from "react";
 import {BsFillTelephoneFill} from "react-icons/bs";
 import Button from "react-bootstrap/Button";
@@ -13,7 +13,7 @@ export default function TopNavbar() {
         <Navbar bg="dark" variant="dark" className="d-none d-md-flex py-md-0">
             <Container style={{fontSize: "0.8rem"}} className="px-md-0 px-lg-1 px-xl-2">
                 <Nav className="px-lg-5 px-md-0 ">
-                    <Nav.Link href="#home">მთავარი</Nav.Link>
+                    <Nav.Link href="/">მთავარი</Nav.Link>
                     <Nav.Link href="#aboutus">ჩვენს შესახებ</Nav.Link>
                     <Nav.Link href="#news">სიახლეები</Nav.Link>
                     <Nav.Link href="#partners">პარტნიორები</Nav.Link>

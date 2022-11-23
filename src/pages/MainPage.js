@@ -11,7 +11,7 @@ export default function MainPage(){
     return (
         <>
             <TopNavbar/>
-            <MainNavbar/>
+            <MainNavbar showButton={false}/>
             <ImageSlider/>
             <InsuranceCards/>
             <News/>

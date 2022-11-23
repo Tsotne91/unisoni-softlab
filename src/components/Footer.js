@@ -4,7 +4,7 @@ import "../custom.scss";
 export default function Footer() {
     return (
         <>
-            <Container className="footerDesktop d-none d-md-flex justify-content-center text-secondary">
+            <Container className="footerDesktop w-75 d-none d-md-flex justify-content-center text-secondary">
                 <Row className="w-100 justify-content-center py-3 fs-6">
                     <Col md={3} className="py-3 my-4">
                         <img src="/img/footerIcons/LogoFooter.svg"/>
@@ -25,7 +25,7 @@ export default function Footer() {
                     <Col md={3} className="py-3 my-4">
                         <p className="fw-bold">დახმარება</p>
                         <a>კონტაქტი</a>
-                        <a>მომხმარებლის ხმა</a>
+                        <a href="/feedback">მომხმარებლის ხმა</a>
                         <a>ხშირად დასმული კითხვები</a>
                         <a>მონაცემთა დაცვა</a>
                     </Col>

@@ -262,6 +262,153 @@ export default function Contracts() {
                                 </div>
                             </Accordion.Body>
                         </Accordion.Item>
+                        <Accordion.Item eventKey="5">
+                            <Accordion.Header style={{fontFamily: "ExtraSquare"}}>კატეგორიის სახელწოდება 6</Accordion.Header>
+                            <Accordion.Body >
+                                <div className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file1" value="file1" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                                <div  className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file2" value="file2" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                                <div  className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file3" value="file3" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                                <div  className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file4" value="file4" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="6">
+                            <Accordion.Header style={{fontFamily: "ExtraSquare"}}>კატეგორიის სახელწოდება 7</Accordion.Header>
+                            <Accordion.Body >
+                                <div className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file1" value="file1" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                                <div  className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file2" value="file2" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                                <div  className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file3" value="file3" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                                <div  className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file4" value="file4" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="7">
+                            <Accordion.Header style={{fontFamily: "ExtraSquare"}}>კატეგორიის სახელწოდება 8</Accordion.Header>
+                            <Accordion.Body >
+                                <div className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file1" value="file1" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                                <div  className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file2" value="file2" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                                <div  className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file3" value="file3" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                                <div  className="my-2 d-flex justify-content-between">
+                                    <label>
+                                        <input type="checkbox" name="file4" value="file4" className="mx-2">
+                                        </input>
+                                        <span className="mx-3 text-secondary">File_name_description.pdf</span>
+                                    </label>
+                                    <Button variant="light">
+                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        გადმოწერა
+                                    </Button>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
                     </Accordion>
                 </div>
             </div>

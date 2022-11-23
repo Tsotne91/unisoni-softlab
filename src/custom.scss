@@ -36,6 +36,16 @@ h3 {
   font-family: ExtraSquare, sans-serif;
 }
 
+.feedbackFormLabel {
+  color: $primary;
+  font-family: ExtraSquare, sans-serif;
+  font-size: 1rem;
+}
+
+.form-check label {
+  color: gray;
+}
+
 .callAgentFixed {
   border-radius: 10px 0 0 10px;
   margin-top: 6rem;
@@ -54,6 +64,10 @@ h3 {
     cursor: pointer;
     width: 7.5rem;
   }
+}
+
+.accordion-button {
+  color: $primary !important;
 }
 
 .overlayIcons {
@@ -162,6 +176,14 @@ h3 {
     text-decoration: none;
     margin-top: 1rem;
   }
+}
+
+.sideInfoContainer {
+  margin-right: 8rem !important;
+}
+
+.info {
+  font-size: small;
 }
 
 footer {

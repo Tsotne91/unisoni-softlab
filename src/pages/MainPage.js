@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 export default function MainPage(){
     return (
         <>
-            <TopNavbar/>
+            <TopNavbar showButton={true}/>
             <MainNavbar showButton={false} className='bg-primary'/>
             <ImageSlider/>
             <InsuranceCards/>

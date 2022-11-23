@@ -4,7 +4,7 @@ import {BsFillTelephoneFill} from "react-icons/bs";
 import Button from "react-bootstrap/Button";
 
 
-export default function TopNavbar() {
+export default function TopNavbar({showButton}) {
     const [sosOverlayShow, setSosOverlayShow] = useState(false);
     const target = useRef(null);
 
@@ -18,10 +18,12 @@ export default function TopNavbar() {
                     <Nav.Link href="#news">სიახლეები</Nav.Link>
                     <Nav.Link href="#partners">პარტნიორები</Nav.Link>
                     <Nav.Link href="#contact">კონტაქტი</Nav.Link>
-                    <Button variant="danger" className="text-light mx-4 my-1 px-4 py-0"
-                            ref={target}
-                            onMouseOver={() => setSosOverlayShow(!sosOverlayShow)}>
-                        SOS</Button>
+                    {
+                       showButton ? <Button variant="danger" className="text-light mx-4 my-1 px-4 py-0"
+                                ref={target}
+                                onMouseOver={() => setSosOverlayShow(!sosOverlayShow)}>
+                            SOS</Button> : null
+                    }
                     <Overlay
                         target={target.current}
                         show={sosOverlayShow}

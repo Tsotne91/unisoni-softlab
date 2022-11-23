@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function AboutUs(){
     return (
         <>
-            <TopNavbar/>
+            <TopNavbar showButton={false}/>
             <MainNavbar showButton={true} className='navbarBgImage'/>
             <Footer/>
         </>

@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 export default function Feedback() {
     return (
         <>
-            <TopNavbar/>
+            <TopNavbar showButton={false}/>
             <MainNavbar showButton={true} className='navbarBgColorStriped'/>
             <div className="d-flex feedbackWrapper">
                 <div className="d-flex w-75 my-4 mx-2 justify-content-end">

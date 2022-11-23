@@ -11,7 +11,7 @@ export default function Contracts() {
 
     return (
         <>
-            <TopNavbar/>
+            <TopNavbar showButton={false}/>
             <MainNavbar showButton={true} className='navbarBgColorStriped'/>
             <div className="d-flex justify-content-center">
                 <div className="text-secondary w-75">

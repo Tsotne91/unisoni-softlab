@@ -45,8 +45,8 @@ export default function MainNavbar({showButton, className}) {
                     <Nav className="px-lg-4 px-md-0 w-75 h-100 align-items-center forBgImage">
                         <Navbar.Brand href="#home">
                             <img src="./img/Logo.svg"
-                                 width="200"
-                                 height="60"
+                                 width="220"
+                                 height="70"
                                  className="d-inline-block align-top"
                                  alt="Unison Logo"
                             />

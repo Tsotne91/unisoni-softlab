@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "BPGArial";
+  src: local("BPGArial"), url("../components/fonts/bpg_arial_2009.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "BPGMrgvlovani";
+  src: local("BPGMrgvlovani"), url("../components/fonts/bpg_nino_elite_ultra_caps.otf") format('opentype');
+}
+
+h1 {
+  font-family: BPGMrgvlovani, sans-serif;
+  position: relative;
+  bottom: 4rem;
+}
+
+p {
+  font-size: 1.1rem;
+}

@@ -14,7 +14,7 @@ export default function TopNavbar() {
             <Container style={{fontSize: "0.8rem"}} className="px-md-0 px-lg-1 px-xl-2">
                 <Nav className="px-lg-5 px-md-0 ">
                     <Nav.Link href="/">მთავარი</Nav.Link>
-                    <Nav.Link href="#aboutus">ჩვენს შესახებ</Nav.Link>
+                    <Nav.Link href="/about-us">ჩვენს შესახებ</Nav.Link>
                     <Nav.Link href="#news">სიახლეები</Nav.Link>
                     <Nav.Link href="#partners">პარტნიორები</Nav.Link>
                     <Nav.Link href="#contact">კონტაქტი</Nav.Link>

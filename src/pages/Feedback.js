@@ -8,12 +8,12 @@ export default function Feedback() {
     return (
         <>
             <TopNavbar/>
-            <MainNavbar showButton={true}/>
-            <div className="d-flex">
+            <MainNavbar showButton={true} className='navbarBgColorStriped'/>
+            <div className="d-flex feedbackWrapper">
                 <div className="d-flex w-75 my-4 mx-2 justify-content-end">
                     <div className="w-75">
-                        <h3 style={{fontFamily: "ExtraSquare"}} className="mx-5 my-3 text-secondary">მომხმარებლის ხმა</h3>
-                        <Form className="mx-5">
+                        <h3 style={{fontFamily: "ExtraSquare"}} className="mx-4 my-3 text-secondary">მომხმარებლის ხმა</h3>
+                        <Form className="mx-4">
                             <Row>
                                 <Form.Group as={Col}>
                                     <Form.Label className="feedbackFormLabel my-2">სახელი</Form.Label>
@@ -68,9 +68,9 @@ export default function Feedback() {
                         </Form>
                     </div>
                 </div>
-                <div className="sideInfoContainer w-25 my-5 mx-2">
+                <div className="sideInfoContainer w-25 my-5 mx-3 px-3">
 
-                    <h3 className="feedbackFormLabel my-4 align-items-center">
+                    <h3 className="feedbackFormLabel my-2 align-items-center">
                         <img src="/img/insuranceIcons/info_black_24dp.svg"
                         className="mx-2"/>
                         ინფორმაცია

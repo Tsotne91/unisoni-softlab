@@ -8,7 +8,7 @@ export default function Footer() {
                 <Row className="w-100 justify-content-center py-3 fs-6">
                     <Col md={3} className="py-3 my-4">
                         <img src="/img/footerIcons/LogoFooter.svg"/>
-                        <a style={{marginTop: "3rem"}}>ჩვენს შესახებ</a>
+                        <a style={{marginTop: "3rem"}} href="/about-us">ჩვენს შესახებ</a>
                         <a>კარიერა</a>
                         <a>პარტნიორები</a>
                         <img className="d-inline my-2" src="/img/footerIcons/AppStoreLogo.svg"/>

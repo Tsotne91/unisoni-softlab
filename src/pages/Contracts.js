@@ -3,12 +3,16 @@ import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
 import {Accordion} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+// import './contracts.scss';
+// import NavbarBackground from '/img/mainNavbarBackground@2x.png';
 
 export default function Contracts() {
+    // const mainNavbarBgImage = {backgroundImage: `url(${NavbarBackground})`}
+
     return (
         <>
             <TopNavbar/>
-            <MainNavbar showButton={true}/>
+            <MainNavbar showButton={true} className='navbarBgColorStriped'/>
             <div className="d-flex justify-content-center">
                 <div className="text-secondary w-75">
                     <h3 className="my-5">ხელშეკრულებები</h3>

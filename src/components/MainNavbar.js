@@ -42,7 +42,7 @@ export default function MainNavbar({showButton, className}) {
             <Navbar className={`mainNavbar d-none d-md-flex px-lg-5 px-md-3 px-sm-1 ${className}`}>
                 <Container
                     className="mx-lg-3 mx-md-1 mx-sm-0 h-100 justify-content-md-center justify-content-sm-start ">
-                    <Nav className="px-lg-4 px-md-0 w-75 h-100 align-items-center forBgImage">
+                    <Nav className="px-lg-3 px-md-0 w-75 h-100 align-items-center forBgImage">
                         <Navbar.Brand href="#home">
                             <img src="./img/Logo.svg"
                                  width="220"
@@ -113,18 +113,18 @@ export default function MainNavbar({showButton, className}) {
                                         )}
                             </Overlay>
                         </Nav.Link>
-                        <Nav.Link href="#judicial" className="mx-3 p-3 text-light ">იურიდიული პირებისთვის</Nav.Link>
-                        <Nav.Link href="#obligatory" className="mx-3 p-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
+                        <Nav.Link href="#judicial" className="mx-lg-3 px-lg-3 mx-sm-0 px-sm-0 py-3 text-light">იურიდიული პირებისთვის</Nav.Link>
+                        <Nav.Link href="#obligatory" className="mx-lg-3 px-lg-3 mx-sm-0 px-sm-0 py-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
                     </Nav>
                 </Container>
-
+                <Nav className="mx-md-2 d-none d-lg-flex w-50 insideNavbar">
                     {
                         showButton ? <Button variant="danger"
-                                             className="text-light justify-content-center mx-3 px-2 w-25 rounded-3 insideNavbar">
+                                             className="text-light justify-content-center mx-3 px-2 py-0 rounded-3 insideNavbar">
                             <img src="/img/footerIcons/shopping_cart_black_24dp.svg" className="mx-2"/>შეიძინე
                             ონლაინ</Button> : null
                     }
-                    <Nav className="mx-md-2 d-none d-lg-flex w-50 insideNavbar">
+
                         <Account width="3rem" fill="#707070"/>
                         <Nav.Link href="#myaccount" className="text-light w-25 px-3">ჩემი კაბინეტი</Nav.Link>
                     </Nav>

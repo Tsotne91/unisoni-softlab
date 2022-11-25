@@ -43,7 +43,7 @@ export default function MainNavbar({showButton, className}) {
                 <Container
                     className="mx-lg-3 mx-md-1 mx-sm-0 h-100 justify-content-md-center justify-content-sm-start ">
                     <Nav className="px-lg-3 px-md-0 w-75 h-100 align-items-center forBgImage">
-                        <Navbar.Brand href="#home">
+                        <Navbar.Brand href="/">
                             <img src="./img/Logo.svg"
                                  width="220"
                                  height="70"
@@ -59,6 +59,7 @@ export default function MainNavbar({showButton, className}) {
                                   }}
                                   onMouseLeave={() => {
                                       setOverlayShow(false);
+                                      if (smallOverlayShow) setSmallOverlayShow(false);
                                   }}
                         >ფიზიკური პირებისთვის
                             <Overlay target={target1.current} show={overlayShow} placement="bottom">
@@ -120,8 +121,8 @@ export default function MainNavbar({showButton, className}) {
                 <Nav className="mx-md-2 d-none d-lg-flex w-50 insideNavbar">
                     {
                         showButton ? <Button variant="danger"
-                                             className="text-light justify-content-center mx-3 px-2 py-0 rounded-3 insideNavbar">
-                            <img src="/img/footerIcons/shopping_cart_black_24dp.svg" className="mx-2"/>შეიძინე
+                                             className="text-light justify-content-center mx-3 px-2 rounded-3 insideNavbar">
+                            <img src="/img/footerIcons/shopping_cart_black_24dp.svg"/>შეიძინე
                             ონლაინ</Button> : null
                     }
 

@@ -5,13 +5,17 @@
 
 @font-face {
   font-family: "BPGMrgvlovani";
-  src: local("BPGMrgvlovani"), url("../components/fonts/bpg_nino_elite_ultra_caps.otf") format('opentype');
+  src: local("BPGMrgvlovani"), url("../components/fonts/bpg_nino_mtavruli_normal.ttf") format('truetype');
 }
 
 h1 {
   font-family: BPGMrgvlovani, sans-serif;
   position: relative;
   bottom: 4rem;
+}
+
+h4 {
+  font-family: BPGMrgvlovani, sans-serif;
 }
 
 p {

@@ -2,6 +2,7 @@ $primary: #006A9F;
 $danger: #EE313C;
 $sosOnHover: #ee5f6a;
 $mainNavbarHeight: 7rem;
+$bgColor: #F8F8F8;
 
 @font-face {
   font-family: 'ExtraSquare';
@@ -14,7 +15,7 @@ $mainNavbarHeight: 7rem;
 }
 
 @mixin overlay() {
-  background-color: white;
+  background-color: $bgColor;
   font-size: 1rem;
   border-radius: 5px;
   div {
@@ -30,6 +31,10 @@ $mainNavbarHeight: 7rem;
   a {
     margin-left: 1rem;
   }
+}
+
+body {
+  background-color: $bgColor;
 }
 
 h3 {
@@ -212,6 +217,7 @@ h3 {
 }
 
 footer {
+  font-family: BPGArial, sans-serif;
   a  {
     display: block;
     margin-bottom: 0.5rem;

@@ -1,3 +1,5 @@
+$bgColor: #F8F8F8;
+
 @font-face {
   font-family: "BPGArial";
   src: local("BPGArial"), url("../components/fonts/bpg_arial_2009.ttf") format('truetype');
@@ -6,6 +8,9 @@
 @font-face {
   font-family: "BPGMrgvlovani";
   src: local("BPGMrgvlovani"), url("../components/fonts/bpg_nino_mtavruli_normal.ttf") format('truetype');
+}
+body {
+  background-color: $bgColor;
 }
 
 h1 {
@@ -20,4 +25,24 @@ h4 {
 
 p {
   font-size: 1.1rem;
+}
+
+.sliderCards {
+  background-color: $bgColor;
+  div {
+    position: relative;
+  }
+  p {
+    background-color: white;
+    font-family: BPGArial, sans-serif;
+    font-size: 0.7rem;
+    width: 15rem;
+    position: absolute;
+    box-shadow: 2px 2px 5px #e6e6e6 inset;
+    z-index: 7;
+  }
+  img {
+    width: 19rem;
+    z-index: 5;
+  }
 }

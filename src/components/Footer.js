@@ -19,7 +19,7 @@ export default function Footer() {
                         <a>სიახლეები</a>
                         <a>საინფორმაციო ფურცელი</a>
                         <a>სამედიცინო პროვაიდერები</a>
-                       <a href="/contracts"> ხელშეკრულებები</a>
+                        <a href="/contracts"> ხელშეკრულებები</a>
                         <p style={{marginTop: "3rem", fontSize: "0.7rem"}}>უნისონი © ყველა უფლება დაცულია 2021</p>
                     </Col>
                     <Col md={3} className="py-3 my-4">
@@ -45,7 +45,7 @@ export default function Footer() {
                 </Row>
 
             </Container>
-            <footer className="d-block d-md-none text-secondary" style={{fontFamily: "BPGArial"}}>
+            <footer className="d-block d-md-none text-secondary">
                 <Container className="m-2 px-2 d-flex">
                     <Row>
                         <div className="w-100">

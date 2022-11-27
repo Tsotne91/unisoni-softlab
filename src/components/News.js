@@ -60,7 +60,6 @@ export default function News() {
                         </Col>
                     </Row>
                 </div>
-
             </Container>
         </>
     )

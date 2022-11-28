@@ -17,7 +17,7 @@ export default function TopNavbar({showButton}) {
                     <Nav.Link href="/about-us">ჩვენს შესახებ</Nav.Link>
                     <Nav.Link href="#news">სიახლეები</Nav.Link>
                     <Nav.Link href="#partners">პარტნიორები</Nav.Link>
-                    <Nav.Link href="#contact">კონტაქტი</Nav.Link>
+                    <Nav.Link href="/contact-us">კონტაქტი</Nav.Link>
                     {
                        showButton ? <Button variant="danger" className="text-light mx-4 my-1 px-4 py-0"
                                 ref={target}
@@ -46,15 +46,13 @@ export default function TopNavbar({showButton}) {
                         }
                     </Overlay>
 
-
                 </Nav>
                 <Nav className="mx-0">
                     <NavDropdown title="ქართული">
                         <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Русский</NavDropdown.Item>
                     </NavDropdown>
-
-                    <Nav.Link className="d-none d-lg-flex mx-2">ცხელი ხაზი <BsFillTelephoneFill/> 2 991 991</Nav.Link>
+                    <Nav.Link className="d-none d-lg-flex mx-3">ცხელი ხაზი <BsFillTelephoneFill className="mx-2" /> 2 991 991</Nav.Link>
 
                 </Nav>
             </Container>

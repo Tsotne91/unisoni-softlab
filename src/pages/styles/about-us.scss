@@ -2,12 +2,12 @@ $bgColor: #F8F8F8;
 
 @font-face {
   font-family: "BPGArial";
-  src: local("BPGArial"), url("../components/fonts/bpg_arial_2009.ttf") format('truetype');
+  src: local("BPGArial"), url("../../components/fonts/bpg_arial_2009.ttf") format('truetype');
 }
 
 @font-face {
   font-family: "BPGMrgvlovani";
-  src: local("BPGMrgvlovani"), url("../components/fonts/bpg_nino_mtavruli_normal.ttf") format('truetype');
+  src: local("BPGMrgvlovani"), url("../../components/fonts/bpg_nino_mtavruli_normal.ttf") format('truetype');
 }
 body {
   background-color: $bgColor;

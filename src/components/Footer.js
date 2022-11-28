@@ -11,8 +11,8 @@ export default function Footer() {
                         <a style={{marginTop: "3rem"}} href="/about-us">ჩვენს შესახებ</a>
                         <a>კარიერა</a>
                         <a>პარტნიორები</a>
-                        <img className="d-inline my-2" src="/img/footerIcons/AppStoreLogo.svg"/>
-                        <img className="d-inline m-2" src="/img/footerIcons/google-play-badge.png"/>
+                        <img className="d-inline my-2" src="/img/footerIcons/AppStoreLogo.svg" alt="appStore"/>
+                        <img className="d-inline m-2" src="/img/footerIcons/google-play-badge.png" alt="googlePlay"/>
                     </Col>
                     <Col md={3} className="py-3 my-4">
                         <p className="fw-bold">ინფორმაცია</p>
@@ -24,7 +24,7 @@ export default function Footer() {
                     </Col>
                     <Col md={3} className="py-3 my-4">
                         <p className="fw-bold">დახმარება</p>
-                        <a>კონტაქტი</a>
+                        <a href="/contact-us">კონტაქტი</a>
                         <a href="/feedback">მომხმარებლის ხმა</a>
                         <a>ხშირად დასმული კითხვები</a>
                         <a>მონაცემთა დაცვა</a>
@@ -32,12 +32,12 @@ export default function Footer() {
                     <Col md={3} className="p-3 my-4">
                         <h6 className="fw-bold fs-6">სოციალური ქსელები</h6>
                         <div><img className="d-inline p-2"
-                                  src="/img/footerIcons/f_logo_RGB-Blue_72.png"/><span>Facebook</span></div>
-                        <div><img className="d-inline p-2" src="/img/footerIcons/Instagram_Glyph_Gradient_RGB.png"/>
+                                  src="/img/footerIcons/f_logo_RGB-Blue_72.png" alt="FB"/><span>Facebook</span></div>
+                        <div><img className="d-inline p-2" src="/img/footerIcons/Instagram_Glyph_Gradient_RGB.png" alt="Instagram"/>
                             <span>Instagram</span></div>
-                        <div><img className="d-inline p-2" src="/img/footerIcons/Image 7.png"/> <span>LinkedIn</span>
+                        <div><img className="d-inline p-2" src="/img/footerIcons/Image 7.png" alt="LI"/> <span>LinkedIn</span>
                         </div>
-                        <div><img className="d-inline p-2" src="/img/footerIcons/yt_icon_rgb.png"/> <span>Youtube</span>
+                        <div><img className="d-inline p-2" src="/img/footerIcons/yt_icon_rgb.png" alt="YT"/> <span>Youtube</span>
                         </div>
 
                     </Col>
@@ -49,7 +49,7 @@ export default function Footer() {
                 <Container className="m-2 px-2 d-flex">
                     <Row>
                         <div className="w-100">
-                            <img className="w-50 my-4" src="/img/footerIcons/LogoFooter.svg"/>
+                            <img className="w-50 my-4" src="/img/footerIcons/LogoFooter.svg" alt="logo"/>
                         </div>
                         <Col xs={6} className="w-50 my-1">
                             <a>ჩვენს შესახებ</a>
@@ -81,10 +81,10 @@ export default function Footer() {
                 <Container>
                     <Row>
                         <Col xs={6}>
-                            <img src="/img/footerIcons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"/>
+                            <img src="/img/footerIcons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="appStore"/>
                         </Col>
                         <Col xs={6}>
-                            <img src="/img/footerIcons/google-play-badge.png"/>
+                            <img src="/img/footerIcons/google-play-badge.png" alt="googlePlay"/>
                         </Col>
                     </Row>
                 </Container>
@@ -92,21 +92,21 @@ export default function Footer() {
                     <Row>
                         <Col xs={6} className="w-50">
                             <div>
-                                <img className="d-inline p-2" src="/img/footerIcons/f_logo_RGB-Blue_72.png"/>
+                                <img className="d-inline p-2" src="/img/footerIcons/f_logo_RGB-Blue_72.png" alt="fLogo"/>
                                 <span>Facebook</span>
                             </div>
                             <div>
-                                <img className="d-inline p-2" src="/img/footerIcons/yt_icon_rgb.png"/>
+                                <img className="d-inline p-2" src="/img/footerIcons/yt_icon_rgb.png" alt="ytLogo"/>
                                 <span>Youtube</span>
                             </div>
                         </Col>
                         <Col xs={6} className="w-50">
                             <div>
-                                <img className="d-inline p-2" src="/img/footerIcons/Instagram_Glyph_Gradient_RGB.png"/>
+                                <img className="d-inline p-2" src="/img/footerIcons/Instagram_Glyph_Gradient_RGB.png" alt="instLogo"/>
                                 <span>Instagram</span>
                             </div>
                             <div>
-                                <img className="d-inline p-2" src="/img/footerIcons/Image 7.png"/>
+                                <img className="d-inline p-2" src="/img/footerIcons/Image 7.png" alt="ldLogo"/>
                                 <span>LinkedIn</span>
                             </div>
                         </Col>

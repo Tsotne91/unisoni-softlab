@@ -118,16 +118,16 @@ export default function MainNavbar({showButton, className}) {
                         <Nav.Link href="#obligatory" className="mx-lg-3 px-lg-3 mx-sm-0 px-sm-0 py-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
                     </Nav>
                 </Container>
-                <Nav className="mx-md-2 d-none d-lg-flex w-50 insideNavbar">
+                <Nav className="mx-md-2 d-none d-lg-flex align-self-start align-items-baseline w-50 rightColumnInsideNavbar">
                     {
                         showButton ? <Button variant="danger"
-                                             className="text-light justify-content-center mx-3 px-2 rounded-3 insideNavbar">
+                                             className="text-light d-block align-self-start mx-4 px-2 rounded-3 rightColumnInsideNavbar">
                             <img src="/img/footerIcons/shopping_cart_black_24dp.svg"/>შეიძინე
                             ონლაინ</Button> : null
                     }
 
                         <Account width="3rem" fill="#707070"/>
-                        <Nav.Link href="#myaccount" className="text-light w-25 px-3">ჩემი კაბინეტი</Nav.Link>
+                        <Nav.Link href="#myaccount" className="text-light w-25 align-self-start px-3">ჩემი კაბინეტი</Nav.Link>
                     </Nav>
 
                 <Nav className="callAgentFixed bg-danger d-none d-md-flex py-2 px-3 justify-content-center">

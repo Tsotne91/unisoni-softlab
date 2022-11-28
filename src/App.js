@@ -5,6 +5,7 @@ import MainPage from "./pages/MainPage";
 import Contracts from "./pages/Contracts";
 import Feedback from "./pages/Feedback";
 import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 
 
 
@@ -16,6 +17,7 @@ function App() {
                 <Route path={"/contracts"} element={<Contracts/>}/>
                 <Route path={"/feedback"} element={<Feedback/>}/>
                 <Route path={"/about-us"} element={<AboutUs/>}/>
+                <Route path={"/contact-us"} element={<ContactUs/>}/>
             </Routes>
         </BrowserRouter>
     )

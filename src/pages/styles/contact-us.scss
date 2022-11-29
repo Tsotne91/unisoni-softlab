@@ -10,23 +10,27 @@ $primary: #006A9F;
   src: local("BPGArial"), url("../../components/fonts/bpg_arial_2009.ttf") format('truetype');
 }
 
+span {
+  font-family: BPGArial, sans-serif;
+}
 
-
-h2 {
+.contactInfo {
+  h2 {
   font-family: Mtavruli, sans-serif;
   color: white;
   position: relative;
   bottom: 4rem;
 }
-span {
-  font-family: BPGArial, sans-serif;
-}
-
-h5 {
-  font-family: BPGArial, sans-serif;
-  color: $primary;
+  h5 {
+    font-family: BPGArial, sans-serif;
+    color: $primary;
+  }
 }
 
 .addresses {
   margin-left: 2.5rem;
+}
+
+.contactUsForm {
+
 }

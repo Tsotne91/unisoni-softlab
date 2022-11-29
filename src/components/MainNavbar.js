@@ -39,10 +39,10 @@ export default function MainNavbar({showButton, className}) {
 
     return (
         <>
-            <Navbar className={`mainNavbar d-none d-md-flex px-lg-5 px-md-3 px-sm-1 ${className}`}>
+            <Navbar className={`mainNavbar d-none d-md-flex px-xxl-5 px-xl-3 px-lg-0 px-md-0 ${className}`}>
                 <Container
-                    className="mx-lg-3 mx-md-1 mx-sm-0 h-100 justify-content-md-center justify-content-sm-start ">
-                    <Nav className="px-lg-3 px-md-0 w-75 h-100 align-items-center forBgImage">
+                    className="mx-xxl-2 mx-xl-0 mx-lg-0 mx-md-0 h-100 justify-content-md-center justify-content-sm-start ">
+                    <Nav className="px-xxl-2 px-xl-1 px-lg-0 px-md-0 w-75 h-100 align-items-center forBgImage">
                         <Navbar.Brand href="/">
                             <img src="./img/Logo.svg"
                                  width="220"
@@ -114,20 +114,20 @@ export default function MainNavbar({showButton, className}) {
                                         )}
                             </Overlay>
                         </Nav.Link>
-                        <Nav.Link href="#judicial" className="mx-lg-3 px-lg-3 mx-sm-0 px-sm-0 py-3 text-light">იურიდიული პირებისთვის</Nav.Link>
-                        <Nav.Link href="#obligatory" className="mx-lg-3 px-lg-3 mx-sm-0 px-sm-0 py-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
+                        <Nav.Link href="#judicial" className="mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">იურიდიული პირებისთვის</Nav.Link>
+                        <Nav.Link href="#obligatory" className="mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
                     </Nav>
                 </Container>
                 <Nav className="mx-md-2 d-none d-lg-flex align-self-start align-items-baseline w-50 rightColumnInsideNavbar">
                     {
                         showButton ? <Button variant="danger"
-                                             className="text-light d-block align-self-start mx-4 px-2 rounded-3 rightColumnInsideNavbar">
+                                             className="buyOnlineButton text-light d-none d-lg-block align-self-start mx-xl-4 mx-lg-2 mx-md-0 px-xl-2 px-lg-0 rounded-3">
                             <img src="/img/footerIcons/shopping_cart_black_24dp.svg"/>შეიძინე
                             ონლაინ</Button> : null
                     }
 
                         <Account width="3rem" fill="#707070"/>
-                        <Nav.Link href="#myaccount" className="text-light w-25 align-self-start px-3">ჩემი კაბინეტი</Nav.Link>
+                        <Nav.Link href="#myaccount" className="text-light w-25 align-self-start px-xl-3 px-lg-0">ჩემი კაბინეტი</Nav.Link>
                     </Nav>
 
                 <Nav className="callAgentFixed bg-danger d-none d-md-flex py-2 px-3 justify-content-center">

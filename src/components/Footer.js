@@ -8,7 +8,7 @@ export default function Footer() {
                 <Row className="w-100 justify-content-center py-3 fs-6">
                     <Col md={3} className="py-3 my-4">
                         <img src="/img/footerIcons/LogoFooter.svg"/>
-                        <a style={{marginTop: "3rem"}} href="/about-us">ჩვენს შესახებ</a>
+                        <a className="aboutUsLink" href="/about-us">ჩვენს შესახებ</a>
                         <a>კარიერა</a>
                         <a>პარტნიორები</a>
                         <img className="d-inline my-2" src="/img/footerIcons/AppStoreLogo.svg" alt="appStore"/>
@@ -20,7 +20,7 @@ export default function Footer() {
                         <a>საინფორმაციო ფურცელი</a>
                         <a>სამედიცინო პროვაიდერები</a>
                         <a href="/contracts"> ხელშეკრულებები</a>
-                        <p style={{marginTop: "3rem", fontSize: "0.7rem"}}>უნისონი © ყველა უფლება დაცულია 2021</p>
+                        <p className="copyright">უნისონი © ყველა უფლება დაცულია 2021</p>
                     </Col>
                     <Col md={3} className="py-3 my-4">
                         <p className="fw-bold">დახმარება</p>

@@ -10,7 +10,7 @@ export default function ContactUs() {
             <TopNavbar/>
             <MainNavbar showButton={true} className="navbarBgImageContactUs"/>
             <Container>
-                <div className="d-flex flex-row">
+                <div className="contactInfo d-flex flex-row">
                     <div>
                         <h2>კონტაქტი</h2>
                         <h5 className="my-3">საკონტაქტო ინფორმაცია</h5>
@@ -32,7 +32,9 @@ export default function ContactUs() {
                         </div>
                     </div>
                     <div>
-                        <Form className="border border-1">
+                        <Form className="contactUsForm border border-1 p-3">
+                            <h3>დაგვიტოვე წერილი</h3>
+                            <h6>უნისონი მუდამ მზად არის მოგისმინოთ</h6>
                             <Form.Group>
                                 <Form.Label>
                                     სახელი გვარი

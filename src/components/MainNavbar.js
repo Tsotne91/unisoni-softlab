@@ -130,13 +130,13 @@ export default function MainNavbar({showButton, className}) {
                         <Nav.Link href="#myaccount" className="text-light w-25 align-self-start px-xl-3 px-lg-0">ჩემი კაბინეტი</Nav.Link>
                     </Nav>
 
-                <Nav className="callAgentFixed bg-danger d-none d-md-flex py-2 px-3 justify-content-center">
+                <Nav className="callAgentFixed bg-danger d-none d-lg-flex py-2 px-3 justify-content-center">
                     <CallAgent width="4em"/>
                     <div><a className="text-light text-decoration-none">აგენტთან დაკავშირება</a></div>
                 </Nav>
             </Navbar>
 
-            <Navbar bg="light" className="d-md-flex d-md-none justify-content-center">
+            <Navbar bg="light" className={`mainNavbarMobile d-md-flex d-md-none justify-content-center ${className}`}>
                 <Nav>
                     <Navbar.Brand href="#home">
                         <img src="./img/Group334.svg"

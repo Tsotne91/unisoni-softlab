@@ -2,71 +2,41 @@ import {Card, Col, Container, Row} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 export default function InsuranceCards() {
-    const cardStyle = {
-        width: "10rem",
-        height: "9rem",
-        fontSize: "1rem",
-        textAlign: "center",
-        alignItems: "center",
-        marginRight: "0.8rem",
-        marginTop: "1rem",
-        paddingTop: "1.5rem",
-        position: "relative",
-        borderRadius: "10px",
-        boxShadow: "5px 10px 8px #e1e1ea",
-        bottom: "2rem",
-        fontFamily: "ExtraSquare"
-    }
-
-    const iconStyle = {
-        width: "2.5rem",
-        paddingBottom: "0.4rem"
-    }
-
-    const advantagesStyle = {
-        width: "10rem",
-        margin: "1rem",
-        padding: "0.7rem",
-        fontSize: "0.8rem",
-        fontFamily: "BPGArial",
-        textAlign: "center",
-        border: "none"
-    }
 
     return (
         <>
             <Container className="d-flex justify-content-center">
                 <Row className="justify-content-center">
-                    <Card style={cardStyle}>
-                        <img src="img/insuranceIcons/house.svg" style={iconStyle}/>
+                    <Card className="insuranceCards">
+                        <img src="img/insuranceIcons/house.svg" className="insuranceCardIcons"/>
                         <span>ქონების<br/>
                      დაზღვევა</span>
                     </Card>
-                    <Card style={cardStyle}>
-                        <img src="img/insuranceIcons/health_and_safety_black_48dp.svg" style={iconStyle}/>
+                    <Card className="insuranceCards">
+                        <img src="img/insuranceIcons/health_and_safety_black_48dp.svg"/>
                         <span>ჯანმრთელობის<br/>
                      დაზღვევა</span>
                     </Card>
-                    <Card style={cardStyle}>
-                        <img src="img/insuranceIcons/directions_car_filled_black_48dp.svg" style={iconStyle}/>
+                    <Card className="insuranceCards">
+                        <img src="img/insuranceIcons/directions_car_filled_black_48dp.svg"/>
                         <span>ავტომობილის<br/>
                     დაზღვევა
                 </span>
                     </Card>
-                    <Card style={cardStyle}>
-                        <img src="img/insuranceIcons/how_to_reg_black_24dp.svg" style={iconStyle}/>
+                    <Card className="insuranceCards">
+                        <img src="img/insuranceIcons/how_to_reg_black_24dp.svg"/>
                         <span>პასუხისმგებლობის<br/>
                     დაზღვევა
                 </span>
                     </Card>
-                    <Card style={cardStyle}>
-                        <img src="img/insuranceIcons/flight_takeoff_black_48dp.svg" style={iconStyle}/>
+                    <Card className="insuranceCards">
+                        <img src="img/insuranceIcons/flight_takeoff_black_48dp.svg"/>
                         <span>სამოგზაურო<br/>
                     დაზღვევა
                 </span>
                     </Card>
-                    <Card style={cardStyle} className="d-flex d-md-none">
-                        <img src="img/insuranceIcons/Path 218.svg" style={iconStyle}/>
+                    <Card className="d-flex d-md-none insuranceCards">
+                        <img src="img/insuranceIcons/Path 218.svg"/>
                         <span>შეიძინე<br/>
                     ონლაინ
                 </span>
@@ -80,32 +50,32 @@ export default function InsuranceCards() {
 
                     <h2 style={{fontFamily: "ExtraSquare", textAlign: "center", marginTop: "3rem"}}>უპირატესობები</h2>
                     <Row className="d-flex justify-content-center">
-                        <Card style={advantagesStyle}>
+                        <Card className="advantages">
                             <img src="./img/advantagesIcons/consumer.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>მომხმარებლის კმაყოფილების 96%-იანი დონე</span>
                         </Card>
-                        <Card style={advantagesStyle}>
+                        <Card className="advantages">
                             <img src="./img/advantagesIcons/stars.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>მაღალრეიტინგული გადამზღვევი კომპანიები</span>
                         </Card>
-                        <Card style={advantagesStyle}>
+                        <Card className="advantages">
                             <img src="./img/advantagesIcons/touch_app_black_24dp.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>თანამედროვე ელექტრონული სერვისები</span>
                         </Card>
-                        <Card style={advantagesStyle}>
+                        <Card className="advantages">
                             <img src="./img/advantagesIcons/timer_black_24dp.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>ზარალის დარეგულირების უმოკლესი ვადები</span>
                         </Card>
-                        <Card style={advantagesStyle}>
+                        <Card className="advantages">
                             <img src="./img/advantagesIcons/people_outline_black_24dp.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>კორპორატიული კლიენტების ფართო სპექტრი</span>
                         </Card>
-                        <Card style={advantagesStyle}>
+                        <Card className="advantages">
                             <img src="./img/advantagesIcons/auto_awesome_black_24dp.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>გუნდის პროფესიონალიზმი და მრავალწლიანი გამოცდილება</span>

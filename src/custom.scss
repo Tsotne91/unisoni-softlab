@@ -1,3 +1,5 @@
+
+
 $primary: #006A9F;
 $danger: #EE313C;
 $sosOnHover: #ee5f6a;
@@ -55,9 +57,6 @@ $bgColor: #F8F8F8;
 body {
   background-color: $bgColor;
 }
-
-
-
 .feedbackWrapper {
   position: relative;
   right: 6rem;
@@ -202,6 +201,36 @@ body {
   position: relative;
   top: 7rem;
   z-index: 10;
+}
+
+.insuranceCards {
+  width: 10rem !important;
+  height: 9rem !important;
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  margin-right: 0.8rem;
+  margin-top: 1rem !important;
+  padding-top: 1.5rem;
+  position: relative !important;
+  bottom: 2rem;
+  border-radius: 10px !important;
+  box-shadow: 5px 10px 8px #e1e1ea;
+  font-family: ExtraSquare, sans-serif;
+  img {
+    width: 2.5rem;
+    padding-bottom: 0.4rem;
+  }
+}
+
+.advantages {
+  width: 10rem !important;
+  margin: 1rem;
+  padding: 0.7rem;
+  font-size: 0.8rem;
+  font-family: BPGArial, sans-serif;
+  text-align: center;
+  border: none !important;
 }
 
 .carousel-indicators {

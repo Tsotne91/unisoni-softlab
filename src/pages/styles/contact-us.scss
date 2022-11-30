@@ -1,16 +1,12 @@
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-
-$primary: #006A9F;
-
-@font-face {
-  font-family: 'Mtavruli';
-  src: local('Mtavruli'), url("../../components/fonts/bpg_nino_mtavruli_normal.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: "BPGArial";
-  src: local("BPGArial"), url("../../components/fonts/bpg_arial_2009.ttf") format('truetype');
-}
+//@font-face {
+//  font-family: 'Mtavruli';
+//  src: local('Mtavruli'), url("../../components/fonts/bpg_nino_mtavruli_normal.ttf") format('truetype');
+//}
+//
+//@font-face {
+//  font-family: "BPGArial";
+//  src: local("BPGArial"), url("../../components/fonts/bpg_arial_2009.ttf") format('truetype');
+//}
 
 span {
   font-family: BPGArial, sans-serif;
@@ -25,7 +21,8 @@ span {
 }
   h5 {
     font-family: BPGArial, sans-serif;
-    color: $primary;
+    //color: $primary;
+    color: blue; //to change
   }
   :first-child h6{
     font-family: Mtavruli, sans-serif;
@@ -35,7 +32,8 @@ span {
 .addresses {
   margin-left: 2.5rem;
   font-size: 0.8rem;
-  color: $secondary;
+  //color: $secondary;
+  color: gray;
 }
 
 .contactUsForm {
@@ -49,10 +47,10 @@ span {
     color: gray;
   }
   .submitButton {
-    background-color: $primary;
+    //background-color: $primary;
   }
   .form-label {
-    color: $primary;
+    //color: $primary;
     font-family: Mtavruli, sans-serif;
     font-size: 0.8rem;
   }

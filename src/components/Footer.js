@@ -81,7 +81,7 @@ export default function Footer() {
                 <Container>
                     <Row>
                         <Col xs={6}>
-                            <img src="/img/footerIcons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="appStore"/>
+                            <img src="/img/footerIcons/AppStoreLogo.svg" alt="appStore"/>
                         </Col>
                         <Col xs={6}>
                             <img src="/img/footerIcons/google-play-badge.png" alt="googlePlay"/>

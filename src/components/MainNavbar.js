@@ -52,7 +52,7 @@ export default function MainNavbar({showButton, className}) {
                             />
                         </Navbar.Brand>
                         <Nav.Link href="#physical"
-                                  className="mx-lg-3 px-lg-3 mx-sm-0 px-sm-0 py-3 text-light"
+                                  className="mx-xl-2 px-xl-2 mx-lg-1 px-lg-1 mx-sm-0 px-sm-0 py-3 text-light"
                                   ref={target1}
                                   onMouseEnter={() => {
                                       setOverlayShow(true);
@@ -74,13 +74,13 @@ export default function MainNavbar({showButton, className}) {
                                                 {...props}
                                                 className="mainNavbarOverlay py-4"
                                             >
-                                                <div className="px-2"><Health className="overlayIcons" fill="#006A9F"
+                                                <div className="px-xl-2 px-lg-0"><Health className="overlayIcons" fill="#006A9F"
                                                                               width="1.3rem"/><a>ინდივიდუალური
                                                     ჯანმრთელობის დაზღვევა</a></div>
-                                                <div className="px-2"><Car className="overlayIcons" fill="#006A9F"
+                                                <div className="px-xl-2 px-lg-0"><Car className="overlayIcons" fill="#006A9F"
                                                                            width="1.3rem"/><a>ავტოდაზღვევა
                                                     - პაკეტები</a></div>
-                                                <div className="px-2" ref={target2} onMouseEnter={() => {
+                                                <div className="px-xl-2 px-lg-0" ref={target2} onMouseEnter={() => {
                                                     setSmallOverlayShow((prevState) => !prevState)
                                                 }}>
                                                     <Plane className="overlayIcons" fill="#006A9F" width="1.3rem"/>
@@ -88,7 +88,7 @@ export default function MainNavbar({showButton, className}) {
                                                     <img className="rightArrow"
                                                          src="img/footerIcons/keyboard_arrow_right_black_24dp.svg"/>
                                                 </div>
-                                                <div className="px-2"><Person className="overlayIcons" fill="#006A9F"
+                                                <div className="px-xl-2 px-lg-0"><Person className="overlayIcons" fill="#006A9F"
                                                                               width="2rem"/><a>მძღოლის პასუხისმგებლობის
                                                     დაზღვევა</a></div>
                                                 <Overlay target={target2.current} show={smallOverlayShow}
@@ -114,8 +114,8 @@ export default function MainNavbar({showButton, className}) {
                                         )}
                             </Overlay>
                         </Nav.Link>
-                        <Nav.Link href="#judicial" className="mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">იურიდიული პირებისთვის</Nav.Link>
-                        <Nav.Link href="#obligatory" className="mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
+                        <Nav.Link href="#judicial" className="mx-xl-2 px-xl-2 mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">იურიდიული პირებისთვის</Nav.Link>
+                        <Nav.Link href="#obligatory" className="mx-xl-2 px-xl-2 mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
                     </Nav>
                 </Container>
                 <Nav className="mx-md-2 d-none d-lg-flex align-self-start align-items-baseline w-50 rightColumnInsideNavbar">

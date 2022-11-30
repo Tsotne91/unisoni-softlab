@@ -1,13 +1,10 @@
 import React from "react";
-import "./app.css";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import MainPage from "./pages/MainPage";
 import Contracts from "./pages/Contracts";
 import Feedback from "./pages/Feedback";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
-
-
 
 function App() {
     return (
@@ -22,5 +19,4 @@ function App() {
         </BrowserRouter>
     )
 }
-
 export default App;

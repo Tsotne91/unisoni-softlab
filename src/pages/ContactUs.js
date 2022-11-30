@@ -24,12 +24,12 @@ export default function ContactUs() {
                         <div className="my-4">
                             <img src="/img/insuranceIcons/locationRed.svg" alt="location"/>
                             <h6 className="px-2 d-inline">სათავო ოფისი:</h6><br/>
-                            <span className="addresses">დ. გამრეკელის 19, საბურთალო, თბილისი, 0160, საქართველო</span>
+                            <span className="addresses text-secondary">დ. გამრეკელის 19, საბურთალო, თბილისი, 0160, საქართველო</span>
                         </div>
                         <div className="my-4">
                             <img src="/img/insuranceIcons/locationRed.svg" alt="location"/>
                             <h6 className="px-2 d-inline">ბათუმის ოფისი:</h6><br/>
-                            <span className="addresses">დ. თავდადებულის 31, ბათუმი, საქართველო</span>
+                            <span className="addresses text-secondary">დ. თავდადებულის 31, ბათუმი, საქართველო</span>
                         </div>
                     </div>
                 </div>

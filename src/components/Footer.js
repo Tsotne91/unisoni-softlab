@@ -9,7 +9,7 @@ export default function Footer() {
                     <Col md={3} className="py-3 my-4">
                         <img src="/img/footerIcons/LogoFooter.svg"/>
                         <a className="aboutUsLink" href="/about-us">ჩვენს შესახებ</a>
-                        <a>კარიერა</a>
+                        <a  href="/career">კარიერა</a>
                         <a>პარტნიორები</a>
                         <img className="d-inline my-2" src="/img/footerIcons/AppStoreLogo.svg" alt="appStore"/>
                         <img className="d-inline m-2" src="/img/footerIcons/google-play-badge.png" alt="googlePlay"/>

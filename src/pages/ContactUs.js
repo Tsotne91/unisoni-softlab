@@ -10,7 +10,7 @@ export default function ContactUs() {
         <>
             <TopNavbar/>
             <MainNavbar showButton={true} className="navbarBgImageContactUs"/>
-            <Container className="d-flex flex-row justify-content-center">
+            <Container className="d-xs-block d-md-flex flex-md-row justify-content-center">
                 <div className="contactInfo mx-4">
                     <div>
                         <h2>კონტაქტი</h2>
@@ -39,12 +39,12 @@ export default function ContactUs() {
                             <h5>დაგვიტოვე წერილი</h5>
                             <span>უნისონი მუდამ მზად არის მოგისმინოთ</span>
                         </div>
-                        <Form.Group className="mx-2">
+                        <Form.Group className="d-flex mx-2">
                             <Form.Label>
                                 სახელი გვარი
                                 <Form.Control type="text" placeholder="გიორგი გიორგაძე"></Form.Control>
                             </Form.Label>
-                            <Form.Label className="mx-2">
+                            <Form.Label>
                                 ტელეფონი
                                 <Form.Control type="number" placeholder="557141587"></Form.Control>
                             </Form.Label>

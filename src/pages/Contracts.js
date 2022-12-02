@@ -31,7 +31,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -42,7 +42,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -53,7 +53,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -64,7 +64,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -80,7 +80,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                        <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -91,7 +91,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -102,7 +102,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -113,7 +113,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -129,7 +129,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -140,7 +140,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -151,7 +151,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -162,7 +162,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -178,7 +178,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -189,7 +189,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -200,7 +200,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -211,7 +211,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -227,7 +227,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -238,7 +238,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -249,7 +249,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -260,7 +260,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -276,7 +276,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -287,7 +287,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -298,7 +298,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -309,7 +309,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -325,7 +325,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -336,7 +336,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -347,7 +347,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -358,7 +358,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -374,7 +374,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -385,7 +385,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -396,7 +396,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>
@@ -407,7 +407,7 @@ export default function Contracts() {
                                         <span className="mx-3 text-secondary">File_name_description.pdf</span>
                                     </label>
                                     <Button variant="light">
-                                        <img src="/img/file_download_black_24dp.svg"/>
+                                       <img src="/img/insuranceIcons/file_download_black_24dp.svg" alt="download"/>
                                         გადმოწერა
                                     </Button>
                                 </div>

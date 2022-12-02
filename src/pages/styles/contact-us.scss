@@ -6,7 +6,7 @@ span {
 
 .contactInfo {
   h2 {
-  font-family: Mtavruli, sans-serif;
+  font-family: BPGMrgvlovani, sans-serif;
   color: white;
   position: relative;
   bottom: 4rem;
@@ -16,7 +16,7 @@ span {
     color: $primary;
   }
   :first-child h6{
-    font-family: Mtavruli, sans-serif;
+    font-family: BPGMrgvlovani, sans-serif;
   }
 }
 
@@ -28,7 +28,7 @@ span {
 .contactUsForm {
   position: relative;
   bottom: 8rem;
-  z-index: 20;
+  z-index: 2;
   width: 30rem;
 
   span, ::placeholder {

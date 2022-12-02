@@ -44,7 +44,7 @@ export default function MainNavbar({showButton, className}) {
                     className="mx-xxl-2 mx-xl-0 mx-lg-0 mx-md-0 h-100 justify-content-md-center justify-content-sm-start ">
                     <Nav className="px-xxl-2 px-xl-1 px-lg-0 px-md-0 w-75 h-100 align-items-center forBgImage">
                         <Navbar.Brand href="/">
-                            <img src="./img/Logo.svg"
+                            <img src="./img/insuranceIcons/Logo.svg"
                                  width="220"
                                  height="70"
                                  className="d-inline-block align-top"
@@ -127,7 +127,7 @@ export default function MainNavbar({showButton, className}) {
                     }
 
                         <Account width="3rem" fill="#707070"/>
-                        <Nav.Link href="#myaccount" className="text-light w-25 align-self-start px-xl-3 px-lg-0">ჩემი კაბინეტი</Nav.Link>
+                        <Nav.Link href="#myaccount" className="text-light w-25 align-self-start px-xl-4 px-lg-0">ჩემი კაბინეტი</Nav.Link>
                     </Nav>
 
                 <Nav className="callAgentFixed bg-danger d-none d-lg-flex py-2 px-3 justify-content-center">
@@ -139,7 +139,7 @@ export default function MainNavbar({showButton, className}) {
             <Navbar bg="light" className={`mainNavbarMobile d-md-flex d-md-none justify-content-center ${className}`}>
                 <Nav>
                     <Navbar.Brand href="#home">
-                        <img src="./img/Group334.svg"
+                        <img src="./img/insuranceIcons/Logo.svg"
                              width="150"
                              height="60"
                              className="d-inline-block align-top"

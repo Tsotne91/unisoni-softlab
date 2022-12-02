@@ -11,7 +11,7 @@ export default function MainPage(){
     return (
         <>
             <TopNavbar showButton={true}/>
-            <MainNavbar showButton={false} className='bg-primary'/>
+            <MainNavbar showButton={false} className='bg-primary' mobileLogo="./img/insuranceIcons/Group334.svg"/>
             <ImageSlider/>
             <InsuranceCards/>
             <News/>

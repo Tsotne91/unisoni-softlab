@@ -15,7 +15,7 @@ import {ReactComponent as MobileObligatory} from "./insuranceIcons/mobile/Union5
 import {ReactComponent as MobileCallAgent} from "./insuranceIcons/mobile/CallAgent.svg";
 import {ReactComponent as PhoneNumber} from "./insuranceIcons/mobile/Subtraction7.svg";
 
-export default function MainNavbar({showButton, className}) {
+export default function MainNavbar({showButton, className, mobileLogo}) {
     const [overlayShow, setOverlayShow] = useState(false);
     const [smallOverlayShow, setSmallOverlayShow] = useState(false);
     const [showFirstCanvas, setShowFirstCanvas] = useState(false);
@@ -136,10 +136,10 @@ export default function MainNavbar({showButton, className}) {
                 </Nav>
             </Navbar>
 
-            <Navbar bg="light" className={`mainNavbarMobile d-md-flex d-md-none justify-content-center ${className}`}>
+            <Navbar bg="light" className={`mainNavbarMobile d-md-flex d-md-none justify-content-center align-items-start ${className}`}>
                 <Nav>
                     <Navbar.Brand href="#home">
-                        <img src="./img/insuranceIcons/Logo.svg"
+                        <img src={mobileLogo}
                              width="150"
                              height="60"
                              className="d-inline-block align-top"

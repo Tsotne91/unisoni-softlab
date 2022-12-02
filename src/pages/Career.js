@@ -6,7 +6,7 @@ export default function Career(){
     return (
         <>
         <TopNavbar showButton={false}/>
-            <MainNavbar showButton={true} className="navbarBgImageCareer" />
+            <MainNavbar showButton={true} className="navbarBgImageCareer"  mobileLogo="./img/insuranceIcons/Logo.svg" />
         </>
     )
 

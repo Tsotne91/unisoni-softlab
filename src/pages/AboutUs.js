@@ -12,7 +12,7 @@ export default function AboutUs() {
     return (
         <>
             <TopNavbar showButton={false}/>
-            <MainNavbar showButton={true} className='navbarBgImageAboutUs'/>
+            <MainNavbar showButton={true} className='navbarBgImageAboutUs' mobileLogo="./img/insuranceIcons/Group334.svg"/>
             <Container className="d-none d-md-block">
                 <h1 className="text-light d-flex justify-content-center">ჩვენს შესახებ</h1>
                 <p className="text-secondary text-center p-2 my-4">

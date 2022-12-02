@@ -106,40 +106,23 @@ body {
   height: $mainNavbarHeight+2rem;
 }
 
-.navbarBgImageAboutUs {
-  background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/shutterstock_627788162_bg1.png");
-  height: $mainNavbarHeight+15rem;
-  @include adjustMainNavbarRightCol();
-}
-
-$screen-md-min: 768px;
-
-//@mixin md {
-//  @media (min-width: #{$screen-md-min}) {
-//    background-image:linear-gradient(180deg,rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/shutterstock_627788162_bg2.png");
-//  }
-//}
-
-
-.navbarBgImageContactUs {
-  background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/shutterstock_627788162_bg2.png");
-  height: $mainNavbarHeight+15rem;
-  @include adjustMainNavbarRightCol();
-  //@include md();
-}
-
-[class*=navbarBgImageCareer] {
-  background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/Rectangle 872@2x.png");
+[class*=navbarBgImageCareer], [class*=navbarBgImageContactUs] {
+  background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/Rectangle 872.png");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: $mainNavbarHeight+5rem;
+  background-position: center;
+  height: $mainNavbarHeight+2rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .navbarBgImageCareer {
+  .navbarBgImageCareer, .navbarBgImageContactUs {
     background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/shutterstock_627788162.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
+    height: $mainNavbarHeight+15rem;
+    @include adjustMainNavbarRightCol();
+  }
+  .navbarBgImageAboutUs {
+    background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/shutterstock_627788162_bg1.png");
     height: $mainNavbarHeight+15rem;
     @include adjustMainNavbarRightCol();
   }

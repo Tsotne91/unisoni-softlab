@@ -9,7 +9,7 @@ export default function ContactUs() {
     return (
         <>
             <TopNavbar/>
-            <MainNavbar showButton={true} className="navbarBgImageContactUs"  />
+            <MainNavbar showButton={true} className="navbarBgImageContactUs" mobileLogo="./img/insuranceIcons/Logo.svg" />
             <Container className="d-xs-block d-md-flex flex-md-row justify-content-center">
                 <div className="contactInfo mx-4">
                     <div>

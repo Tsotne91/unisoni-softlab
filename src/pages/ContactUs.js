@@ -10,7 +10,7 @@ export default function ContactUs() {
         <>
             <TopNavbar/>
             <MainNavbar showButton={true} className="navbarBgImageContactUs" mobileLogo="./img/insuranceIcons/Logo.svg" />
-            <Container className="d-xs-block d-md-flex flex-md-row justify-content-center">
+            <Container className="d-none d-md-flex flex-md-row justify-content-center">
                 <div className="contactInfo mx-4">
                     <div>
                         <h2>კონტაქტი</h2>
@@ -65,6 +65,30 @@ export default function ContactUs() {
                             <img src="/img/insuranceIcons/send_black_24dp.svg" alt="sendIcon"/> გაგზავნა
                         </Button>
                     </Form>
+                </div>
+            </Container>
+            <Container className="contactUsMobile d-block d-md-none">
+                <div className="mx-4">
+                    <div>
+                        <h2 className="text-center">კონტაქტი</h2>
+                        <h5 className="my-3">საკონტაქტო ინფორმაცია</h5>
+                        <div className="my-3 py-3">
+                            <img src="/img/insuranceIcons/phoneRed.svg" alt="phone-icon" className="my-3"/>
+                            <span className="mx-2 text-secondary fs-6">322 991 991</span><br/>
+                            <img src="/img/insuranceIcons/mailRed.svg" alt="mail-icon"/>
+                            <span className="mx-2 text-secondary fs-6">unison@unison.ge</span>
+                        </div>
+                        <div className="my-2">
+                            <img src="/img/insuranceIcons/locationRed.svg" alt="location"/>
+                            <h6 className="px-2 d-inline">სათავო ოფისი:</h6><br/>
+                            <span className="addresses text-secondary">დ. გამრეკელის 19, საბურთალო, თბილისი, 0160, საქართველო</span>
+                        </div>
+                        <div className="my-2">
+                            <img src="/img/insuranceIcons/locationRed.svg" alt="location"/>
+                            <h6 className="px-2 d-inline">ბათუმის ოფისი:</h6><br/>
+                            <span className="addresses text-secondary">დ. თავდადებულის 31, ბათუმი, საქართველო</span>
+                        </div>
+                    </div>
                 </div>
             </Container>
             <Footer/>

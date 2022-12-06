@@ -114,7 +114,7 @@ export default function ContactUs() {
                            onHide={handleClose}
                            placement="bottom"
                            backdrop={false}
-                           className="h-75">
+                           className="contactUsOffcanvas h-75">
                     <Offcanvas.Header className="justify-content-end">
                         <CloseButton className="mx-2" onTouchEnd={handleClose}/>
                     </Offcanvas.Header>

@@ -120,8 +120,17 @@ body {
     position: relative;
     bottom: 4rem;
   }
-
-
+  h5 {
+    color: $primary;
+  }
+  h6 {
+    font-family: ExtraSquare, sans-serif;
+    color: #383838;
+  }
+  p {
+    margin-left: 2.5rem;
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -144,6 +153,7 @@ body {
   position: absolute;
   top: 0 !important;
   left: 7rem !important;
+  z-index: 8;
 }
 
 .rightArrow {
@@ -180,7 +190,6 @@ body {
   padding: 0.4rem 1rem;
   color: white;
   border-radius: 5px;
-
   a {
     text-decoration: none;
   }
@@ -193,13 +202,11 @@ body {
 
 .carouselItem {
   height: 25rem;
-
   h1 {
     font-family: ExtraSquare, sans-serif;
     position: relative;
     top: 7rem;
   }
-
   h5 {
     position: relative;
     top: 7rem;

@@ -20,17 +20,11 @@ span {
   }
 }
 
-.addresses {
-  margin-left: 2.5rem;
-  font-size: 0.8rem;
-}
-
 .contactUsForm {
   position: relative;
   bottom: 8rem;
   z-index: 2;
   width: 30rem;
-
   span, ::placeholder {
     font-size: 0.8rem;
     color: gray;

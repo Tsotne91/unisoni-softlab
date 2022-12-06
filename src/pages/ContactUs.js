@@ -72,21 +72,21 @@ export default function ContactUs() {
                     <div>
                         <h2 className="text-center">კონტაქტი</h2>
                         <h5 className="my-3">საკონტაქტო ინფორმაცია</h5>
-                        <div className="my-3 py-3">
+                        <div className="my-2 py-2">
                             <img src="/img/insuranceIcons/phoneRed.svg" alt="phone-icon" className="my-3"/>
                             <span className="mx-2 text-secondary fs-6">322 991 991</span><br/>
                             <img src="/img/insuranceIcons/mailRed.svg" alt="mail-icon"/>
                             <span className="mx-2 text-secondary fs-6">unison@unison.ge</span>
                         </div>
                         <div className="my-2">
-                            <img src="/img/insuranceIcons/locationRed.svg" alt="location"/>
+                            <img src="/img/insuranceIcons/locationRed.svg" alt="location" />
                             <h6 className="px-2 d-inline">სათავო ოფისი:</h6><br/>
-                            <span className="addresses text-secondary">დ. გამრეკელის 19, საბურთალო, თბილისი, 0160, საქართველო</span>
+                            <p className="addresses text-secondary">დ. გამრეკელის 19, საბურთალო, თბილისი, 0160, საქართველო</p>
                         </div>
                         <div className="my-2">
                             <img src="/img/insuranceIcons/locationRed.svg" alt="location"/>
                             <h6 className="px-2 d-inline">ბათუმის ოფისი:</h6><br/>
-                            <span className="addresses text-secondary">დ. თავდადებულის 31, ბათუმი, საქართველო</span>
+                            <p className="addresses text-secondary">დ. თავდადებულის 31, ბათუმი, საქართველო</p>
                         </div>
                     </div>
                 </div>

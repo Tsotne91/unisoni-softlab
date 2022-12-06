@@ -1,11 +1,17 @@
 import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
-import {Container, Form} from "react-bootstrap";
+import {Container, Form, Offcanvas} from "react-bootstrap";
 import './styles/contact-us.scss';
 import Button from "react-bootstrap/Button";
+import {useState} from "react";
 
 export default function ContactUs() {
+    const [mobileOffcanvasShow, setMobileOffCanvasShow] = useState(false);
+
+    const handleClose = () => setMobileOffCanvasShow(false);
+    const handleShow = () => setMobileOffCanvasShow(true);
+
     return (
         <>
             <TopNavbar/>
@@ -68,7 +74,7 @@ export default function ContactUs() {
                 </div>
             </Container>
             <Container className="contactUsMobile d-block d-md-none">
-                <div className="mx-4">
+                <div className="mx-4 my-2">
                     <div>
                         <h2 className="text-center">კონტაქტი</h2>
                         <h5 className="my-3">საკონტაქტო ინფორმაცია</h5>
@@ -89,7 +95,50 @@ export default function ContactUs() {
                             <p className="addresses text-secondary">დ. თავდადებულის 31, ბათუმი, საქართველო</p>
                         </div>
                     </div>
+                    <div className="feedbackMobile my-5">
+                        <h5>დაგვიტოვე წერილი</h5>
+                        <span className="text-secondary d-block my-3">უნისონი მუდამ მზად არის მოგისმინოთ</span>
+                        <Button type="button"
+                                variant="primary"
+                                className="p-2"
+                                onTouchEnd={handleShow}
+                        ><img src="/img/insuranceIcons/send_black_24dp.svg" alt="sendIcon" className="px-2"/>
+                            მოგვმართეთ</Button>
+                    </div>
                 </div>
+                <Offcanvas show={mobileOffcanvasShow} onHide={handleClose} placement="bottom">
+                    <Offcanvas.Header closeButton></Offcanvas.Header>
+                    <Offcanvas.Body>
+                        <Form className="px-4 py-3">
+                            <Form.Group className="mx-2">
+                                <Form.Label>
+                                    სახელი გვარი
+                                    <Form.Control type="text" placeholder="გიორგი გიორგაძე"></Form.Control>
+                                </Form.Label>
+                                <Form.Label>
+                                    ტელეფონი
+                                    <Form.Control type="number" placeholder="557141587"></Form.Control>
+                                </Form.Label>
+                            </Form.Group>
+                            <Form.Group className="mx-2">
+                                <Form.Label>ელ-ფოსტა</Form.Label>
+                                <Form.Control type="email" placeholder="ggiorgadze@gmail.com"/>
+                            </Form.Group>
+                            <Form.Group className="mx-2">
+                                <Form.Label>სათაური</Form.Label>
+                                <Form.Control type="text" placeholder="სათაური"/>
+                            </Form.Group>
+                            <Form.Group className="mx-2">
+                                <Form.Label> მოგვწერე</Form.Label>
+                                <Form.Control rows={4} as="textarea" placeholder="მინდა მოგახსენოთ..."/>
+                            </Form.Group>
+                            <Button className="submitButton my-3 mx-1 p-2" type="submit">
+                                <img src="/img/insuranceIcons/send_black_24dp.svg" alt="sendIcon"/> გაგზავნა
+                            </Button>
+                        </Form>
+                    </Offcanvas.Body>
+
+                </Offcanvas>
             </Container>
             <Footer/>
         </>

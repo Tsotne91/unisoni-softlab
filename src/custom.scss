@@ -45,6 +45,7 @@
 .rightColumnInsideNavbar {
   position: relative;
   top: 1rem;
+  left: 4rem;
   @include adjustMainNavbarRightCol();
 }
 
@@ -122,6 +123,7 @@ body {
   }
   h5 {
     color: $primary;
+    font-size: 1rem;
   }
   h6 {
     font-family: ExtraSquare, sans-serif;
@@ -129,7 +131,12 @@ body {
   }
   p {
     margin-left: 2.5rem;
-    font-size: 0.8rem;
+    font-size: $smallFont;
+  }
+  .feedbackMobile {
+    span {
+      font-size: $smallFont;
+    }
   }
 }
 
@@ -186,7 +193,7 @@ body {
   top: 10rem;
   background-color: $danger;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: $smallFont;
   padding: 0.4rem 1rem;
   color: white;
   border-radius: 5px;
@@ -251,7 +258,7 @@ body {
   width: 10rem !important;
   margin: 1rem;
   padding: 0.7rem;
-  font-size: 0.8rem;
+  font-size: $smallFont;
   font-family: BPGArial, sans-serif;
   text-align: center;
   border: none !important;
@@ -280,11 +287,9 @@ body {
     text-decoration: none;
     margin-top: 1rem;
   }
-
   .aboutUsLink {
     margin-top: 3rem;
   }
-
   .copyright {
     margin-top: 3rem;
     font-size: 0.7rem;
@@ -303,12 +308,10 @@ body {
 
 footer {
   font-family: BPGArial, sans-serif;
-
   a {
     display: block;
     margin-bottom: 0.5rem;
   }
-
   .copyright {
     font-size: small;
   }
@@ -320,7 +323,6 @@ footer {
     text-align: center;
     margin-top: 3rem;
   }
-
   .newsDate {
     align-self: start;
     font-size: 0.7rem;

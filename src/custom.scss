@@ -114,31 +114,7 @@ body {
   height: $mainNavbarHeight+4rem;
 }
 
-.contactUsMobile {
-  h2 {
-    font-family: ExtraSquare, sans-serif;
-    color: white;
-    position: relative;
-    bottom: 4rem;
-  }
-  h5 {
-    color: $primary;
-    font-size: 1rem;
-  }
-  h6 {
-    font-family: ExtraSquare, sans-serif;
-    color: #383838;
-  }
-  p {
-    margin-left: 2.5rem;
-    font-size: $smallFont;
-  }
-  .feedbackMobile {
-    span {
-      font-size: $smallFont;
-    }
-  }
-}
+
 
 .mobileFormLabels {
   font-family: ExtraSquare, sans-serif;
@@ -318,6 +294,7 @@ footer {
   a {
     display: block;
     margin-bottom: 0.5rem;
+    text-decoration: none;
   }
   .copyright {
     font-size: small;

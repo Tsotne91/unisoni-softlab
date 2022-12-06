@@ -9,6 +9,7 @@
   font-family: "BPGMrgvlovani";
   src: local("BPGMrgvlovani"), url("../../components/fonts/bpg_nino_mtavruli_normal.ttf") format('truetype');
 }
+
 body {
   background-color: $bgColor;
 }
@@ -19,9 +20,12 @@ h1 {
   bottom: 4rem;
 }
 
-h4 {
-  font-family: BPGMrgvlovani, sans-serif;
+.unisonHistoryTitle {
+  h4 {
+    font-family: BPGMrgvlovani, sans-serif;
+  }
 }
+
 
 p {
   font-size: 1.1rem;
@@ -29,9 +33,11 @@ p {
 
 .sliderCards {
   background-color: $bgColor;
+
   div {
     position: relative;
   }
+
   p {
     background-color: white;
     font-family: BPGArial, sans-serif;
@@ -41,6 +47,7 @@ p {
     box-shadow: 2px 2px 5px #e6e6e6 inset;
     z-index: 7;
   }
+
   img {
     width: 19rem;
     z-index: 5;

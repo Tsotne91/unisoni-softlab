@@ -28,7 +28,7 @@ export default function AboutUs() {
                 </p>
             </Container>
             <Container>
-                <div className="d-flex flex-column">
+                <div className="unisonHistoryTitle d-flex flex-column">
                         <h4 className="text-primary align-self-center d-inline">უნისონის ისტორია</h4>
                         <div className="align-self-end d-inline-block">
                             <LeftArrow className="mx-2 d-inline cursor-pointer"/>

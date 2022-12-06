@@ -4,6 +4,32 @@ span {
   font-family: BPGArial, sans-serif;
 }
 
+.contactUsMobile {
+  h2 {
+    font-family: ExtraSquare, sans-serif;
+    color: white;
+    position: relative;
+    bottom: 4rem;
+  }
+  h4 {
+    color: $primary;
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-family: ExtraSquare, sans-serif;
+    color: #383838;
+  }
+  p {
+    margin-left: 2.5rem;
+    font-size: $smallFont;
+  }
+  //.feedbackMobile {
+  //  span {
+  //    font-size: $smallFont;
+  //  }
+  //}
+}
+
 .contactInfo {
   h2 {
   font-family: BPGMrgvlovani, sans-serif;
@@ -11,7 +37,7 @@ span {
   position: relative;
   bottom: 4rem;
 }
-  h5 {
+  h4 {
     font-family: BPGArial, sans-serif;
     color: $primary;
   }

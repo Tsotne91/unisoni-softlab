@@ -52,29 +52,29 @@ export default function Footer() {
                             <img className="w-50 my-4" src="/img/footerIcons/LogoFooter.svg" alt="logo"/>
                         </div>
                         <Col xs={6} className="w-50 my-1">
-                            <a>ჩვენს შესახებ</a>
-                            <a>პარტნიორები</a>
+                            <a className="text-secondary">ჩვენს შესახებ</a>
+                            <a className="text-secondary">პარტნიორები</a>
                         </Col>
                         <Col xs={6} className="w-50">
-                            <a>კარიერა</a>
+                            <a className="text-secondary">კარიერა</a>
                         </Col>
                         <h6 className="fw-bold my-2">ინფორმაცია</h6>
                         <Col xs={6} className="w-50">
-                            <a>სიახლეები</a>
-                            <a>საინფორმაციო ფურცელი</a>
+                            <a className="text-secondary">სიახლეები</a>
+                            <a className="text-secondary">საინფორმაციო ფურცელი</a>
                         </Col>
                         <Col xs={6} className="w-50">
-                           <a>ხელშეკრულებები</a>
-                            <a>სამედიცინო პროვაიდერები</a>
+                           <a className="text-secondary">ხელშეკრულებები</a>
+                            <a className="text-secondary">სამედიცინო პროვაიდერები</a>
                         </Col>
                         <h6 className="fw-bold my-2">დახმარება</h6>
                         <Col xs={6} className="w-50 my-1">
-                            <a href="/contact-us">კონტაქტი</a>
-                            <a>მომხმარებლის ხმა</a>
+                            <a className="text-secondary" href="/contact-us">კონტაქტი</a>
+                            <a className="text-secondary">მომხმარებლის ხმა</a>
                         </Col>
                         <Col xs={6} className="w-50">
-                            <a>მონაცემთა დაცვა</a>
-                            <a>ხშირად დასმული კითხვები</a>
+                            <a className="text-secondary">მონაცემთა დაცვა</a>
+                            <a className="text-secondary">ხშირად დასმული კითხვები</a>
                         </Col>
                     </Row>
                 </Container>

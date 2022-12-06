@@ -14,6 +14,7 @@ import {ReactComponent as MobileJudicial} from "./insuranceIcons/mobile/Path233.
 import {ReactComponent as MobileObligatory} from "./insuranceIcons/mobile/Union5.svg";
 import {ReactComponent as MobileCallAgent} from "./insuranceIcons/mobile/CallAgent.svg";
 import {ReactComponent as PhoneNumber} from "./insuranceIcons/mobile/Subtraction7.svg";
+import {ReactComponent as CloseButton} from "../components/insuranceIcons/mobile/Group110.svg";
 
 export default function MainNavbar({showButton, className, mobileLogo}) {
     const [overlayShow, setOverlayShow] = useState(false);
@@ -74,11 +75,13 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                                                 {...props}
                                                 className="mainNavbarOverlay py-4"
                                             >
-                                                <div className="px-xl-2 px-lg-0"><Health className="overlayIcons" fill="#006A9F"
-                                                                              width="1.3rem"/><a>ინდივიდუალური
+                                                <div className="px-xl-2 px-lg-0"><Health className="overlayIcons"
+                                                                                         fill="#006A9F"
+                                                                                         width="1.3rem"/><a>ინდივიდუალური
                                                     ჯანმრთელობის დაზღვევა</a></div>
-                                                <div className="px-xl-2 px-lg-0"><Car className="overlayIcons" fill="#006A9F"
-                                                                           width="1.3rem"/><a>ავტოდაზღვევა
+                                                <div className="px-xl-2 px-lg-0"><Car className="overlayIcons"
+                                                                                      fill="#006A9F"
+                                                                                      width="1.3rem"/><a>ავტოდაზღვევა
                                                     - პაკეტები</a></div>
                                                 <div className="px-xl-2 px-lg-0" ref={target2} onMouseEnter={() => {
                                                     setSmallOverlayShow((prevState) => !prevState)
@@ -88,8 +91,10 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                                                     <img className="rightArrow"
                                                          src="img/footerIcons/keyboard_arrow_right_black_24dp.svg"/>
                                                 </div>
-                                                <div className="px-xl-2 px-lg-0"><Person className="overlayIcons" fill="#006A9F"
-                                                                              width="2rem"/><a>მძღოლის პასუხისმგებლობის
+                                                <div className="px-xl-2 px-lg-0"><Person className="overlayIcons"
+                                                                                         fill="#006A9F"
+                                                                                         width="2rem"/><a>მძღოლის
+                                                    პასუხისმგებლობის
                                                     დაზღვევა</a></div>
                                                 <Overlay target={target2.current} show={smallOverlayShow}
                                                          placement="right">
@@ -114,11 +119,15 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                                         )}
                             </Overlay>
                         </Nav.Link>
-                        <Nav.Link href="#judicial" className="mx-xl-2 px-xl-2 mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">იურიდიული პირებისთვის</Nav.Link>
-                        <Nav.Link href="#obligatory" className="mx-xl-2 px-xl-2 mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">სავალდებულო დაზღვევა</Nav.Link>
+                        <Nav.Link href="#judicial" className="mx-xl-2 px-xl-2 mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">იურიდიული
+                            პირებისთვის</Nav.Link>
+                        <Nav.Link href="#obligatory"
+                                  className="mx-xl-2 px-xl-2 mx-lg-1 px-lg-1 mx-md-0 py-3 text-light">სავალდებულო
+                            დაზღვევა</Nav.Link>
                     </Nav>
                 </Container>
-                <Nav className="mx-md-2 d-none d-lg-flex align-self-start align-items-baseline w-50 rightColumnInsideNavbar">
+                <Nav
+                    className="mx-md-2 d-none d-lg-flex align-self-start align-items-baseline w-50 rightColumnInsideNavbar">
                     {
                         showButton ? <Button variant="danger"
                                              className="buyOnlineButton text-light d-none d-lg-block align-self-start mx-xl-4 mx-lg-2 mx-md-0 px-xl-2 px-lg-0 rounded-3">
@@ -126,9 +135,10 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                             ონლაინ</Button> : null
                     }
 
-                        <Account width="3rem" fill="#707070"/>
-                        <Nav.Link href="#myaccount" className="text-light w-25 align-self-start px-xl-4 px-lg-0">ჩემი კაბინეტი</Nav.Link>
-                    </Nav>
+                    <Account width="3rem" fill="#707070"/>
+                    <Nav.Link href="#myaccount" className="text-light w-25 align-self-start px-xl-4 px-lg-0">ჩემი
+                        კაბინეტი</Nav.Link>
+                </Nav>
 
                 <Nav className="callAgentFixed bg-danger d-none d-lg-flex py-2 px-3 justify-content-center">
                     <CallAgent width="4em"/>
@@ -136,9 +146,10 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                 </Nav>
             </Navbar>
 
-            <Navbar bg="light" className={`mainNavbarMobile d-md-flex d-md-none justify-content-center align-items-start ${className}`}>
+            <Navbar bg="light"
+                    className={`mainNavbarMobile d-md-flex d-md-none justify-content-center align-items-start ${className}`}>
                 <Nav>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img src={mobileLogo}
                              width="150"
                              height="60"
@@ -152,11 +163,12 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                         onTouchEnd={handleShowFirstCanvas}
                     />
                 </Nav>
-                <Offcanvas show={showFirstCanvas} onHide={handleCloseFirstCanvas} placement="end">
-                    <Offcanvas.Header closeButton>
+                <Offcanvas show={showFirstCanvas} placement="end">
+                    <Offcanvas.Header>
                         <Offcanvas.Title>
                             <img src="img/insuranceIcons/Group2.svg"/>
                         </Offcanvas.Title>
+                        <CloseButton onTouchEnd={handleCloseFirstCanvas}/>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Navbar className="mx-md-1 my-0 px-2 d-flex justify-content-between">
@@ -199,7 +211,8 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                                 </Col>
                                 <Col sm={6} className="py-2 d-flex justify-content-between">
                                     <a className="w-50 text-decoration-none text-secondary">პარტნიორები</a>
-                                    <a className="w-50 text-decoration-none text-secondary">კონტაქტი</a>
+                                    <a className="w-50 text-decoration-none text-secondary"
+                                       href="/contact-us">კონტაქტი</a>
                                 </Col>
                             </Row>
                         </footer>
@@ -220,8 +233,12 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                         </Row>
                     </Offcanvas.Body>
                 </Offcanvas>
-                <Offcanvas show={showSecondCanvas} onHide={handleCloseSecondCanvas} placement="end">
-                    <Offcanvas.Header closeButton className="justify-content-end m-3"></Offcanvas.Header>
+                <Offcanvas show={showSecondCanvas} placement="end">
+                    <Offcanvas.Title className="d-flex justify-content-end">
+                        <CloseButton
+                            onTouchEnd={handleCloseSecondCanvas}
+                            className="my-4 mx-3"/>
+                    </Offcanvas.Title>
                     <Offcanvas.Body>
                         <div className="my-5 mx-4 text-secondary" style={{fontFamily: "BPGArial"}}>
                             <div className="d-flex align-items-start my-3">

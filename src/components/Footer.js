@@ -69,7 +69,7 @@ export default function Footer() {
                         </Col>
                         <h6 className="fw-bold my-2">დახმარება</h6>
                         <Col xs={6} className="w-50 my-1">
-                            <a>კონტაქტი</a>
+                            <a href="/contact-us">კონტაქტი</a>
                             <a>მომხმარებლის ხმა</a>
                         </Col>
                         <Col xs={6} className="w-50">

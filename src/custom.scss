@@ -140,6 +140,13 @@ body {
   }
 }
 
+.mobileFormLabels {
+  font-family: ExtraSquare, sans-serif;
+  input, textarea {
+    font-family: BPGArial, sans-serif;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .navbarBgImageCareer, .navbarBgImageContactUs {
     background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/shutterstock_627788162.png");

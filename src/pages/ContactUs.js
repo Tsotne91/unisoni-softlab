@@ -20,7 +20,6 @@ export default function ContactUs() {
                         mobileLogo="./img/insuranceIcons/Logo.svg"/>
             <Container className="d-none d-md-flex flex-md-row justify-content-center">
                 <div className="contactInfo mx-4">
-                    <div>
                         <h2>კონტაქტი</h2>
                         <h5 className="my-3">საკონტაქტო ინფორმაცია</h5>
                         <div className="my-3 py-3">
@@ -39,7 +38,6 @@ export default function ContactUs() {
                             <h6 className="px-2 d-inline">ბათუმის ოფისი:</h6><br/>
                             <span className="addresses text-secondary">დ. თავდადებულის 31, ბათუმი, საქართველო</span>
                         </div>
-                    </div>
                 </div>
                 <div
                     className="contactUsForm bg-light border border-1 rounded-4 mx-xl-4 mx-lg-1 d-none d-md-inline-block">
@@ -120,27 +118,27 @@ export default function ContactUs() {
                     </Offcanvas.Header>
 
                     <Offcanvas.Body>
-                        <Form className="px-4 py-3">
+                        <Form className="px-3 py-2">
                             <Form.Group className="mx-2">
                                 <Form.Label className="mobileFormLabels text-primary my-2 w-100">
                                     სახელი გვარი
-                                    <Form.Control type="text" placeholder="გიორგი გიორგაძე" className="py-3"/>
+                                    <Form.Control type="text" placeholder="გიორგი გიორგაძე" className="py-2"/>
                                 </Form.Label>
                             </Form.Group>
                             <Form.Group className="mx-2">
                                 <Form.Label className="mobileFormLabels text-primary my-2 w-100">
                                     ტელეფონი
-                                    <Form.Control type="number" placeholder="557141587" className="py-3"/>
+                                    <Form.Control type="number" placeholder="557141587" className="py-2"/>
                                 </Form.Label>
                             </Form.Group>
                             <Form.Group className="mx-2">
                                 <Form.Label className="mobileFormLabels text-primary my-2 w-100">ელ-ფოსტა
-                                <Form.Control type="email" placeholder="ggiorgadze@gmail.com" className="py-3"/>
+                                <Form.Control type="email" placeholder="ggiorgadze@gmail.com" className="py-2"/>
                                 </Form.Label>
                             </Form.Group>
                             <Form.Group className="mx-2">
                                 <Form.Label className="mobileFormLabels text-primary my-2 w-100">სათაური
-                                <Form.Control type="text" placeholder="სათაური" className="py-3"/>
+                                <Form.Control type="text" placeholder="სათაური" className="py-2"/>
                                 </Form.Label>
                             </Form.Group>
                             <Form.Group className="mx-2">
@@ -149,7 +147,7 @@ export default function ContactUs() {
                                 </Form.Label>
                             </Form.Group>
                             <Form.Group className="d-flex justify-content-center">
-                            <Button className="my-3 mx-1 p-3 rounded-4 fs-5" type="submit">
+                            <Button className="my-3 mx-1 px-3 py-2 rounded-3 fs-5" type="submit">
                                 <img src="/img/insuranceIcons/send_black_24dp.svg" alt="sendIcon"/> გაგზავნა
                             </Button>
                             </Form.Group>

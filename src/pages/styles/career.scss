@@ -1,0 +1,15 @@
+@import "../../variables";
+
+.careerMain {
+  @include headerPosition();
+  p {
+    font-size: $smallFont;
+    font-family: BPGArial, sans-serif;
+    :hover {
+      cursor: pointer;
+    }
+  }
+  span {
+    font-size: $smallFont;
+  }
+}

@@ -18,6 +18,7 @@ span {
   h5 {
     font-family: ExtraSquare, sans-serif;
     color: #383838;
+    font-size: 1rem;
   }
   p {
     margin-left: 2.5rem;
@@ -31,23 +32,15 @@ span {
 }
 
 .contactInfo {
-  h2 {
-  font-family: BPGMrgvlovani, sans-serif;
-  color: white;
-  position: relative;
-  bottom: 4rem;
-}
-  h4 {
-    font-family: BPGArial, sans-serif;
-    color: $primary;
-  }
+  @include headerPosition();
+
   :first-child h6{
     font-family: BPGMrgvlovani, sans-serif;
   }
 }
 
 .contactUsOffcanvas{
-  height: 85% !important;
+  height: 90% !important;
   border-radius: 15px 15px 0 0;
   box-shadow: -15px -30px 50px #7db8d5;
 }

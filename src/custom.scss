@@ -10,38 +10,6 @@
   src: local("BPGArial"), url("components/fonts/bpg_arial_2009.ttf") format('truetype');
 }
 
-@mixin overlay() {
-  background-color: $bgColor;
-  font-size: 1rem;
-  border-radius: 5px;
-  div {
-    cursor: pointer;
-
-    &:hover {
-      background-color: $danger;
-      color: white;
-
-      .overlayIcons {
-        fill: white;
-      }
-    }
-  }
-  a {
-    margin-left: 1rem;
-  }
-}
-
-@mixin adjustMainNavbarRightCol() {
-  .forBgImage {
-    align-items: start !important;
-    align-self: start !important;
-  }
-  .buyOnlineButton {
-    position: relative;
-    top: 0.5rem;
-  }
-}
-
 .rightColumnInsideNavbar {
   position: relative;
   top: 1rem;
@@ -114,10 +82,13 @@ body {
   height: $mainNavbarHeight+4rem;
 }
 
-
+.modalCloseButton{
+ cursor: pointer;
+}
 
 .mobileFormLabels {
   font-family: ExtraSquare, sans-serif;
+  font-size: $smallFont;
   input, textarea {
     font-family: BPGArial, sans-serif;
   }
@@ -291,6 +262,7 @@ body {
 
 footer {
   font-family: BPGArial, sans-serif;
+  font-size: 0.9rem;
   a {
     display: block;
     margin-bottom: 0.5rem;

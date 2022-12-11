@@ -2,13 +2,16 @@
 
 .careerMain {
   @include headerPosition();
+
   p {
     font-size: $smallFont;
     font-family: BPGArial, sans-serif;
+
     :hover {
       cursor: pointer;
     }
   }
+
   span {
     font-size: $smallFont;
   }
@@ -20,12 +23,61 @@
   bottom: 3rem;
   background: white;
   z-index: 2;
+
   h5 {
     color: $primary;
     font-family: BPGArial, sans-serif;
   }
+
   p {
     font-family: BPGArial, sans-serif;
     font-size: $smallFont;
   }
+}
+
+.careerMobile {
+  h3 {
+    color: white;
+    font-family: BPGMrgvlovani, sans-serif;
+    position: relative;
+    bottom: 3rem;
+  }
+
+  h5 {
+    font-family: BPGArial, sans-serif;
+    color: $primary;
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .accordion {
+    position: relative;
+    bottom: 3rem;
+
+    h2 {
+      font-family: BPGArial, sans-serif;
+    }
+
+    .mobileAccordionText {
+      font-family: BPGArial, sans-serif;
+      font-size: $smallFont;
+    }
+  }
+}
+
+.offcanvas-header {
+  color: $primary;
+  font-family: BPGArial, sans-serif;
+}
+
+.mobileFormLabelsUploadButton {
+  height: 0;
+  overflow: hidden;
+}
+
+.btn-light {
+  font-family: BPGArial, sans-serif;
 }

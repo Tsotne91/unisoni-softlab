@@ -2,7 +2,7 @@ import './styles/career.scss';
 import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
 import {Accordion, Button, Container, Form, Offcanvas} from "react-bootstrap";
-import {useState} from "react";
+import {useRef, useState} from "react";
 import CareerFormModal from "../components/CareerFormModal";
 import Footer from "../components/Footer";
 import {ReactComponent as CloseButton} from "../components/insuranceIcons/mobile/Group110.svg";
@@ -12,6 +12,8 @@ export default function Career() {
 
     const [modalShow, setModalShow] = useState(false);
     const [offCanvasShow, setOffCanvasShow] = useState(false);
+    const uploadButtonRef1 = useRef();
+    const uploadButtonRef2 = useRef();
 
 
     const onHide = () => setModalShow(false);
@@ -111,10 +113,10 @@ export default function Career() {
                            onHide={handleOffcanvasShow}
                            placement="bottom"
                            backdrop={false}
-                           className="contactUsOffcanvas h-75">
+                           className="careerOffcanvas h-75">
                     <Offcanvas.Header className="justify-content-between fs-5 px-4">
                         შეავსეთ ფორმა
-                        <CloseButton className="mx-2" onTouchEnd={handleOffcanvasShow}/>
+                        <CloseButton className="mx-2" onClick={handleOffcanvasShow}/>
                     </Offcanvas.Header>
 
                     <Offcanvas.Body>
@@ -166,17 +168,30 @@ export default function Career() {
                                 </Form.Label>
                             </Form.Group>
                             <Form.Group className="mx-2">
-                                <Form.Label className="mobileFormLabels text-primary w-100">განათლება
-                                    <Button variant="light" className="py-2 px-4 w-100 border border-1 rounded-4">
-                                        <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton" className="mx-3"/>
-                                        განათლების დამატება
-                                    </Button>
-                                    <div className="mobileFormLabelsUploadButton">
-                                        <Form.Control type="file"/>
-                                    </div>
+                                <Form.Label className="mobileFormLabels my-2 text-primary w-100">განათლება
+                                        <Form.Control type="file" className="mobileFormLabelsUploadButton" ref={uploadButtonRef1} hidden/>
+                                        <Button onClick={()=> uploadButtonRef1.current.click()} variant="light" className="mobileFileUploadButton py-2 px-4 w-100 border border-1 rounded-4">
+                                            <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton" className="mx-3"/>
+                                            განათლების დამატება
+                                        </Button>
                                 </Form.Label>
                             </Form.Group>
-
+                            <Form.Group className="mx-2">
+                                <Form.Label className="mobileFormLabels my-2 text-primary w-100">სამუშაო გამოცდილება
+                                    <Form.Control type="file" className="mobileFormLabelsUploadButton" ref={uploadButtonRef2} hidden/>
+                                    <Button onClick={()=> uploadButtonRef2.current.click()} variant="light" className="mobileFileUploadButton p-2 w-100 border border-1 rounded-4">
+                                        <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton" className="mx-3"/>
+                                        გამოცდილების დამატება
+                                    </Button>
+                                </Form.Label>
+                            </Form.Group>
+                            <Form.Group className="mx-2">
+                                <p className="text-secondary">
+                                    მსურს ელ-ფოსტაზე მივიღო კომპანიის მიმდინარე ვაკანსიები და სიახლეები
+                                </p>
+                                <Form.Check inline label="დიახ" type="radio" name="newsletter" />
+                                <Form.Check inline label="არა" type="radio" name="newsletter" />
+                            </Form.Group>
                             <Form.Group className="d-flex justify-content-center">
                                 <Button className="my-3 mx-1 px-3 py-2 rounded-3 fs-5" type="submit">
                                     <img src="/img/insuranceIcons/send_black_24dp.svg" alt="sendIcon"/> გაგზავნა

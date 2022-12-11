@@ -73,9 +73,19 @@
   font-family: BPGArial, sans-serif;
 }
 
-.mobileFormLabelsUploadButton {
-  height: 0;
-  overflow: hidden;
+.careerOffcanvas {
+  height: 95% !important;
+  p {
+    font-size: $smallFont;
+  }
+}
+
+.mobileFormLabelsFileInput {
+  opacity: 0;
+}
+
+.mobileFileUploadButton {
+  pointer-events: all;
 }
 
 .btn-light {

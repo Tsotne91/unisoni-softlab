@@ -160,7 +160,7 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                     <GoThreeBars
                         fill="#EE313C"
                         className="burgerButton"
-                        onTouchEnd={handleShowFirstCanvas}
+                        onClick={handleShowFirstCanvas}
                     />
                 </Nav>
                 <Offcanvas show={showFirstCanvas} placement="end">
@@ -168,7 +168,7 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                         <Offcanvas.Title>
                             <img src="img/insuranceIcons/Group2.svg"/>
                         </Offcanvas.Title>
-                        <CloseButton onTouchEnd={handleCloseFirstCanvas}/>
+                        <CloseButton onClick={handleCloseFirstCanvas}/>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Navbar className="mx-md-1 my-0 px-2 d-flex justify-content-between">
@@ -182,7 +182,7 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                         </Navbar>
                         <div className="my-4 mx-1 fs-5 text-secondary" style={{fontFamily: "BPGArial"}}>
                             <div className="d-flex align-items-center justify-content-between py-3"
-                                 onTouchEnd={handleShowSecondCanvas}>
+                                 onClick={handleShowSecondCanvas}>
                                 <MobilePhysical/>
                                 <span>ფიზიკური პირებისთვის</span>
                                 <Arrow/>
@@ -236,7 +236,7 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                 <Offcanvas show={showSecondCanvas} placement="end">
                     <Offcanvas.Title className="d-flex justify-content-end">
                         <CloseButton
-                            onTouchEnd={handleCloseSecondCanvas}
+                            onClick={handleCloseSecondCanvas}
                             className="my-4 mx-3"/>
                     </Offcanvas.Title>
                     <Offcanvas.Body>

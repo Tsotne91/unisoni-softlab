@@ -56,7 +56,7 @@ export default function Footer() {
                             <a className="text-secondary">პარტნიორები</a>
                         </Col>
                         <Col xs={6} className="w-50">
-                            <a className="text-secondary">კარიერა</a>
+                            <a  href="/career" className="text-secondary">კარიერა</a>
                         </Col>
                         <h6 className="fw-bold my-2">ინფორმაცია</h6>
                         <Col xs={6} className="w-50">

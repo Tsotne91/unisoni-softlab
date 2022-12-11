@@ -13,3 +13,19 @@
     font-size: $smallFont;
   }
 }
+
+.ourHrSquad {
+  border-bottom: 2px solid red;
+  position: relative;
+  bottom: 3rem;
+  background: white;
+  z-index: 2;
+  h5 {
+    color: $primary;
+    font-family: BPGArial, sans-serif;
+  }
+  p {
+    font-family: BPGArial, sans-serif;
+    font-size: $smallFont;
+  }
+}

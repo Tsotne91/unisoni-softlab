@@ -25,7 +25,7 @@ export default function ImageSlider(){
                     <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
                     <img src="./img/Image42.png" className="redImage"/>
                     <p>შეიძინე ონლაინ</p>
-                    <img src="./img/Path398.svg"/>
+                    <img src="./img/insuranceIcons/Path398.svg"/>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item className="carouselItem">
@@ -39,7 +39,7 @@ export default function ImageSlider(){
                     <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
                     <img src="./img/Image42.png" className="redImage"/>
                     <p>შეიძინე ონლაინ</p>
-                    <img src="./img/Path398.svg"/>
+                    <img src="./img/insuranceIcons/Path398.svg"/>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item className="carouselItem">
@@ -53,7 +53,7 @@ export default function ImageSlider(){
                     <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
                     <img src="./img/Image42.png" className="redImage"/>
                     <p>შეიძინე ონლაინ</p>
-                    <img src="./img/Path398.svg"/>
+                    <img src="./img/insuranceIcons/Path398.svg"/>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item className="carouselItem">
@@ -67,7 +67,7 @@ export default function ImageSlider(){
                     <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
                     <img src="./img/Image42.png" className="redImage"/>
                     <p>შეიძინე ონლაინ</p>
-                    <img src="./img/Path398.svg"/>
+                    <img src="./img/insuranceIcons/Path398.svg"/>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

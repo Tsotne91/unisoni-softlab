@@ -17,7 +17,7 @@
   }
 }
 
-.ourHrSquad {
+.ourHrSquadText {
   border-bottom: 2px solid red;
   position: relative;
   bottom: 3rem;
@@ -33,6 +33,41 @@
     font-family: BPGArial, sans-serif;
     font-size: $smallFont;
   }
+}
+
+.careerMgmtTeam {
+  .card {
+    width: 18rem;
+  }
+
+  .card-title {
+    color: $primary;
+  }
+
+  h6 {
+    font-size: $smallFont;
+  }
+
+  p {
+    font-size: $smallFont;
+    color: white;
+    background: $primary;
+  }
+}
+
+.modal-content {
+  h5 {
+    color: $primary;
+  }
+  .form-label {
+    color: $primary;
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+  .btn {
+
+    font-size: $smallFont;
+  }
+
 }
 
 .careerMobile {
@@ -75,6 +110,7 @@
 
 .careerOffcanvas {
   height: 95% !important;
+
   p {
     font-size: $smallFont;
   }

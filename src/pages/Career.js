@@ -1,7 +1,7 @@
 import './styles/career.scss';
 import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
-import {Accordion, Button, Container, Form, Offcanvas} from "react-bootstrap";
+import {Accordion, Button, Card, Container, Form, Offcanvas} from "react-bootstrap";
 import {useRef, useState} from "react";
 import CareerFormModal from "../components/CareerFormModal";
 import Footer from "../components/Footer";
@@ -48,7 +48,7 @@ export default function Career() {
                     <CareerFormModal modalShow={modalShow} onHide={onHide} />
 
                 </div>
-                <div className="ourHrSquad px-4 py-3 rounded-4 w-50">
+                <div className="ourHrSquadText px-4 py-3 rounded-4 w-50">
                     <h5 className="my-3">ჩვენი HR გუნდი</h5>
                     <p className="text-secondary">“უნისონი” ერთ-ერთი წამყვანი სადაზღვევო კომპანიაა საქართველოში. ამაში კი, უდიდესი წვლილი მისი ლოიალური
                         თანამშრომლების გუნდს მიუძღვის, რომელიც კომპანიას 16 წლის მანძილზე ზრდის და ავითარებს.
@@ -64,6 +64,50 @@ export default function Career() {
                         და ძალიან პოზიტიური ურთიერთთანამშრომლობა. დაკოპირებულია ირაოდან</p>
 
                 </div>
+            </Container>
+            <Container className="careerMgmtTeam d-none d-md-flex border border-2">
+                   <Card className="mx-2">
+                       <Card.Img variant="left" src="./img/careerPhotos/1.jpg"/>
+                       <Card.Body>
+                           <Card.Title>გიორგი გიორგაძე</Card.Title>
+                           <h6 className="text-secondary">გენერალური დირექტორი</h6>
+                           <Card.Text className="p-3">
+                               2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი.
+                               ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს.
+                                აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება.
+                                2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
+                               სადაც მისი კარიერა კორპორატიული კლიენტების…
+                           </Card.Text>
+                       </Card.Body>
+                   </Card>
+                   <Card className="mx-2">
+                       <Card.Img variant="left" src="./img/careerPhotos/2.jpg"/>
+                       <Card.Body>
+                           <Card.Title>გიორგი გიორგაძე</Card.Title>
+                           <h6 className="text-secondary">გენერალური დირექტორი</h6>
+                           <Card.Text className="p-3">
+                               2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი.
+                               ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს.
+                               აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება.
+                               2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
+                               სადაც მისი კარიერა კორპორატიული კლიენტების…
+                           </Card.Text>
+                       </Card.Body>
+                   </Card>
+                   <Card className="mx-2">
+                       <Card.Img variant="left" src="./img/careerPhotos/3.jpg"/>
+                       <Card.Body>
+                           <Card.Title>გიორგი გიორგაძე</Card.Title>
+                           <h6 className="text-secondary">გენერალური დირექტორი</h6>
+                           <Card.Text className="p-3">
+                               2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი.
+                               ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს.
+                               აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება.
+                               2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
+                               სადაც მისი კარიერა კორპორატიული კლიენტების…
+                           </Card.Text>
+                       </Card.Body>
+                   </Card>
             </Container>
             <Container>
                 <div className="careerMobile d-block d-md-none text-center">
@@ -108,10 +152,6 @@ export default function Career() {
                         შეავსეთ ფორმა
                       </span>
                     </p>
-
-
-
-
                 </div>
                 <Offcanvas show={offCanvasShow}
                            onHide={handleOffcanvasShow}
@@ -204,7 +244,6 @@ export default function Career() {
                         </Form>
                     </Offcanvas.Body>
                 </Offcanvas>
-
 
             </Container>
             <Footer/>

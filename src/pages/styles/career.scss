@@ -63,16 +63,31 @@
   h5 {
     color: $primary;
   }
+
   .form-label {
     color: $primary;
     font-family: BPGMrgvlovani, sans-serif;
   }
-  .btn {
+
+  .addFile {
     font-size: $smallFont;
-    width: 33%;
     background: white;
   }
 
+  .radioButtons {
+    h6, label {
+      font-size: $smallFont;
+    }
+    input {
+      padding: 0;
+    }
+  }
+  .submitButton {
+    width: 18%;
+    button {
+      font-size: $smallFont;
+    }
+  }
 }
 
 .careerMobile {

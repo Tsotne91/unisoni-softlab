@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {Col, Form, Modal, Row, Button} from "react-bootstrap";
 import {ReactComponent as CloseButton} from "../components/insuranceIcons/Component18–2.svg";
 
 function CareerFormModal({modalShow, onHide}) {
+
+    const uploadEducation = useRef();
+    const uploadExperience = useRef();
 
     return (
         <>
@@ -11,13 +14,13 @@ function CareerFormModal({modalShow, onHide}) {
                    className="px-xl-4 px-lg-2"
                    backdrop="false"
             >
-                <Modal.Header className="d-flex border-none">
+                <Modal.Header className="d-flex border border-none">
                     <h5>შეავსეთ ფორმა</h5>
                     <CloseButton onClick={onHide}
                                  className="modalCloseButton"
                     />
                 </Modal.Header>
-                <Form className="px-xl-4 px-lg-2 border-none">
+                <Form className="px-xl-4 px-lg-2 border border-none">
                     <Row className="px-xl-4 px-lg-2">
                         <Col>
                             <Form.Group className="mb-3">
@@ -40,7 +43,7 @@ function CareerFormModal({modalShow, onHide}) {
                     </Row>
                     <Row className="px-xl-4 px-lg-2">
                         <Col>
-                            <Form.Group className="mb-3" >
+                            <Form.Group className="mb-3">
                                 <Form.Label>ელ-ფოსტა</Form.Label>
                                 <Form.Control type="email" placeholder="gamezardashvili@comp.ge"/>
                             </Form.Group>
@@ -80,17 +83,45 @@ function CareerFormModal({modalShow, onHide}) {
 
                     </Row>
                     <Row className="px-xl-4 px-lg-2 py-xl-3 py-lg-0">
-                        <Form.Label>განათლება</Form.Label>
-                            <Button className="py-lg-2 text-secondary border border-1 rounded-3">
-                                <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton" className="mx-2"/>
-                                განათლების დამატება
-                            </Button>
+                        <Form.Group>
+                            <Form.Label>განათლება
+                                <Form.Control type="file" ref={uploadEducation} hidden/><br/>
+                                <Button
+                                    onClick={()=> uploadEducation.current.click()}
+                                    className="addFile lg-2 text-secondary border border-1 rounded-3">
+                                    <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton"
+                                         className="mx-2"/>
+                                    განათლების დამატება
+                                </Button>
+                            </Form.Label>
+                        </Form.Group>
                     </Row>
                     <Row className="px-xl-4 px-lg-2 py-xl-3 py-lg-0">
-                        <Form.Label>სამუშაო გამოცდილება</Form.Label>
-                        <Button className="py-lg-2 text-secondary border border-1 rounded-3">
-                            <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton" className="mx-2"/>
-                            სამუშაო გამოცდილების დამატება
+                        <Form.Group>
+                            <Form.Label>სამუშაო გამოცდილება
+                                <Form.Control type="file" ref={uploadExperience} hidden/><br/>
+                                <Button
+                                    onClick={() => uploadExperience.current.click()}
+                                    className="addFile py-lg-2 text-secondary border border-1 rounded-3">
+                                    <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton"
+                                         className="mx-2"/>
+                                    სამუშაო გამოცდილების დამატება
+                                </Button>
+                            </Form.Label>
+                        </Form.Group>
+                    </Row>
+                    <Row className="px-xl-4 px-lg-2 py-xl-3 py-lg-0">
+                        <Form.Group className="radioButtons">
+                            <h6 className="text-secondary">მსურს ელ-ფოსტაზე მივიღო კომპანიის მიმდინარე ვაკანსიები და
+                                სიახლეები</h6>
+                            <Form.Check inline label="დიახ" name="group1" type='radio' id={`inline-'radio'-1`}/>
+                            <Form.Check inline label="არა" name="group1" type='radio' id={`inline-'radio'-2`}/>
+                        </Form.Group>
+                    </Row>
+                    <Row className="submitButton px-xl-4 px-lg-2 py-xl-3 py-lg-0">
+                        <Button type="submit" variant="primary" className="rounded-3 py-2 my-2">
+                            <img src="/img/insuranceIcons/send_black_24dp.svg" alt="sendIcon" className="mx-2"/>
+                            გაგზავნა
                         </Button>
                     </Row>
                 </Form>

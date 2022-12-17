@@ -211,7 +211,7 @@ export default function Career() {
                             </Form.Group>
                             <Form.Group className="mx-2">
                                 <Form.Label className="mobileFormLabels my-2 text-primary w-100">განათლება
-                                        <Form.Control type="file" className="mobileFormLabelsUploadButton" ref={uploadButtonRef1} hidden/>
+                                        <Form.Control type="file" ref={uploadButtonRef1} hidden/>
                                         <Button onClick={()=> uploadButtonRef1.current.click()} variant="light" className="mobileFileUploadButton py-2 px-4 w-100 border border-1 rounded-4">
                                             <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton" className="mx-3"/>
                                             განათლების დამატება
@@ -220,7 +220,7 @@ export default function Career() {
                             </Form.Group>
                             <Form.Group className="mx-2">
                                 <Form.Label className="mobileFormLabels my-2 text-primary w-100">სამუშაო გამოცდილება
-                                    <Form.Control type="file" className="mobileFormLabelsUploadButton" ref={uploadButtonRef2} hidden/>
+                                    <Form.Control type="file" ref={uploadButtonRef2} hidden/>
                                     <Button onClick={()=> uploadButtonRef2.current.click()} variant="light" className="mobileFileUploadButton p-2 w-100 border border-1 rounded-4">
                                         <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton" className="mx-3"/>
                                         გამოცდილების დამატება

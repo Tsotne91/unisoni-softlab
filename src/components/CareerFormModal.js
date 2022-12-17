@@ -9,6 +9,7 @@ function CareerFormModal({modalShow, onHide}) {
             <Modal show={modalShow}
                    size="xl"
                    className="px-xl-4 px-lg-2"
+                   backdrop="false"
             >
                 <Modal.Header className="d-flex border-none">
                     <h5>შეავსეთ ფორმა</h5>
@@ -78,16 +79,16 @@ function CareerFormModal({modalShow, onHide}) {
                         </Col>
 
                     </Row>
-                    <Row>
+                    <Row className="px-xl-4 px-lg-2 py-xl-3 py-lg-0">
                         <Form.Label>განათლება</Form.Label>
-                            <Button className="py-2 bg-light text-secondary border border-1 rounded-3">
+                            <Button className="py-lg-2 text-secondary border border-1 rounded-3">
                                 <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton" className="mx-2"/>
                                 განათლების დამატება
                             </Button>
                     </Row>
-                    <Row>
+                    <Row className="px-xl-4 px-lg-2 py-xl-3 py-lg-0">
                         <Form.Label>სამუშაო გამოცდილება</Form.Label>
-                        <Button className="py-2 bg-light text-secondary border border-1 rounded-3">
+                        <Button className="py-lg-2 text-secondary border border-1 rounded-3">
                             <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton" className="mx-2"/>
                             სამუშაო გამოცდილების დამატება
                         </Button>

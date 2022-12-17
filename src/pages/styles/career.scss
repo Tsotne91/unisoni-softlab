@@ -56,6 +56,10 @@
 }
 
 .modal-content {
+  input {
+    padding: 1rem;
+  }
+
   h5 {
     color: $primary;
   }
@@ -64,8 +68,9 @@
     font-family: BPGMrgvlovani, sans-serif;
   }
   .btn {
-
     font-size: $smallFont;
+    width: 33%;
+    background: white;
   }
 
 }

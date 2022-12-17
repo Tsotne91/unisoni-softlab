@@ -46,7 +46,6 @@ export default function Career() {
                       </span>
                    </p>
                     <CareerFormModal modalShow={modalShow} onHide={onHide} />
-
                 </div>
                 <div className="ourHrSquadText px-4 py-3 rounded-4 w-50">
                     <h5 className="my-3">ჩვენი HR გუნდი</h5>
@@ -62,8 +61,7 @@ export default function Career() {
                         და ზრუნვა მათ კმაყოფილებასა და განვითარებაზე. ასევე, არანაკლები ყურადღება ეთმობა კომპანიის ზრდის
                         ფონზე, თანამშრომელთა ლოიალობის შენარჩუნებას.<br/><br/> ჩვენი გუნდის გამორჩეული თვისებაა კოლეგიურობა
                         და ძალიან პოზიტიური ურთიერთთანამშრომლობა. დაკოპირებულია ირაოდან</p>
-
-                </div>
+                    </div>
             </Container>
             <Container className="careerMgmtTeam d-none d-md-flex border border-2">
                    <Card className="mx-2">

@@ -6,7 +6,7 @@ import {useRef} from "react";
 export default function UnisonHistorySlider(){
 
     const sliderWrapper = useRef();
-    const moveSlider = (dir) => sliderWrapper.current.scrollLeft += dir*280;
+    const moveSlider = (dir) => sliderWrapper.current.scrollLeft += dir*350;
 
     return (
         <>
@@ -14,8 +14,8 @@ export default function UnisonHistorySlider(){
                 <div className="unisonHistoryTitle d-flex flex-column">
                     <h4 className="text-primary align-self-center d-inline">უნისონის ისტორია</h4>
                     <div className="align-self-end d-inline-block">
-                        <LeftArrow className="mx-2 d-inline cursor-pointer" onClick={()=>moveSlider(-1)}/>
-                        <RightArrow className="mx-2 d-inline cursor-pointer" onClick={()=>moveSlider(1)}/>
+                        <LeftArrow className="sliderArrows mx-2 d-inline" onClick={()=>moveSlider(-1)}/>
+                        <RightArrow className="sliderArrows mx-2 d-inline" onClick={()=>moveSlider(1)}/>
                     </div>
                 </div>
             </Container>
@@ -110,7 +110,6 @@ export default function UnisonHistorySlider(){
                                     დისტანციურ მიწოდებას
                                 </p>
                                 <img src="/img/aboutUsPhotos/Rectangle 819.png" alt="sliderImage"  className="my-2"/>
-
                             </Card>
                         </Col>
                     </Row>

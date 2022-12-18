@@ -6,20 +6,33 @@ import {useRef, useState} from "react";
 import CareerFormModal from "../components/CareerFormModal";
 import Footer from "../components/Footer";
 import {ReactComponent as CloseButton} from "../components/insuranceIcons/mobile/Group110.svg";
+import FormSubmitted from "../components/FormSubmitted";
 
 
 export default function Career() {
 
     const [modalShow, setModalShow] = useState(false);
     const [offCanvasShow, setOffCanvasShow] = useState(false);
+    const [formSubmittedShow, setFormSubmittedShow] = useState(false);
     const uploadButtonRef1 = useRef();
     const uploadButtonRef2 = useRef();
 
 
-    const onHide = () => setModalShow(false);
-    const handleShow = () => setModalShow(true);
-    const handleOffcanvasShow = () => offCanvasShow ? setOffCanvasShow(false) : setOffCanvasShow(true);
+    const onHide = () =>
+        setModalShow(false);
 
+    const handleModalShow = () =>
+        setModalShow(true);
+
+    const handleOffcanvasShow = () =>
+        offCanvasShow ? setOffCanvasShow(false) : setOffCanvasShow(true);
+
+    const handleFormSubmittedShow = (formValues) => {
+          setModalShow(false);
+         setFormSubmittedShow(true);
+    }
+
+    const hideFormSubmitted = () => setFormSubmittedShow(false);
 
     return (
         <>
@@ -38,14 +51,15 @@ export default function Career() {
                        ატვირთეთ CV
                    </Button>
                    <p className="my-3"
-                    onClick={handleShow}
+                    onClick={handleModalShow}
                    >ან
                        <img src="/img/insuranceIcons/Path 285.svg" alt="icon" className="mx-2"/>
                       <span className="text-decoration-underline">
                         შეავსეთ ფორმა
                       </span>
                    </p>
-                    <CareerFormModal modalShow={modalShow} onHide={onHide} />
+                    <CareerFormModal modalShow={modalShow} onHide={onHide} onFormSubmit={handleFormSubmittedShow}/>
+                    <FormSubmitted formSubmittedShow={formSubmittedShow} onHide={hideFormSubmitted}/>
                 </div>
                 <div className="ourHrSquadText px-4 py-3 rounded-4 w-50">
                     <h5 className="my-3">ჩვენი HR გუნდი</h5>
@@ -72,8 +86,8 @@ export default function Career() {
                            <Card.Text className="p-3">
                                2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი.
                                ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს.
-                                აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება.
-                                2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
+                               აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება.
+                               2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
                                სადაც მისი კარიერა კორპორატიული კლიენტების…
                            </Card.Text>
                        </Card.Body>

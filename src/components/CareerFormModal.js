@@ -1,11 +1,19 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import {Col, Form, Modal, Row, Button} from "react-bootstrap";
 import {ReactComponent as CloseButton} from "../components/insuranceIcons/Component18–2.svg";
 
-function CareerFormModal({modalShow, onHide}) {
+function CareerFormModal({modalShow, onHide, onFormSubmit}) {
 
+
+    const [formValues, setFormValues] = useState({});
     const uploadEducation = useRef();
     const uploadExperience = useRef();
+
+    const handleSubmit = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        onFormSubmit && onFormSubmit(formValues);
+    }
 
     return (
         <>
@@ -20,7 +28,7 @@ function CareerFormModal({modalShow, onHide}) {
                                  className="modalCloseButton"
                     />
                 </Modal.Header>
-                <Form className="px-xl-4 px-lg-2 border border-none">
+                <Form className="px-xl-4 px-lg-2 border border-none" onSubmit={handleSubmit}>
                     <Row className="px-xl-4 px-lg-2">
                         <Col>
                             <Form.Group className="mb-3">
@@ -87,12 +95,15 @@ function CareerFormModal({modalShow, onHide}) {
                             <Form.Label>განათლება
                                 <Form.Control type="file" ref={uploadEducation} hidden/><br/>
                                 <Button
-                                    onClick={()=> uploadEducation.current.click()}
+                                    onClick={()=>
+                                    {   uploadEducation.current.click();
+                                    }}
                                     className="addFile lg-2 text-secondary border border-1 rounded-3">
                                     <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton"
                                          className="mx-2"/>
                                     განათლების დამატება
                                 </Button>
+                                {/*take value from form value state*/}
                             </Form.Label>
                         </Form.Group>
                     </Row>
@@ -101,12 +112,17 @@ function CareerFormModal({modalShow, onHide}) {
                             <Form.Label>სამუშაო გამოცდილება
                                 <Form.Control type="file" ref={uploadExperience} hidden/><br/>
                                 <Button
-                                    onClick={() => uploadExperience.current.click()}
+                                    onClick={() => {
+                                        uploadExperience.current.click();
+                                    }}
                                     className="addFile py-lg-2 text-secondary border border-1 rounded-3">
                                     <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton"
                                          className="mx-2"/>
                                     სამუშაო გამოცდილების დამატება
                                 </Button>
+                                <div>
+
+                                </div>
                             </Form.Label>
                         </Form.Group>
                     </Row>
@@ -119,7 +135,8 @@ function CareerFormModal({modalShow, onHide}) {
                         </Form.Group>
                     </Row>
                     <Row className="submitButton px-xl-4 px-lg-2 py-xl-3 py-lg-0">
-                        <Button type="submit" variant="primary" className="rounded-3 py-2 my-2">
+                        <Button
+                            type="submit" variant="primary" className="rounded-3 py-2 my-2">
                             <img src="/img/insuranceIcons/send_black_24dp.svg" alt="sendIcon" className="mx-2"/>
                             გაგზავნა
                         </Button>

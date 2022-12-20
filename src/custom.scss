@@ -117,9 +117,11 @@ body {
   z-index: 8;
 }
 
-.sliderArrows:hover {
+.sliderArrows:hover, .sliderCards:hover {
   cursor: pointer;
 }
+
+
 
 .rightArrow {
   margin-left: 12rem;

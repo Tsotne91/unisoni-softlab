@@ -8,6 +8,24 @@ export default function UnisonHistorySlider(){
     const sliderWrapper = useRef();
     const moveSlider = (dir) => sliderWrapper.current.scrollLeft += dir*350;
 
+    let mouseDown = false;
+    let startX, scrollLeft;
+    const startDragging = e => {
+        mouseDown = true;
+        startX = e.pageX-sliderWrapper.current.offsetLeft;
+        scrollLeft = sliderWrapper.current.scrollLeft;
+    };
+    const stopDragging = e => {
+        mouseDown=false;
+    };
+    const mouseMove = e => {
+        e.preventDefault();
+        if (!mouseDown) {return;}
+        const x = e.pageX - sliderWrapper.current.offsetLeft;
+        const scroll = x-startX;
+        sliderWrapper.current.scrollLeft = scrollLeft - scroll;
+    };
+
     return (
         <>
             <Container>
@@ -18,12 +36,15 @@ export default function UnisonHistorySlider(){
                         <RightArrow className="sliderArrows mx-2 d-inline" onClick={()=>moveSlider(1)}/>
                     </div>
                 </div>
-            </Container>
-            <Container>
-                <div ref={sliderWrapper} className="d-block overflow-hidden">
+                <div ref={sliderWrapper}
+                     onMouseDown={startDragging}
+                     onMouseUp={stopDragging}
+                     onMouseLeave={stopDragging}
+                     onMouseMove={mouseMove}
+                     className="d-block overflow-hidden">
                     <Row className="d-flex flex-row flex-nowrap align-items-end">
                         <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">
-                            <Card className="sliderCards px-md-2 p-lg-2 border-0">
+                            <Card className="sliderCards px-md-2 p-lg-2 border-0 mx-xs-3">
                                 <div>
                                     <p className="py-4 px-3 bg-light rounded-3">
                                         უნისონი დაარსდა და საერთაშორისო
@@ -45,7 +66,6 @@ export default function UnisonHistorySlider(){
                                     ჯეიჰანის მილსადენის ექსკლუზიურ Მზღვეველად
                                 </p>
                                 <img src="/img/aboutUsPhotos/Rectangle 805.png" alt="sliderImage"  className="my-2"/>
-
                             </Card>
                         </Col>
                         <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">

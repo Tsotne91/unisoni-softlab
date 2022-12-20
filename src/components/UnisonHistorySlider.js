@@ -41,11 +41,10 @@ export default function UnisonHistorySlider(){
                      onMouseUp={stopDragging}
                      onMouseLeave={stopDragging}
                      onMouseMove={mouseMove}
-                     className="d-block overflow-hidden">
+                     className="sliderWrapper d-block">
                     <Row className="d-flex flex-row flex-nowrap align-items-end">
                         <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">
                             <Card className="sliderCards px-md-2 p-lg-2 border-0 mx-xs-3">
-                                <div>
                                     <p className="py-4 px-3 bg-light rounded-3">
                                         უნისონი დაარსდა და საერთაშორისო
                                         გადამზღვევა კომპანიებთან
@@ -54,7 +53,6 @@ export default function UnisonHistorySlider(){
                                         პროდუქციის მრავალფეროვანი სპექტრი
                                     </p>
                                     <img src="/img/aboutUsPhotos/Rectangle 804.png" alt="sliderImage" className="my-2"/>
-                                </div>
                             </Card>
                         </Col>
                         <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">

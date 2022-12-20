@@ -107,7 +107,15 @@ body {
     height: $mainNavbarHeight+15rem;
     @include adjustMainNavbarRightCol();
   }
+  .sliderWrapper {
+    overflow: hidden;
+  }
 }
+@media only screen and (max-width: 768px) {
+  .sliderWrapper {
+  overflow: scroll;
+}}
+
 
 .mainNavbarOverlay {
   @include overlay();

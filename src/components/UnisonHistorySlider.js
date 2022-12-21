@@ -15,7 +15,7 @@ export default function UnisonHistorySlider(){
         startX = e.pageX-sliderWrapper.current.offsetLeft;
         scrollLeft = sliderWrapper.current.scrollLeft;
     };
-    const stopDragging = e => {
+    const stopDragging = () => {
         mouseDown=false;
     };
     const mouseMove = e => {
@@ -31,7 +31,7 @@ export default function UnisonHistorySlider(){
             <Container>
                 <div className="unisonHistoryTitle d-flex flex-column">
                     <h4 className="text-primary align-self-center d-inline">უნისონის ისტორია</h4>
-                    <div className="align-self-end d-inline-block">
+                    <div className="sliderArrowsWrapper align-self-end d-inline">
                         <LeftArrow className="sliderArrows mx-2 d-inline" onClick={()=>moveSlider(-1)}/>
                         <RightArrow className="sliderArrows mx-2 d-inline" onClick={()=>moveSlider(1)}/>
                     </div>
@@ -43,7 +43,7 @@ export default function UnisonHistorySlider(){
                      onMouseMove={mouseMove}
                      className="sliderWrapper d-block">
                     <Row className="d-flex flex-row flex-nowrap align-items-end">
-                        <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">
+                        <Col xl={3} lg={4} md={6} sm={10} xs={10} className="sliderCardCols mx-xl-3 mx-xs-1">
                             <Card className="sliderCards px-md-2 p-lg-2 border-0 mx-xs-3">
                                     <p className="py-4 px-3 bg-light rounded-3">
                                         უნისონი დაარსდა და საერთაშორისო
@@ -55,7 +55,7 @@ export default function UnisonHistorySlider(){
                                     <img src="/img/aboutUsPhotos/Rectangle 804.png" alt="sliderImage" className="my-2"/>
                             </Card>
                         </Col>
-                        <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">
+                        <Col xl={3} lg={4} md={6} sm={10} xs={10} className="sliderCardCols mx-xl-3 mx-xs-1">
                             <Card className="sliderCards px-md-2 p-lg-2 border-0">
 
                                 <p className="py-4 px-3 bg-light rounded-3">
@@ -66,7 +66,7 @@ export default function UnisonHistorySlider(){
                                 <img src="/img/aboutUsPhotos/Rectangle 805.png" alt="sliderImage"  className="my-2"/>
                             </Card>
                         </Col>
-                        <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">
+                        <Col xl={3} lg={4} md={6} sm={10} xs={10} className="sliderCardCols mx-xl-3 mx-xs-1">
                             <Card className="sliderCards px-md-2 p-lg-2 border-0">
 
                                 <p className="py-4 px-3 bg-light rounded-3">
@@ -77,7 +77,7 @@ export default function UnisonHistorySlider(){
 
                             </Card>
                         </Col>
-                        <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">
+                        <Col xl={3} lg={4} md={6} sm={10} xs={10} className="sliderCardCols mx-xl-3 mx-xs-1">
                             <Card className="sliderCards px-md-2 p-lg-2 border-0">
 
                                 <p className="py-4 px-3 bg-light rounded-3">
@@ -88,7 +88,7 @@ export default function UnisonHistorySlider(){
 
                             </Card>
                         </Col>
-                        <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">
+                        <Col xl={3} lg={4} md={6} sm={10} xs={10}className="sliderCardCols mx-xl-3 mx-xs-1">
                             <Card className="sliderCards px-md-2 p-lg-2 border-0">
                                 <p className="py-4 px-3 bg-light rounded-3">
                                     უნისონი აზღვევს საქართველოს საჰაერო სივრცეს,
@@ -100,7 +100,7 @@ export default function UnisonHistorySlider(){
 
                             </Card>
                         </Col>
-                        <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">
+                        <Col xl={3} lg={4} md={6} sm={10} xs={10} className="sliderCardCols mx-xl-3 mx-xs-1">
                             <Card className="sliderCards px-md-2 p-lg-2 border-0">
                                 <p className="py-4 px-3 bg-light rounded-3">
                                     უნისონი აზღვევს ქვეყნის მასშტაბით უმსხვილეს ინდუსტრიულ
@@ -110,7 +110,7 @@ export default function UnisonHistorySlider(){
 
                             </Card>
                         </Col>
-                        <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1">
+                        <Col xl={3} lg={4} md={6} sm={10} xs={10} className="sliderCardCols mx-xl-3 mx-xs-1">
                             <Card className="sliderCards px-md-2 p-lg-2 border-0">
                                 <p className="py-4 px-3 bg-light rounded-3">
                                     უნისონი ანაზღაურებს აღმოსავლეთ ევროპის მასშტაბით ერთ-ერთ
@@ -120,7 +120,7 @@ export default function UnisonHistorySlider(){
 
                             </Card>
                         </Col>
-                        <Col xl={3} lg={4} md={6} sm={8} xs={8} className="mx-xl-3 mx-xs-1 mx-xs-1">
+                        <Col xl={3} lg={4} md={6} sm={10} xs={10} className="sliderCardCols mx-xl-3 mx-xs-1 mx-xs-1">
                             <Card className="sliderCards px-md-2 p-lg-2 border-0">
                                 <p className="py-4 px-3 bg-light rounded-3">
                                     უნისონი უზრუნველყოფს პანდემიით გამოწვეული

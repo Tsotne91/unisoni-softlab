@@ -5,9 +5,27 @@ import {ReactComponent as CloseButton} from "../components/insuranceIcons/Compon
 function CareerFormModal({modalShow, onHide, onFormSubmit}) {
 
 
+    const initialFormValues = {
+        name: "",
+        surname: "",
+        phoneNumber: "",
+        emailAddress: "",
+        birthDate: Date(),
+        desiredCity: "",
+        desiredPosition: "",
+        desiredSection: "",
+        desiredSalary: "",
+        education: null,
+        experience: null,
+        newsletter: false
+    }
     const [formValues, setFormValues] = useState({});
     const uploadEducation = useRef();
     const uploadExperience = useRef();
+
+    const changeHandler = (field) => {
+        return (event) => setFormValues({...formValues, [field]: event.target.value})
+    }
 
     const handleSubmit = (e) => {
         e.stopPropagation();
@@ -33,19 +51,28 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                         <Col>
                             <Form.Group className="mb-3">
                                 <Form.Label>სახელი</Form.Label>
-                                <Form.Control placeholder="გიორგი"/>
+                                <Form.Control placeholder="გიორგი"
+                                              value={formValues.name}
+                                              onChange={changeHandler("name")}
+                                />
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group className="mb-3">
                                 <Form.Label>გვარი</Form.Label>
-                                <Form.Control placeholder="გამეზარდაშვილი"/>
+                                <Form.Control placeholder="გამეზარდაშვილი"
+                                              value={formValues.surname}
+                                              onChange={changeHandler("surname")}
+                                />
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group className="mb-3">
                                 <Form.Label>ტელეფონი</Form.Label>
-                                <Form.Control placeholder="557141587"/>
+                                <Form.Control placeholder="557141587"
+                                              value={formValues.phoneNumber}
+                                              onChange={changeHandler("phoneNumber")}
+                                />
                             </Form.Group>
                         </Col>
                     </Row>
@@ -53,19 +80,28 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                         <Col>
                             <Form.Group className="mb-3">
                                 <Form.Label>ელ-ფოსტა</Form.Label>
-                                <Form.Control type="email" placeholder="gamezardashvili@comp.ge"/>
+                                <Form.Control type="email" placeholder="gamezardashvili@comp.ge"
+                                              value={formValues.emailAddress}
+                                              onChange={changeHandler("emailAddress")}
+                                />
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group className="mb-3">
                                 <Form.Label>დაბადების თარიღი</Form.Label>
-                                <Form.Control type="date" placeholder="11 / 07 / 86"/>
+                                <Form.Control type="date" placeholder="11 / 07 / 86"
+                                              value={formValues.birthDate}
+                                              onChange={changeHandler("birthDate")}
+                                />
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group className="mb-3">
                                 <Form.Label>რომელ ქალაქში გსურთ მუშაობა?</Form.Label>
-                                <Form.Control placeholder="gamezardashvili@comp.ge"/>
+                                <Form.Control placeholder="თბილისი"
+                                              value={formValues.desiredCity}
+                                              onChange={changeHandler("desiredCity")}
+                                />
                             </Form.Group>
                         </Col>
                     </Row>
@@ -73,13 +109,19 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                         <Col>
                             <Form.Group className="mb-3">
                                 <Form.Label>რა დონის პოზიცია გაინტერესებთ?</Form.Label>
-                                <Form.Control placeholder="gamezardashvili@comp.ge"/>
+                                <Form.Control placeholder="gamezardashvili@comp.ge"
+                                              value={formValues.desiredPosition}
+                                              onChange={changeHandler("desiredPosition")}
+                                />
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group className="mb-3">
                                 <Form.Label>რა მიმართულებით გსურთ მუშაობა?</Form.Label>
-                                <Form.Control placeholder="თბილისი"/>
+                                <Form.Control placeholder="აგენტი"
+                                              value={formValues.desiredSection}
+                                              onChange={changeHandler("desiredSection")}
+                                />
                             </Form.Group>
                         </Col>
                         <Col>

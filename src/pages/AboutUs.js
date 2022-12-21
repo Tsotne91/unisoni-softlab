@@ -15,7 +15,7 @@ export default function AboutUs() {
             <MainNavbar showButton={true} className='navbarBgImageAboutUs' mobileLogo="./img/insuranceIcons/Group334.svg"/>
             <Container className="d-none d-md-block">
                 <h1 className="text-light d-flex justify-content-center">ჩვენს შესახებ</h1>
-                <p className="text-secondary text-center p-2 my-4">
+                <p className="aboutUsMain text-secondary text-center p-2 my-4">
                     სადაზღვევო კომპანია "უნისონი" დაფუძნდა 2011 წელს და დროის
                     მცირე მონაკვეთში ქართული სადაზღვევო ბაზრის ერთ-ერთ თვალსაჩინო
                     მოთამაშედ იქცა. სადაზღვევო სფეროში, მენეჯმენტის მრავალწლიანი გამოცდილებითა

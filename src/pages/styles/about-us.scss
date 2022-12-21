@@ -26,9 +26,21 @@ h1 {
   }
 }
 
-
-p {
+.aboutUsMain {
   font-size: 1.1rem;
+}
+
+.sliderArrowsWrapper {
+  position: relative;
+  bottom: 2.5rem;
+}
+
+.sliderArrows:hover, .sliderCards:hover {
+  cursor: pointer;
+}
+
+.rightArrow {
+  margin-left: 12rem;
 }
 
 .sliderCards {

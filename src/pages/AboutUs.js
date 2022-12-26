@@ -11,8 +11,9 @@ export default function AboutUs() {
 
     return (
         <>
-            <TopNavbar showButton={false}/>
-            <MainNavbar showButton={true} className='navbarBgImageAboutUs' mobileLogo="./img/insuranceIcons/Group334.svg"/>
+             <TopNavbar showButton={false}/>
+            <MainNavbar showButton={true} className='navbarBgImageAboutUs'
+                        mobileLogo="./img/insuranceIcons/Group334.svg"/>
             <Container className="d-none d-md-block">
                 <h1 className="text-light d-flex justify-content-center">ჩვენს შესახებ</h1>
                 <p className="aboutUsMain text-secondary text-center p-2 my-4">
@@ -28,6 +29,55 @@ export default function AboutUs() {
                 </p>
             </Container>
             <UnisonHistorySlider/>
+            <Container>
+                <div className="unisonToday my-2 d-flex flex-column">
+                    <h4 className="text-primary align-self-center d-inline">უნისონი დღეს</h4>
+                    <div className="d-flex justify-content-center w-100">
+                        <div className="unisonTodayDivs d-flex flex-column py-3 mx-2">
+                            <img src="./img/insuranceIcons/unisonToday/Image 19.png" alt="icon"
+                                 className="my-2 align-self-center"/>
+                            <h4 className="text-light my-2 align-self-center">მისია</h4>
+                            <p className="text-light my-3 text-center align-self-center">ჩვენი მისიაა ხელი შევუწყოთ
+                                ფინანსურ დაცულობასა და სტაბილურობას;
+                                თქვენთან ერთად მუდმივად ვიზრუნოთ ცხოვრების გამარტივებასა და სიმშვიდეზე.</p>
+                        </div>
+                        <div className="unisonTodayDivs d-flex flex-column py-3 mx-2">
+                            <img src="./img/insuranceIcons/unisonToday/Image 20.png" alt="icon"
+                                 className="my-2 align-self-center"/>
+                            <h4 className="text-light my-2 align-self-center">სტანდარტი</h4>
+                            <p className="unisonTodayDivList text-light d-flex justify-content-center">
+                                <div>
+                                    <ul>
+                                        <li>პროფესიონალიზმი</li>
+                                        <li>განვითარება</li>
+                                        <li>სიძლიერე</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>სტაბილურობა</li>
+                                        <li>სანდოობა</li>
+                                        <li>მრავალფეროვნება</li>
+                                    </ul>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="unisonToday d-flex justify-content-center">
+                    <div className="unisonTodayDivs d-flex flex-column py-3 mx-2">
+                        <img src="./img/insuranceIcons/unisonToday/Image 18@2x.png" alt="icon"
+                        className="my-2 align-self-center"/>
+                        <h4 className="text-light my-2 align-self-center">ღირებულებები</h4>
+                        <p className="text-light text-center align-self-center">
+                            ჩვენ ვქმნით კომპანიას, რომელიც მაღალპროფესიონალური
+                            სადაზღვევო სერვისებითა და ურთიერთობის გამორჩეული
+                            სტილით, თქვენი გრძელვადიანი და სანდო პარტნიორია.
+                        </p>
+
+                    </div>
+                </div>
+            </Container>
             <Footer/>
         </>
     )

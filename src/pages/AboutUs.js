@@ -30,8 +30,8 @@ export default function AboutUs() {
             </Container>
             <UnisonHistorySlider/>
             <Container>
-                <div className="unisonToday my-2 d-flex flex-column">
-                    <h4 className="text-primary align-self-center d-inline">უნისონი დღეს</h4>
+                <div className="unisonToday unisonHistoryTitle my-2 d-flex flex-column">
+                    <h4 className=" text-primary align-self-center d-inline">უნისონი დღეს</h4>
                     <div className="d-flex justify-content-center w-100">
                         <div className="unisonTodayDivs d-flex flex-column py-3 mx-2">
                             <img src="./img/insuranceIcons/unisonToday/Image 19.png" alt="icon"
@@ -45,7 +45,7 @@ export default function AboutUs() {
                             <img src="./img/insuranceIcons/unisonToday/Image 20.png" alt="icon"
                                  className="my-2 align-self-center"/>
                             <h4 className="text-light my-2 align-self-center">სტანდარტი</h4>
-                            <p className="unisonTodayDivList text-light d-flex justify-content-center">
+                            <div className="unisonTodayDivList text-light d-flex justify-content-center">
                                 <div>
                                     <ul>
                                         <li>პროფესიონალიზმი</li>
@@ -60,13 +60,13 @@ export default function AboutUs() {
                                         <li>მრავალფეროვნება</li>
                                     </ul>
                                 </div>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="unisonToday d-flex justify-content-center">
+                <div className="unisonToday unisonHistoryTitle d-flex justify-content-center">
                     <div className="unisonTodayDivs d-flex flex-column py-3 mx-2">
-                        <img src="./img/insuranceIcons/unisonToday/Image 18@2x.png" alt="icon"
+                        <img src="./img/insuranceIcons/unisonToday/Image 18.png" alt="icon"
                         className="my-2 align-self-center"/>
                         <h4 className="text-light my-2 align-self-center">ღირებულებები</h4>
                         <p className="text-light text-center align-self-center">

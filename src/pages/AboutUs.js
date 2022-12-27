@@ -30,10 +30,10 @@ export default function AboutUs() {
             </Container>
             <UnisonHistorySlider/>
             <Container>
-                <div className="unisonToday unisonHistoryTitle my-2 d-flex flex-column">
+                <div className="unisonToday my-2 d-flex flex-column">
                     <h4 className="text-primary align-self-center d-inline">უნისონი დღეს</h4>
                     <div className="d-flex justify-content-center w-100">
-                        <div className="unisonTodayDivs d-flex flex-column py-3 mx-2">
+                        <div className="unisonTodayDivs rounded-5 d-flex flex-column py-3 mx-2 my-1">
                             <img src="./img/insuranceIcons/unisonToday/Image 19.png" alt="icon"
                                  className="my-2 align-self-center"/>
                             <h4 className="text-light my-2 align-self-center">მისია</h4>
@@ -41,7 +41,7 @@ export default function AboutUs() {
                                 ფინანსურ დაცულობასა და სტაბილურობას;
                                 თქვენთან ერთად მუდმივად ვიზრუნოთ ცხოვრების გამარტივებასა და სიმშვიდეზე.</p>
                         </div>
-                        <div className="unisonTodayDivs d-flex flex-column py-3 mx-2">
+                        <div className="unisonTodayDivs rounded-5 d-flex flex-column py-3 mx-2 my-1">
                             <img src="./img/insuranceIcons/unisonToday/Image 20.png" alt="icon"
                                  className="my-2 align-self-center"/>
                             <h4 className="text-light my-2 align-self-center">სტანდარტი</h4>
@@ -64,8 +64,8 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
-                <div className="unisonToday unisonHistoryTitle d-flex justify-content-center">
-                    <div className="unisonTodayLastDiv d-flex flex-column py-3 mx-2">
+                <div className="unisonToday d-flex justify-content-center">
+                    <div className="unisonTodayLastDiv rounded-5 d-flex flex-column py-4 mx-2">
                         <img src="./img/insuranceIcons/unisonToday/Image 18.png" alt="icon"
                         className="my-2 align-self-center"/>
                         <h4 className="text-light my-2 align-self-center">ღირებულებები</h4>

@@ -29,7 +29,7 @@ export default function UnisonHistorySlider(){
     return (
         <>
             <Container>
-                <div className="unisonHistoryTitle d-flex flex-column">
+                <div className="unisonToday d-flex flex-column">
                     <h4 className="text-primary align-self-center d-inline">უნისონის ისტორია</h4>
                     <div className="sliderArrowsWrapper align-self-end d-inline">
                         <LeftArrow className="sliderArrows mx-2 d-inline" onClick={()=>moveSlider(-1)}/>

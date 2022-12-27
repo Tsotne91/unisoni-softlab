@@ -4,7 +4,7 @@ $sosOnHover: #ee5f6a;
 $mainNavbarHeight: 7rem;
 $bgColor: #F8F8F8;
 $smallFont: 0.8rem;
-@mixin headerPosition (){
+@mixin headerPosition() {
   h2 {
     font-family: BPGMrgvlovani, sans-serif;
     color: white;
@@ -16,6 +16,7 @@ $smallFont: 0.8rem;
     color: $primary;
   }
 }
+
 @mixin overlay() {
   background-color: $bgColor;
   font-size: 1rem;
@@ -45,5 +46,19 @@ $smallFont: 0.8rem;
   .buyOnlineButton {
     position: relative;
     top: 0.5rem;
+  }
+}
+
+@mixin adjustFontsUnisonHistory() {
+  h4 {
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+  p, li {
+    font-family: BPGArial, sans-serif;
+    font-size: $smallFont
+  }
+  p {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
   }
 }

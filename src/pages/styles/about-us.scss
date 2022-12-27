@@ -20,12 +20,6 @@ h1 {
   bottom: 4rem;
 }
 
-.unisonHistoryTitle {
-  h4 {
-    font-family: BPGMrgvlovani, sans-serif;
-  }
-}
-
 .aboutUsMain {
   font-size: 1.1rem;
 }
@@ -43,12 +37,24 @@ h1 {
   margin-left: 12rem;
 }
 
+.unisonToday {
+  h4 {
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+}
+
 .unisonTodayDivs {
   background: url("../../../public/img/Rectangle 824.png") center;
+  width: 35rem;
+  box-shadow: 3px 20px 20px 2px #7dcbfd;
+  @include adjustFontsUnisonHistory();
 }
 
 .unisonTodayLastDiv {
   background: url("../../../public/img/Rectangle 823.png") center;
+  width: 32rem;
+  box-shadow: 3px 20px 20px 2px #7dcbfd;
+  @include adjustFontsUnisonHistory();
 }
 
 .sliderCards {

@@ -31,7 +31,7 @@ export default function AboutUs() {
             <UnisonHistorySlider/>
             <Container>
                 <div className="unisonToday unisonHistoryTitle my-2 d-flex flex-column">
-                    <h4 className=" text-primary align-self-center d-inline">უნისონი დღეს</h4>
+                    <h4 className="text-primary align-self-center d-inline">უნისონი დღეს</h4>
                     <div className="d-flex justify-content-center w-100">
                         <div className="unisonTodayDivs d-flex flex-column py-3 mx-2">
                             <img src="./img/insuranceIcons/unisonToday/Image 19.png" alt="icon"
@@ -65,7 +65,7 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div className="unisonToday unisonHistoryTitle d-flex justify-content-center">
-                    <div className="unisonTodayDivs d-flex flex-column py-3 mx-2">
+                    <div className="unisonTodayLastDiv d-flex flex-column py-3 mx-2">
                         <img src="./img/insuranceIcons/unisonToday/Image 18.png" alt="icon"
                         className="my-2 align-self-center"/>
                         <h4 className="text-light my-2 align-self-center">ღირებულებები</h4>

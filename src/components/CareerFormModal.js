@@ -17,9 +17,9 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
         desiredSalary: "",
         education: null,
         experience: null,
-        newsletter: false
+        newsletter: "value2"
     }
-    const [formValues, setFormValues] = useState({});
+    const [formValues, setFormValues] = useState({initialFormValues});
     const uploadEducation = useRef();
     const uploadExperience = useRef();
 
@@ -135,10 +135,11 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                     <Row className="px-xl-4 px-lg-2 py-xl-3 py-lg-0">
                         <Form.Group>
                             <Form.Label>განათლება
-                                <Form.Control type="file" ref={uploadEducation} hidden/><br/>
+                                <Form.Control type="file" ref={uploadEducation} hidden onChange={changeHandler("education")}/><br/>
                                 <Button
                                     onClick={()=>
-                                    {   uploadEducation.current.click();
+                                    {
+                                        uploadEducation.current.click();
                                     }}
                                     className="addFile lg-2 text-secondary border border-1 rounded-3">
                                     <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton"
@@ -146,13 +147,18 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                                     განათლების დამატება
                                 </Button>
                                 {/*take value from form value state*/}
+                                <div>
+                                    {
+                                        !formValues.education ? null : formValues.education
+                                    }
+                                </div>
                             </Form.Label>
                         </Form.Group>
                     </Row>
                     <Row className="px-xl-4 px-lg-2 py-xl-3 py-lg-0">
                         <Form.Group>
                             <Form.Label>სამუშაო გამოცდილება
-                                <Form.Control type="file" ref={uploadExperience} hidden/><br/>
+                                <Form.Control type="file" ref={uploadExperience} hidden onChange={changeHandler("experience")}/><br/>
                                 <Button
                                     onClick={() => {
                                         uploadExperience.current.click();
@@ -163,7 +169,9 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                                     სამუშაო გამოცდილების დამატება
                                 </Button>
                                 <div>
-
+                                    {
+                                        !formValues.experience ? null : formValues.experience
+                                    }
                                 </div>
                             </Form.Label>
                         </Form.Group>
@@ -172,8 +180,8 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                         <Form.Group className="radioButtons">
                             <h6 className="text-secondary">მსურს ელ-ფოსტაზე მივიღო კომპანიის მიმდინარე ვაკანსიები და
                                 სიახლეები</h6>
-                            <Form.Check inline label="დიახ" name="group1" type='radio' id={`inline-'radio'-1`}/>
-                            <Form.Check inline label="არა" name="group1" type='radio' id={`inline-'radio'-2`}/>
+                            <Form.Check inline label="დიახ" name="group1" type='radio' id={`inline-'radio'-1`} />
+                            <Form.Check inline label="არა" name="group1" type='radio' id={`inline-'radio'-2`}  />
                         </Form.Group>
                     </Row>
                     <Row className="submitButton px-xl-4 px-lg-2 py-xl-3 py-lg-0">

@@ -23,9 +23,7 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
     const uploadEducation = useRef();
     const uploadExperience = useRef();
 
-    const changeHandler = (field) => {
-         return (event) => setFormValues({...formValues, [field]: event.target.value});
-    }
+    const changeHandler = (field) => (event) => setFormValues({...formValues, [field]: event.target.value});
 
     const handleSubmit = (e) => {
         e.stopPropagation();
@@ -160,9 +158,7 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                             <Form.Label>სამუშაო გამოცდილება
                                 <Form.Control type="file" ref={uploadExperience} hidden onChange={changeHandler("experience")}/><br/>
                                 <Button
-                                    onClick={() => {
-                                        uploadExperience.current.click();
-                                    }}
+                                    onClick={() => uploadExperience.current.click()}
                                     className="addFile py-lg-2 text-secondary border border-1 rounded-3">
                                     <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton"
                                          className="mx-2"/>

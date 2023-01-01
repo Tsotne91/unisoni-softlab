@@ -11,21 +11,36 @@ import CareerMobileOffcanvas from "../components/CareerMobileOffcanvas";
 
 
 export default function Career() {
-
+    const initialFormValues = {
+        name: "",
+        surname: "",
+        phoneNumber: "",
+        emailAddress: "",
+        birthDate: "",
+        desiredCity: "",
+        desiredPosition: "",
+        desiredSection: "",
+        desiredSalary: "",
+        education: null,
+        experience: null,
+        newsletter: "value2"
+    }
+    const [formValues, setFormValues] = useState({initialFormValues});
     const [modalShow, setModalShow] = useState(false);
     const [offCanvasShow, setOffCanvasShow] = useState(false);
     const [formSubmittedShow, setFormSubmittedShow] = useState(false);
     const [fileToUpload, setFileToUpload] = useState( "")
     const uploadCv = useRef(null);
 
+    const changeHandler = (field) => (event) =>{
+        setFormValues({...formValues, [field]: event.target.value});
+    } ;
+
     const onHide = () => setModalShow(false);
 
     const handleModalShow = () => setModalShow(true);
 
-    const handleOffcanvasShow = () => {
-        offCanvasShow ? setOffCanvasShow(false) : setOffCanvasShow(true);
-        console.log(offCanvasShow);
-    }
+    const handleOffcanvasShow = () => offCanvasShow ? setOffCanvasShow(false) : setOffCanvasShow(true);
 
     const handleFormSubmittedShow = (formValues) => {
         setModalShow(false);
@@ -58,8 +73,15 @@ export default function Career() {
                         შეავსეთ ფორმა
                       </span>
                     </p>
-                    <CareerFormModal modalShow={modalShow} onHide={onHide} onFormSubmit={handleFormSubmittedShow}/>
-                    <FormSubmitted formSubmittedShow={formSubmittedShow} onHide={hideFormSubmitted}/>
+                    <CareerFormModal modalShow={modalShow}
+                                     onHide={onHide}
+                                     onFormSubmit={handleFormSubmittedShow}
+                                     changeHandler={changeHandler}
+                                     formValues={formValues}
+                    />
+                    <FormSubmitted
+                        formSubmittedShow={formSubmittedShow}
+                        onHide={hideFormSubmitted}/>
                 </div>
                 <div className="ourHrSquadText px-4 py-3 rounded-4 w-50">
                     <h5 className="my-3">ჩვენი HR გუნდი</h5>
@@ -169,11 +191,7 @@ export default function Career() {
                         />
                         ატვირთეთ CV
                     </Button>
-                    <div className="border border-dark">
-                        {
-                            !fileToUpload ? null : fileToUpload
-                        }
-                    </div>
+                    <div>{!fileToUpload ? null : fileToUpload}</div>
                     <p className="my-3"
                        onClick={handleOffcanvasShow}
                     >ან
@@ -186,6 +204,9 @@ export default function Career() {
                 <CareerMobileOffcanvas
                     handleOffcanvasShow={handleOffcanvasShow}
                     offCanvasShow={offCanvasShow}
+                    changeHandler={changeHandler}
+                    onFormSubmit={handleFormSubmittedShow}
+                    formValues={formValues}
                 />
             </Container>
             <Footer/>

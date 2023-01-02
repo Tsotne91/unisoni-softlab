@@ -248,6 +248,12 @@ body {
   }
 }
 
+.faq {
+  h3 {
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+}
+
 .footerDesktop {
   a {
     display: block;
@@ -301,6 +307,10 @@ footer {
     align-self: start;
     font-size: 0.7rem;
     color: gray;
+  }
+
+  .card {
+    max-height: inherit;
   }
 }
 

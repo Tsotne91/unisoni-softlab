@@ -277,6 +277,13 @@ export default function Career() {
                     onFormSubmit={handleFormSubmittedShow}
                     formValues={formValues}
                 />
+                <div className="careerInfo my-3">
+                    <h5>ინფორმაცია კომპანიის ბენეფიციარების და უშუალო მესაკუთრის შესახებ</h5>
+                    <p className="text-secondary">
+                        ინფორმაცია მზღვეველის აქციების 10 პროცენტის ან 10 პროცენტზე მეტის მფლობელი უშუალო მესაკუთრის შესახებ ნახვა შეგიძლიათ <a href="#">ბმულზე.</a><br/>
+                        ინფორმაცია მზღვეველის მნიშვნელოვანი წილის მფლობელი ბენეფიციარი მესაკუთრის შესახებ ნახვა შეგიძლიათ <a href="#">ბმულზე.</a>
+                    </p>
+                </div>
             </Container>
             <Footer/>
         </>

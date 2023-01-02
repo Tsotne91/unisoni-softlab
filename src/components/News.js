@@ -8,6 +8,7 @@ export default function News() {
         <>
             <Container className="newsDesktop d-none d-md-block w-75 py-2" fluid>
                 <h2>სიახლეები</h2>
+                {/*cards need the same height fixed*/}
                 <Row className="d-flex">
                     <Col md={4}>
                         <Card>

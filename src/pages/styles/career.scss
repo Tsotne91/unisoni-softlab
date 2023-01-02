@@ -17,6 +17,20 @@
   }
 }
 
+.careerInfo {
+  h5 {
+    font-family: BPGMrgvlovani, sans-serif;
+    font-size: 0.9rem;
+  }
+  p {
+    font-family: BPGArial, sans-serif;
+    font-size: $smallFont;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
 .careerMgmtTeamMobileHeader{
   h4 {
    font-family: BPGMrgvlovani, sans-serif;

@@ -26,7 +26,7 @@ export default function Footer() {
                         <p className="fw-bold">დახმარება</p>
                         <a href="/contact-us">კონტაქტი</a>
                         <a href="/feedback">მომხმარებლის ხმა</a>
-                        <a>ხშირად დასმული კითხვები</a>
+                        <a href="/faq">ხშირად დასმული კითხვები</a>
                         <a>მონაცემთა დაცვა</a>
                     </Col>
                     <Col md={3} className="p-3 my-4">

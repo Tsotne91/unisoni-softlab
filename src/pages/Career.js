@@ -1,7 +1,9 @@
 import './styles/career.scss';
 import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
-import {Accordion, Button, Card, Container, Form} from "react-bootstrap";
+import {ReactComponent as LeftArrow} from "../components/insuranceIcons/arrow-left-circle.svg";
+import {ReactComponent as RightArrow} from "../components/insuranceIcons/arrow-right-circle.svg";
+import {Accordion, Button, Card, Col, Container, Form, Row} from "react-bootstrap";
 import React, {useRef, useState} from "react";
 import CareerFormModal from "../components/CareerFormModal";
 import Footer from "../components/Footer";
@@ -29,12 +31,15 @@ export default function Career() {
     const [modalShow, setModalShow] = useState(false);
     const [offCanvasShow, setOffCanvasShow] = useState(false);
     const [formSubmittedShow, setFormSubmittedShow] = useState(false);
-    const [fileToUpload, setFileToUpload] = useState( "")
+    const [fileToUpload, setFileToUpload] = useState("")
     const uploadCv = useRef(null);
+    const sliderMobileWrapper = useRef();
 
-    const changeHandler = (field) => (event) =>{
+    const moveSlider = (dir) => sliderMobileWrapper.current.scrollLeft += dir*395;
+
+    const changeHandler = (field) => (event) => {
         setFormValues({...formValues, [field]: event.target.value});
-    } ;
+    };
 
     const onHide = () => setModalShow(false);
 
@@ -104,6 +109,7 @@ export default function Career() {
                 </div>
             </Container>
             <Container className="careerMgmtTeam d-none d-md-flex border border-2">
+                {/*this has to be fixed*/}
                 <Card className="mx-2">
                     <Card.Img variant="left" src="./img/careerPhotos/1.jpg"/>
                     <Card.Body>
@@ -183,7 +189,8 @@ export default function Career() {
                     </Accordion>
                     <h5 className="my-2">#გახდიუნისონელი</h5>
                     <p className="text-secondary">თუ გსურს შემოუერთდე ჩვენ გუნდს, დაგვიტოვე ინფორმაცია</p>
-                    <Form.Control type="file" ref={uploadCv} onChange={(event)=>setFileToUpload(event.target.value)} hidden/>
+                    <Form.Control type="file" ref={uploadCv} onChange={(event) => setFileToUpload(event.target.value)}
+                                  hidden/>
                     <Button className="p-2 rounded-3" onClick={() => uploadCv.current.click()}>
                         <img src="/img/insuranceIcons/file_upload_black_24dp.svg"
                              alt="upload-icon"
@@ -201,6 +208,68 @@ export default function Career() {
                       </span>
                     </p>
                 </div>
+                <div className="careerMgmtTeamMobileHeader d-flex flex-wrap mx-2">
+                    <h4>მენეჯმენტის გუნდი</h4>
+                    <div>
+                        <LeftArrow className="sliderArrows mx-2 d-inline" onClick={()=> moveSlider(-1)}/>
+                        <RightArrow className="sliderArrows mx-2 d-inline" onClick={()=> moveSlider(1)}/>
+                    </div>
+                </div>
+                <div className="careerMgmtTeamMobile d-block d-md-none overflow-scroll" ref={sliderMobileWrapper}>
+                    <Row className="d-flex flex-row flex-nowrap my-4">
+                        <Col md={4}>
+                            <Card>
+                                <Card.Img variant="left" src="./img/careerPhotos/mobile/4.jpg"/>
+                                <Card.Body>
+                                    <Card.Title>გიორგი გიორგაძე</Card.Title>
+                                    <h6 className="text-secondary">გენერალური დირექტორი</h6>
+                                    <Card.Text className="text-secondary my-3">
+                                        2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
+                                        სამართლის ფაკულტეტი.
+                                        ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის
+                                        15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
+                                        სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
+                                        გამოცდილება. 2004 წლიდან მუშაობს.
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            </Col>
+                            <Col md={4}>
+                                <Card>
+                                    <Card.Img variant="left" src="./img/careerPhotos/mobile/5.jpg"/>
+                                    <Card.Body>
+                                        <Card.Title>გიორგი გიორგაძე</Card.Title>
+                                        <h6 className="text-secondary">გენერალური დირექტორი</h6>
+                                        <Card.Text className="text-secondary my-3">
+                                            2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
+                                            სამართლის ფაკულტეტი.
+                                            ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის
+                                            15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
+                                            სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
+                                            გამოცდილება. 2004 წლიდან მუშაობს.
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col md={4}>
+                                <Card>
+                                    <Card.Img variant="left" src="./img/careerPhotos/mobile/6.jpg"/>
+                                    <Card.Body>
+                                        <Card.Title>გიორგი გიორგაძე</Card.Title>
+                                        <h6 className="text-secondary">გენერალური დირექტორი</h6>
+                                        <Card.Text className="text-secondary my-3">
+                                            2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
+                                            სამართლის ფაკულტეტი.
+                                            ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის
+                                            15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
+                                            სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
+                                            გამოცდილება. 2004 წლიდან მუშაობს.
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                    </Row>
+                </div>
                 <CareerMobileOffcanvas
                     handleOffcanvasShow={handleOffcanvasShow}
                     offCanvasShow={offCanvasShow}
@@ -211,6 +280,6 @@ export default function Career() {
             </Container>
             <Footer/>
         </>
-    )
+)
 
 }

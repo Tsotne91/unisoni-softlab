@@ -13,7 +13,7 @@ import CareerMobileOffcanvas from "../components/CareerMobileOffcanvas";
 
 
 export default function Career() {
-    const initialFormValues = {
+    let initialFormValues = {
         name: "",
         surname: "",
         phoneNumber: "",
@@ -208,7 +208,7 @@ export default function Career() {
                       </span>
                     </p>
                 </div>
-                <div className="careerMgmtTeamMobileHeader d-flex flex-wrap mx-2">
+                <div className="careerMgmtTeamMobileHeader d-flex d-md-none flex-wrap mx-2">
                     <h4>მენეჯმენტის გუნდი</h4>
                     <div>
                         <LeftArrow className="sliderArrows mx-2 d-inline" onClick={()=> moveSlider(-1)}/>

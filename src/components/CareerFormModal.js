@@ -6,7 +6,7 @@ function CareerFormModal({modalShow,
                              onHide,
                              onFormSubmit,
                              changeHandler,
-                             formValues }) {
+                             formValues}) {
 
     const uploadEducation = useRef();
     const uploadExperience = useRef();
@@ -15,7 +15,6 @@ function CareerFormModal({modalShow,
         e.stopPropagation();
         e.preventDefault();
         onFormSubmit && onFormSubmit(formValues);
-        console.log(formValues);
     }
 
     return (

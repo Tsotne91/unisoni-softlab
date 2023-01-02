@@ -12,7 +12,7 @@ export default function Contracts() {
     return (
         <>
             <TopNavbar showButton={false}/>
-            <MainNavbar showButton={true} className='navbarBgColorStriped'/>
+            <MainNavbar showButton={true} className='navbarBgColorStripedDesktop mobileFeedbackBgMainNavbar' mobileLogo="./img/insuranceIcons/Logo.svg"/>
             <div className="d-flex justify-content-center">
                 <div className="text-secondary w-75">
                     <h3 className="my-5">ხელშეკრულებები</h3>

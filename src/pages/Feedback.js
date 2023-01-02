@@ -8,8 +8,8 @@ export default function Feedback() {
     return (
         <>
             <TopNavbar showButton={false}/>
-            <MainNavbar showButton={true} className='navbarBgColorStriped'/>
-            <div className="d-flex feedbackWrapper">
+            <MainNavbar showButton={true} className='navbarBgColorStriped mobileFeedbackBgMainNavbar' mobileLogo="./img/insuranceIcons/Logo.svg" />
+            <div className="d-none d-md-flex feedbackWrapper">
                 <div className="d-flex w-75 my-4 mx-2 justify-content-end">
                     <div className="w-75">
                         <h3 style={{fontFamily: "ExtraSquare"}} className="mx-4 my-3 text-secondary">მომხმარებლის ხმა</h3>

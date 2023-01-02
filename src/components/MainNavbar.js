@@ -147,7 +147,7 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
             </Navbar>
 
             <Navbar bg="light"
-                    className={`mainNavbarMobile d-md-flex d-md-none justify-content-center align-items-start ${className}`}>
+                    className={`mainNavbarMobile d-flex d-md-none justify-content-center align-items-start ${className}`}>
                 <Nav>
                     <Navbar.Brand href="/">
                         <img src={mobileLogo}

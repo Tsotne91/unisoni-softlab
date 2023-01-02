@@ -10,7 +10,7 @@ export default function Faq(){
             <TopNavbar showButton={false}/>
             <MainNavbar showButton={true} className='navbarBgColorStriped'/>
             <Container className="faq d-none d-md-block">
-                <h3 className="text-secondary my-3">ხშირად დასმული კითხვები</h3>
+                <h3 className="text-secondary my-4">ხშირად დასმული კითხვები</h3>
                 <Accordion defaultActiveKey="1">
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>სად მდებარეობს თქვენი ოფისი?</Accordion.Header>

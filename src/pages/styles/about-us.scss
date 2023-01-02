@@ -43,6 +43,25 @@ h1 {
   }
 }
 
+.aboutUsMobile{
+  .accordion-header{
+    color: $primary;
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+  .accordion-body {
+    font-size: $smallFont;
+  }
+}
+
+.mobileYearlyReports {
+  h3 {
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+}
+
 .unisonTodayDivs {
   background: url("../../../public/img/Rectangle 824.png") center;
   width: 35rem;

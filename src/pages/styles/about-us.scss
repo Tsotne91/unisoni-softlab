@@ -43,7 +43,9 @@ h1 {
   }
 }
 
+
 .aboutUsMobile{
+  background: url("../../img/Group 237.svg") repeat;
   .accordion-header{
     color: $primary;
     font-family: BPGMrgvlovani, sans-serif;
@@ -97,4 +99,10 @@ h1 {
     width: 19rem;
     z-index: 5;
   }
+}
+
+.downIcon {
+  background: #F2F2F2;
+  position: relative;
+  left: 4rem;
 }

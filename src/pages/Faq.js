@@ -8,10 +8,10 @@ export default function Faq(){
     return(
         <>
             <TopNavbar showButton={false}/>
-            <MainNavbar showButton={true} className='navbarBgColorStriped'/>
-            <Container className="faq d-none d-md-block">
+            <MainNavbar showButton={true} className='navbarBgColorStripedDesktop' mobileLogo="./img/insuranceIcons/Group334.svg" />
+            <Container className="faq">
                 <h3 className="text-secondary my-4">ხშირად დასმული კითხვები</h3>
-                <Accordion defaultActiveKey="1">
+                <Accordion>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>სად მდებარეობს თქვენი ოფისი?</Accordion.Header>
                         <Accordion.Body>

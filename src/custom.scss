@@ -22,7 +22,9 @@ body {
 }
 
 .feedbackWrapper {
-  background-image: url("../public/img/Group 237.svg");
+  h3 {
+    font-family: ExtraSquare, sans-serif;
+  }
   position: relative;
   right: 6rem;
 }
@@ -71,12 +73,8 @@ body {
   height: $mainNavbarHeight;
 }
 
-.navbarBgColorStriped {
-  background-image: url("../public/img/mainNavbarBackground.png");
-  height: $mainNavbarHeight+2rem;
-}
 
-[class*=navbarBgImageCareer], [class*=navbarBgImageContactUs] {
+[class*=navbarBgImageCareer], [class*=navbarBgImageContactUs], {
   background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/Rectangle 872.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -96,6 +94,8 @@ body {
   }
 }
 
+
+
 @media only screen and (min-width: 768px) {
   .navbarBgImageCareer, .navbarBgImageContactUs {
     background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/shutterstock_627788162.png");
@@ -112,6 +112,16 @@ body {
   .sliderWrapper {
     overflow: hidden;
   }
+  .mainNavbarBgImageMobile {
+    background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/Rectangle 872.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: $mainNavbarHeight+4rem;
+  }
+  .navbarBgColorStripedDesktop {
+    background-image: url("../public/img/mainNavbarBackground.png");
+    height: $mainNavbarHeight+2rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -120,6 +130,12 @@ body {
   }
   .sliderCards {
     margin-right: 3rem;
+  }
+  .mobileFeedbackBgMainNavbar{
+    background-image: linear-gradient(180deg, rgba(0, 106, 159, 1), rgba(0, 106, 159, 0.5), rgba(0, 106, 159, 1)), url("../public/img/Rectangle 872.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: $mainNavbarHeight+4rem;
   }
 }
 
@@ -249,6 +265,12 @@ body {
   }
 }
 
+.faq {
+  h3 {
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+}
+
 .footerDesktop {
   a {
     display: block;
@@ -302,6 +324,10 @@ footer {
     align-self: start;
     font-size: 0.7rem;
     color: gray;
+  }
+
+  .card {
+    max-height: inherit;
   }
 }
 

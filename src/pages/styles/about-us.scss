@@ -43,6 +43,27 @@ h1 {
   }
 }
 
+
+.aboutUsMobile{
+  background: url("../../img/Group 237.svg") repeat;
+  .accordion-header{
+    color: $primary;
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+  .accordion-body {
+    font-size: $smallFont;
+  }
+}
+
+.mobileYearlyReports {
+  h3 {
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+}
+
 .unisonTodayDivs {
   background: url("../../../public/img/Rectangle 824.png") center;
   width: 35rem;
@@ -78,4 +99,10 @@ h1 {
     width: 19rem;
     z-index: 5;
   }
+}
+
+.downIcon {
+  background: #F2F2F2;
+  position: relative;
+  left: 4rem;
 }

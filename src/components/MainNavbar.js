@@ -31,7 +31,6 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
     const handleShowSecondCanvas = () => setShowSecondCanvas(true);
     const handleCloseSecondCanvas = () => setShowSecondCanvas(false);
 
-
     // const languages = [
     //     { code: 'geo', name: 'ქართული'},
     //     { code: 'eng', name: 'English'},
@@ -145,9 +144,8 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                     <div><a className="text-light text-decoration-none">აგენტთან დაკავშირება</a></div>
                 </Nav>
             </Navbar>
-
             <Navbar bg="light"
-                    className={`mainNavbarMobile d-md-flex d-md-none justify-content-center align-items-start ${className}`}>
+                    className={`mainNavbarMobile d-flex d-md-none justify-content-center align-items-start ${className}`}>
                 <Nav>
                     <Navbar.Brand href="/">
                         <img src={mobileLogo}

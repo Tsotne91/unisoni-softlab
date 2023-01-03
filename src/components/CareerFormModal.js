@@ -1,31 +1,15 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import {Col, Form, Modal, Row, Button} from "react-bootstrap";
 import {ReactComponent as CloseButton} from "../components/insuranceIcons/Component18–2.svg";
 
-function CareerFormModal({modalShow, onHide, onFormSubmit}) {
+function CareerFormModal({modalShow,
+                             onHide,
+                             onFormSubmit,
+                             changeHandler,
+                             formValues}) {
 
-
-    const initialFormValues = {
-        name: "",
-        surname: "",
-        phoneNumber: "",
-        emailAddress: "",
-        birthDate: Date(),
-        desiredCity: "",
-        desiredPosition: "",
-        desiredSection: "",
-        desiredSalary: "",
-        education: null,
-        experience: null,
-        newsletter: "value2"
-    }
-    const [formValues, setFormValues] = useState({initialFormValues});
     const uploadEducation = useRef();
     const uploadExperience = useRef();
-
-    const changeHandler = (field) => {
-        return (event) => setFormValues({...formValues, [field]: event.target.value})
-    }
 
     const handleSubmit = (e) => {
         e.stopPropagation();
@@ -98,7 +82,7 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                         <Col>
                             <Form.Group className="mb-3">
                                 <Form.Label>რომელ ქალაქში გსურთ მუშაობა?</Form.Label>
-                                <Form.Control placeholder="თბილისი"
+                                <Form.Control placeholder="ქალაქი"
                                               value={formValues.desiredCity}
                                               onChange={changeHandler("desiredCity")}
                                 />
@@ -137,10 +121,7 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                             <Form.Label>განათლება
                                 <Form.Control type="file" ref={uploadEducation} hidden onChange={changeHandler("education")}/><br/>
                                 <Button
-                                    onClick={()=>
-                                    {
-                                        uploadEducation.current.click();
-                                    }}
+                                    onClick={()=> uploadEducation.current.click()}
                                     className="addFile lg-2 text-secondary border border-1 rounded-3">
                                     <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton"
                                          className="mx-2"/>
@@ -160,9 +141,7 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                             <Form.Label>სამუშაო გამოცდილება
                                 <Form.Control type="file" ref={uploadExperience} hidden onChange={changeHandler("experience")}/><br/>
                                 <Button
-                                    onClick={() => {
-                                        uploadExperience.current.click();
-                                    }}
+                                    onClick={() => uploadExperience.current.click()}
                                     className="addFile py-lg-2 text-secondary border border-1 rounded-3">
                                     <img src="/img/insuranceIcons/add_circle_black_24dp.svg" alt="uploadButton"
                                          className="mx-2"/>
@@ -180,13 +159,14 @@ function CareerFormModal({modalShow, onHide, onFormSubmit}) {
                         <Form.Group className="radioButtons">
                             <h6 className="text-secondary">მსურს ელ-ფოსტაზე მივიღო კომპანიის მიმდინარე ვაკანსიები და
                                 სიახლეები</h6>
-                            <Form.Check inline label="დიახ" name="group1" type='radio' id={`inline-'radio'-1`} />
-                            <Form.Check inline label="არა" name="group1" type='radio' id={`inline-'radio'-2`}  />
+                            <Form.Check inline label="დიახ" name="group1" type='radio' value={"value1"} onClick={changeHandler("newsletter")} />
+                            <Form.Check inline label="არა" name="group1" type='radio'  value={"value2"} onClick={changeHandler("newsletter")}/>
                         </Form.Group>
                     </Row>
                     <Row className="submitButton px-xl-4 px-lg-2 py-xl-3 py-lg-0">
                         <Button
-                            type="submit" variant="primary" className="rounded-3 py-2 my-2">
+                            type="submit" variant="primary" className="rounded-3 py-2 my-2"
+                        >
                             <img src="/img/insuranceIcons/send_black_24dp.svg" alt="sendIcon" className="mx-2"/>
                             გაგზავნა
                         </Button>

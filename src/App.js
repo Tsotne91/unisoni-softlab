@@ -6,6 +6,7 @@ import Feedback from "./pages/Feedback";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Career from "./pages/Career";
+import Faq from "./pages/Faq";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path={"/about-us"} element={<AboutUs/>}/>
                 <Route path={"/contact-us"} element={<ContactUs/>}/>
                 <Route path={"/career"} element={<Career/>}/>
+                <Route path={"/faq"} element={<Faq/>}/>
             </Routes>
         </BrowserRouter>
     )

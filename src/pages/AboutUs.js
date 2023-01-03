@@ -1,7 +1,7 @@
 import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
-import {Container} from "react-bootstrap";
+import {Container, Form} from "react-bootstrap";
 import './styles/about-us.scss';
 import UnisonHistorySlider from "../components/UnisonHistorySlider";
 
@@ -65,7 +65,7 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div className="unisonToday d-flex justify-content-center">
-                    <div className="unisonTodayLastDiv rounded-5 d-flex flex-column py-4 mx-2">
+                    <div className="unisonTodayLastDiv rounded-5 d-flex flex-column py-4 m-2">
                         <img src="./img/insuranceIcons/unisonToday/Image 18.png" alt="icon"
                         className="my-2 align-self-center"/>
                         <h4 className="text-light my-2 align-self-center">ღირებულებები</h4>
@@ -76,6 +76,14 @@ export default function AboutUs() {
                         </p>
 
                     </div>
+                </div>
+                <div className="yearlyReport unisonToday d-flex flex-column border border-2 rounded-4 bg-light my-4">
+                    <h4 className="text-primary text-center">წლიური ანგარიშები</h4>
+                    <Form.Select className="w-25 align-self-center">
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                    </Form.Select>
                 </div>
             </Container>
             <Footer/>

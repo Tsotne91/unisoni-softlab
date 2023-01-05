@@ -8,7 +8,7 @@ export default function Footer() {
                 <Row className="w-100 justify-content-center py-3 fs-6">
                     <Col md={3} className="py-3 my-4">
                         <img src="/img/footerIcons/LogoFooter.svg"/>
-                        <a className="aboutUsLink" href="/about-us">ჩვენს შესახებ</a>
+                        <a  href="/about-us" className="aboutUsLink">ჩვენს შესახებ</a>
                         <a  href="/career">კარიერა</a>
                         <a>პარტნიორები</a>
                         <img className="d-inline my-2" src="/img/footerIcons/AppStoreLogo.svg" alt="appStore"/>
@@ -52,7 +52,7 @@ export default function Footer() {
                             <img className="w-50 my-4" src="/img/footerIcons/LogoFooter.svg" alt="logo"/>
                         </div>
                         <Col xs={6} className="w-50 my-1">
-                            <a className="text-secondary">ჩვენს შესახებ</a>
+                            <a href="/about-us" className="text-secondary">ჩვენს შესახებ</a>
                             <a className="text-secondary">პარტნიორები</a>
                         </Col>
                         <Col xs={6} className="w-50">
@@ -64,17 +64,17 @@ export default function Footer() {
                             <a className="text-secondary">საინფორმაციო ფურცელი</a>
                         </Col>
                         <Col xs={6} className="w-50">
-                           <a className="text-secondary">ხელშეკრულებები</a>
-                            <a className="text-secondary">სამედიცინო პროვაიდერები</a>
+                           <a href="/contracts" className="text-secondary">ხელშეკრულებები</a>
+                           <a className="text-secondary">სამედიცინო პროვაიდერები</a>
                         </Col>
                         <h6 className="fw-bold my-2">დახმარება</h6>
                         <Col xs={6} className="w-50 my-1">
-                            <a className="text-secondary" href="/contact-us">კონტაქტი</a>
-                            <a className="text-secondary">მომხმარებლის ხმა</a>
+                            <a href="/contact-us" className="text-secondary" >კონტაქტი</a>
+                            <a href="/feedback" className="text-secondary">მომხმარებლის ხმა</a>
                         </Col>
                         <Col xs={6} className="w-50">
                             <a className="text-secondary">მონაცემთა დაცვა</a>
-                            <a className="text-secondary">ხშირად დასმული კითხვები</a>
+                            <a href="/faq" className="text-secondary">ხშირად დასმული კითხვები</a>
                         </Col>
                     </Row>
                 </Container>

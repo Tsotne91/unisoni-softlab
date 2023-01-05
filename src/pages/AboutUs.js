@@ -80,7 +80,7 @@ export default function AboutUs() {
                 </Accordion>
             </Container>
             <UnisonHistorySlider/>
-            <YearlyReports className={"mobileYearlyReports d-flex d-md-none"}/>
+            <YearlyReports className={"d-flex d-md-none"}/>
             <Container>
                 <div className="unisonToday my-2 d-none d-md-flex flex-column">
                     <h4 className="text-primary align-self-center d-inline">უნისონი დღეს</h4>

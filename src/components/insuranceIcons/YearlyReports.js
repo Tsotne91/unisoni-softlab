@@ -3,7 +3,7 @@ import {Form} from "react-bootstrap";
 export default function YearlyReports({className}){
     return (
         <>
-            <div className={`${className} bg-light flex-wrap justify-content-center  rounded-3 mx-3 py-4`}>
+            <div className={`${className} mobileYearlyReports bg-light flex-wrap justify-content-center rounded-3 m-3 py-4`}>
                 <h3 className="text-primary">წლიური ანგარიშები</h3>
                 <Form.Select name="yearly-report" className="w-50 my-2">
                     <option value="2021">2021</option>
@@ -27,6 +27,7 @@ export default function YearlyReports({className}){
                     <img src="./img/insuranceIcons/file_download_black_24dp.svg" alt="icon" className="downIcon px-2"/>
                 </div>
             </div>
+
         </>
     )
 }

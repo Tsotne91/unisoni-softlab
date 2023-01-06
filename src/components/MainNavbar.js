@@ -145,7 +145,7 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                 </Nav>
             </Navbar>
             <Navbar bg="light"
-                    className={`mainNavbarMobile d-flex d-md-none justify-content-center align-items-start ${className}`}>
+                    className={`d-flex d-md-none justify-content-center align-items-start ${className}`}>
                 <Nav>
                     <Navbar.Brand href="/">
                         <img src={mobileLogo}
@@ -204,7 +204,7 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                         <footer className="d-flex my-4">
                             <Row>
                                 <Col sm={6} className="py-3 d-flex justify-content-between">
-                                    <a className="w-50 text-decoration-none text-secondary">ჩვენს შესახებ</a>
+                                    <a href="/about-us" className="w-50 text-decoration-none text-secondary">ჩვენს შესახებ</a>
                                     <a className="w-50 text-decoration-none text-secondary">სიახლეები</a>
                                 </Col>
                                 <Col sm={6} className="py-2 d-flex justify-content-between">

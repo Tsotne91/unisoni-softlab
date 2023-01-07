@@ -1,11 +1,10 @@
 import {Container, Form} from "react-bootstrap";
-import {useRef, useState} from "react";
+import {useState} from "react";
 
 export default function YearlyReports({className}) {
 
 
     const [selectedYear, setSelectedYear] = useState("2022");
-    const selectElement = useRef();
 
     const selectYear = (event) => setSelectedYear(event.target.value);
 
@@ -44,7 +43,6 @@ export default function YearlyReports({className}) {
                 <Form.Select aria-label="yearly-reports"
                              className="w-25 align-self-center my-3"
                              onChange={selectYear}
-                             ref={selectElement}
                              value={selectedYear}
                 >
                     <option value="2022">2022</option>

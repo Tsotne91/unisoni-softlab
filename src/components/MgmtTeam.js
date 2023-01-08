@@ -34,8 +34,8 @@ const arr = [
 function Member({imgUrl, title, subTitle, text, active, onClick}) {
 
     return (
-        <div className={`${active?"active":""} mx-2 d-flex`} onClick={onClick}>
-            <img src={imgUrl} alt="pic"/>
+        <div className={`${active ? "active" : ""} mx-2 d-flex`}>
+            <img src={imgUrl} alt="pic" onClick={onClick}/>
             <div className="side-text w-50 d-none">
                 <div className="p-3">
                     <h5 className="title">{title}</h5>
@@ -57,8 +57,9 @@ function MgmtTeam(props) {
         <Container className="careerMgmtTeam d-none d-md-flex border border-2 bg-light">
             {/*this has to be fixed*/}
             {
-                arr.map((member, index)=>(
-                    <Member {...member} key={index} active={index === activeIndex} onClick={() => setActiveIndex(index)}></Member>
+                arr.map((member, index) => (
+                    <Member {...member} key={index} active={index === activeIndex}
+                            onClick={() => setActiveIndex(index)}></Member>
                 ))
             }
 

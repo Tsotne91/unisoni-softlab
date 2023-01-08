@@ -23,8 +23,7 @@ export default function ImageSlider(){
                 <Carousel.Caption>
                     <h1 className="my-4">ქონების დაზღვევა</h1>
                     <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
-                    <img src="./img/Image42.png" className="redImage"/>
-                    <p>შეიძინე ონლაინ</p>
+                    <div className="p-2" style={{background: 'url(./img/Image42.png) top center no-repeat'}}>შეიძინე ონლაინ</div>
                     <img src="./img/insuranceIcons/Path398.svg"/>
                 </Carousel.Caption>
             </Carousel.Item>

@@ -198,9 +198,10 @@ body {
 
 }
 
-.redImage {
-  width: 22rem;
-  z-index: 10;
+.carousel-caption {
+  div {
+    background: url("../public/img/Image42.png") top center no-repeat;
+  }
 }
 
 .insuranceCards {

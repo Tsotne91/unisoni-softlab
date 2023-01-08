@@ -49,7 +49,7 @@ function Member({imgUrl, title, subTitle, text, active, onClick}) {
     )
 }
 
-function MgmtTeam(props) {
+function MgmtTeam() {
 
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -62,8 +62,6 @@ function MgmtTeam(props) {
                             onClick={() => setActiveIndex(index)}></Member>
                 ))
             }
-
-
         </Container>
     );
 }

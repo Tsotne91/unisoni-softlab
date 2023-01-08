@@ -22,20 +22,24 @@
     font-family: BPGMrgvlovani, sans-serif;
     font-size: 0.9rem;
   }
+
   p {
     font-family: BPGArial, sans-serif;
     font-size: $smallFont;
   }
+
   a {
     text-decoration: none;
   }
 }
 
-.careerMgmtTeamMobileHeader{
+.careerMgmtTeamMobileHeader {
+
   h4 {
-   font-family: BPGMrgvlovani, sans-serif;
-   margin-left: 1rem;
+    font-family: BPGMrgvlovani, sans-serif;
+    margin-left: 1rem;
   }
+
   div {
     position: relative;
     left: 5rem;
@@ -63,21 +67,29 @@
 .careerMgmtTeam {
   min-height: 21.6875rem;
 
+  :hover {
+    cursor: pointer;
+  }
+
   .active {
     width: 50% !important;
+
     img {
       width: 50%;
     }
+
     .side-text {
       display: flex !important;
       flex-direction: column;
       justify-content: space-between;
     }
   }
-  > div{
+
+  > div {
     width: 25%;
   }
-  img{
+
+  img {
     width: 100%;
     object-fit: cover;
   }
@@ -123,12 +135,15 @@
     h6, label {
       font-size: $smallFont;
     }
+
     input {
       padding: 0;
     }
   }
+
   .submitButton {
     width: 18%;
+
     button {
       font-size: $smallFont;
     }
@@ -139,6 +154,7 @@
   h4 {
     font-family: BPGMrgvlovani, sans-serif;
   }
+
   p {
     font-size: $smallFont;
   }

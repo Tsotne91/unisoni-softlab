@@ -15,7 +15,7 @@ import MgmtTeam from "../components/MgmtTeam";
 
 export default function Career() {
 
-    {/*create one form component which will have the values and states - then insert the form in both modal and canvas*/}
+    /*create one form component which will have the values and states - then insert the form in both modal and canvas*/
     let initialFormValues = {
         name: "",
         surname: "",
@@ -178,7 +178,7 @@ export default function Career() {
                     <Row className="d-flex flex-row flex-nowrap my-4">
                         <Col md={4}>
                             <div>
-                                <img variant="left" src="./img/careerPhotos/mobile/4.jpg"/>
+                                <img src="./img/careerPhotos/mobile/4.jpg" alt="photo"/>
                                 <div>
                                     <h5>გიორგი გიორგაძე</h5>
                                     <h6 className="text-secondary">გენერალური დირექტორი</h6>
@@ -195,7 +195,7 @@ export default function Career() {
                             </Col>
                             <Col md={4}>
                                 <div>
-                                    <img variant="left" src="./img/careerPhotos/mobile/5.jpg"/>
+                                    <img src="./img/careerPhotos/mobile/5.jpg" alt="photo"/>
                                     <div>
                                         <h5>გიორგი გიორგაძე</h5>
                                         <h6 className="text-secondary">გენერალური დირექტორი</h6>
@@ -212,7 +212,7 @@ export default function Career() {
                             </Col>
                             <Col md={4}>
                                 <div>
-                                    <img variant="left" src="./img/careerPhotos/mobile/6.jpg"/>
+                                    <img src="./img/careerPhotos/mobile/6.jpg" alt="photo"/>
                                     <div>
                                         <h5>გიორგი გიორგაძე</h5>
                                         <h6 className="text-secondary">გენერალური დირექტორი</h6>

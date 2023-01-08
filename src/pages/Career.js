@@ -3,16 +3,19 @@ import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
 import {ReactComponent as LeftArrow} from "../components/insuranceIcons/arrow-left-circle.svg";
 import {ReactComponent as RightArrow} from "../components/insuranceIcons/arrow-right-circle.svg";
-import {Accordion, Button, Card, Col, Container, Form, Row} from "react-bootstrap";
+import {Accordion, Button, Col, Container, Form, Row} from "react-bootstrap";
 import React, {useRef, useState} from "react";
 import CareerFormModal from "../components/CareerFormModal";
 import Footer from "../components/Footer";
 
 import FormSubmitted from "../components/FormSubmitted";
 import CareerMobileOffcanvas from "../components/CareerMobileOffcanvas";
+import MgmtTeam from "../components/MgmtTeam";
 
 
 export default function Career() {
+
+    {/*create one form component which will have the values and states - then insert the form in both modal and canvas*/}
     let initialFormValues = {
         name: "",
         surname: "",
@@ -23,8 +26,8 @@ export default function Career() {
         desiredPosition: "",
         desiredSection: "",
         desiredSalary: "",
-        education: null,
-        experience: null,
+        education: "",
+        experience: "",
         newsletter: "value2"
     }
     const [formValues, setFormValues] = useState({initialFormValues});
@@ -108,51 +111,7 @@ export default function Career() {
                         და ძალიან პოზიტიური ურთიერთთანამშრომლობა. დაკოპირებულია ირაოდან</p>
                 </div>
             </Container>
-            <Container className="careerMgmtTeam d-none d-md-flex border border-2">
-                {/*this has to be fixed*/}
-                <Card className="mx-2">
-                    <Card.Img variant="left" src="./img/careerPhotos/1.jpg"/>
-                    <Card.Body>
-                        <Card.Title>გიორგი გიორგაძე</Card.Title>
-                        <h6 className="text-secondary">გენერალური დირექტორი</h6>
-                        <Card.Text className="p-3">
-                            2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი.
-                            ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს.
-                            აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება.
-                            2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
-                            სადაც მისი კარიერა კორპორატიული კლიენტების…
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card className="mx-2">
-                    <Card.Img variant="left" src="./img/careerPhotos/2.jpg"/>
-                    <Card.Body>
-                        <Card.Title>გიორგი გიორგაძე</Card.Title>
-                        <h6 className="text-secondary">გენერალური დირექტორი</h6>
-                        <Card.Text className="p-3">
-                            2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი.
-                            ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს.
-                            აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება.
-                            2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
-                            სადაც მისი კარიერა კორპორატიული კლიენტების…
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card className="mx-2">
-                    <Card.Img variant="left" src="./img/careerPhotos/3.jpg"/>
-                    <Card.Body>
-                        <Card.Title>გიორგი გიორგაძე</Card.Title>
-                        <h6 className="text-secondary">გენერალური დირექტორი</h6>
-                        <Card.Text className="p-3">
-                            2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი.
-                            ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს.
-                            აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება.
-                            2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
-                            სადაც მისი კარიერა კორპორატიული კლიენტების…
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </Container>
+            <MgmtTeam />
             <Container>
                 <div className="careerMobile d-block d-md-none text-center">
                     <h3>კარიერა</h3>
@@ -218,55 +177,55 @@ export default function Career() {
                 <div className="careerMgmtTeamMobile d-block d-md-none overflow-scroll" ref={sliderMobileWrapper}>
                     <Row className="d-flex flex-row flex-nowrap my-4">
                         <Col md={4}>
-                            <Card>
-                                <Card.Img variant="left" src="./img/careerPhotos/mobile/4.jpg"/>
-                                <Card.Body>
-                                    <Card.Title>გიორგი გიორგაძე</Card.Title>
+                            <div>
+                                <img variant="left" src="./img/careerPhotos/mobile/4.jpg"/>
+                                <div>
+                                    <h5>გიორგი გიორგაძე</h5>
                                     <h6 className="text-secondary">გენერალური დირექტორი</h6>
-                                    <Card.Text className="text-secondary my-3">
+                                    <p className="text-secondary my-3">
                                         2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
                                         სამართლის ფაკულტეტი.
                                         ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის
                                         15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
                                         სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
                                         გამოცდილება. 2004 წლიდან მუშაობს.
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
+                                    </p>
+                                </div>
+                            </div>
                             </Col>
                             <Col md={4}>
-                                <Card>
-                                    <Card.Img variant="left" src="./img/careerPhotos/mobile/5.jpg"/>
-                                    <Card.Body>
-                                        <Card.Title>გიორგი გიორგაძე</Card.Title>
+                                <div>
+                                    <img variant="left" src="./img/careerPhotos/mobile/5.jpg"/>
+                                    <div>
+                                        <h5>გიორგი გიორგაძე</h5>
                                         <h6 className="text-secondary">გენერალური დირექტორი</h6>
-                                        <Card.Text className="text-secondary my-3">
+                                        <p className="text-secondary my-3">
                                             2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
                                             სამართლის ფაკულტეტი.
                                             ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის
                                             15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
                                             სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
                                             გამოცდილება. 2004 წლიდან მუშაობს.
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                        </p>
+                                    </div>
+                                </div>
                             </Col>
                             <Col md={4}>
-                                <Card>
-                                    <Card.Img variant="left" src="./img/careerPhotos/mobile/6.jpg"/>
-                                    <Card.Body>
-                                        <Card.Title>გიორგი გიორგაძე</Card.Title>
+                                <div>
+                                    <img variant="left" src="./img/careerPhotos/mobile/6.jpg"/>
+                                    <div>
+                                        <h5>გიორგი გიორგაძე</h5>
                                         <h6 className="text-secondary">გენერალური დირექტორი</h6>
-                                        <Card.Text className="text-secondary my-3">
+                                        <p className="text-secondary my-3">
                                             2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
                                             სამართლის ფაკულტეტი.
                                             ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის
                                             15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
                                             სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
                                             გამოცდილება. 2004 წლიდან მუშაობს.
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                        </p>
+                                    </div>
+                                </div>
                             </Col>
                     </Row>
                 </div>

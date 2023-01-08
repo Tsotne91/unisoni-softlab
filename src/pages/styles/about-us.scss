@@ -43,28 +43,33 @@ h1 {
   }
 }
 
+.mobileYearlyReports {
+  h3 {
+    font-family: BPGMrgvlovani, sans-serif;
+  }
 
-.aboutUsMobile{
+}
+
+
+.aboutUsMobile {
   background: url("../../img/Group 237.svg") repeat;
-  .accordion-header{
+
+  .accordion-header {
     color: $primary;
     font-family: BPGMrgvlovani, sans-serif;
   }
+
   button {
     font-size: 1.5rem;
   }
+
   .accordion-body {
     font-size: $smallFont;
   }
 }
 
-.mobileYearlyReports {
-  h3 {
-    font-family: BPGMrgvlovani, sans-serif;
-  }
-}
 
-.yearlyReports{
+.yearlyReports {
   h3 {
     font-family: BPGMrgvlovani, sans-serif;
   }

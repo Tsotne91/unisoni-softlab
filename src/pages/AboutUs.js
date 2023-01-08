@@ -1,7 +1,7 @@
 import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
-import {Accordion, Container, Form} from "react-bootstrap";
+import {Accordion, Container} from "react-bootstrap";
 import './styles/about-us.scss';
 import UnisonHistorySlider from "../components/UnisonHistorySlider";
 import YearlyReports from "../components/insuranceIcons/YearlyReports";
@@ -80,7 +80,7 @@ export default function AboutUs() {
                 </Accordion>
             </Container>
             <UnisonHistorySlider/>
-            <YearlyReports className={"d-flex d-md-none"}/>
+            <YearlyReports className={"mobileYearlyReports d-flex d-md-none"}/>
             <Container>
                 <div className="unisonToday my-2 d-none d-md-flex flex-column">
                     <h4 className="text-primary align-self-center d-inline">უნისონი დღეს</h4>
@@ -129,6 +129,7 @@ export default function AboutUs() {
                     </div>
                 </div>
             </Container>
+            <YearlyReports className={"desktopYearlyReports"}/>
             <Footer/>
         </>
     )

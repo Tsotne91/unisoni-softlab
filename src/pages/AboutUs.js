@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import {Accordion, Container} from "react-bootstrap";
 import './styles/about-us.scss';
 import UnisonHistorySlider from "../components/UnisonHistorySlider";
-import YearlyReports from "../components/insuranceIcons/YearlyReports";
+import YearlyReports from "../components/YearlyReports";
 
 export default function AboutUs() {
 

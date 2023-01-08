@@ -19,7 +19,6 @@ export default function CareerMobileOffcanvas({
         e.stopPropagation();
         e.preventDefault();
         onFormSubmit && onFormSubmit(formValues);
-        console.log(formValues);
         handleOffcanvasShow();
     }
 

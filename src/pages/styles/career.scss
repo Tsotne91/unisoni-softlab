@@ -61,21 +61,40 @@
 }
 
 .careerMgmtTeam {
-  .card {
-    width: 18rem;
+  min-height: 21.6875rem;
+
+  .active {
+    width: 50% !important;
+    img {
+      width: 50%;
+    }
+    .side-text {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  > div{
+    width: 25%;
+  }
+  img{
+    width: 100%;
+    object-fit: cover;
   }
 
-  .card-title {
+  .description {
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  .title {
     color: $primary;
   }
 
   h6 {
     font-family: BPGArial, sans-serif;
-    font-size: $smallFont;
   }
 
   p {
-    font-size: $smallFont;
     color: white;
     background: $primary;
   }

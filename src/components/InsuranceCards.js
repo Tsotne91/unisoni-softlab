@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 export default function InsuranceCards() {
 
     return (
-        <>
+        <div className="insuranceCardsComponent">
             <Container className="d-flex justify-content-center">
                 <Row className="justify-content-center">
                     <Card className="insuranceCards">
@@ -50,32 +50,32 @@ export default function InsuranceCards() {
 
                     <h2 style={{fontFamily: "ExtraSquare", textAlign: "center", marginTop: "3rem"}}>უპირატესობები</h2>
                     <Row className="d-flex justify-content-center">
-                        <Card className="advantages">
+                        <Card bg="transparent" className="advantages">
                             <img src="./img/advantagesIcons/consumer.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>მომხმარებლის კმაყოფილების 96%-იანი დონე</span>
                         </Card>
-                        <Card className="advantages">
+                        <Card bg="transparent" className="advantages">
                             <img src="./img/advantagesIcons/stars.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>მაღალრეიტინგული გადამზღვევი კომპანიები</span>
                         </Card>
-                        <Card className="advantages">
+                        <Card bg="transparent" className="advantages">
                             <img src="./img/advantagesIcons/touch_app_black_24dp.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>თანამედროვე ელექტრონული სერვისები</span>
                         </Card>
-                        <Card className="advantages">
+                        <Card bg="transparent" className="advantages">
                             <img src="./img/advantagesIcons/timer_black_24dp.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>ზარალის დარეგულირების უმოკლესი ვადები</span>
                         </Card>
-                        <Card className="advantages">
+                        <Card bg="transparent" className="advantages">
                             <img src="./img/advantagesIcons/people_outline_black_24dp.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>კორპორატიული კლიენტების ფართო სპექტრი</span>
                         </Card>
-                        <Card className="advantages">
+                        <Card bg="transparent" className="advantages">
                             <img src="./img/advantagesIcons/auto_awesome_black_24dp.svg"
                                  style={{width: "2rem", marginLeft: "2.5rem"}}/><br/>
                             <span>გუნდის პროფესიონალიზმი და მრავალწლიანი გამოცდილება</span>
@@ -115,6 +115,6 @@ export default function InsuranceCards() {
                 </Row>
 
             </Container>
-        </>
+        </div>
     )
 }

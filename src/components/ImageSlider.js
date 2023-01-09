@@ -3,11 +3,7 @@ import '../custom.scss';
 
 
 export default function ImageSlider(){
-    // const [index, setIndex] = useState(0);
-    // const handleSelect = (selectedIndex, e) => {
-    //     setIndex(selectedIndex);
-    // };
-    //
+
     const sliders = [
         {  src: "./slider/shutterstock_627788162@2x.png", },
         { src: "./slider/2.jpg"},
@@ -16,11 +12,8 @@ export default function ImageSlider(){
         { src: "./slider/4.jpg"}
     ];
 
-
     return (
-
         <Carousel interval={50000} className="justify-content-center">
-
                 { sliders.map((photo, index) => (
                         <Carousel.Item key={index} className="carouselItem">
                             <img src={photo.src} alt="sliderPhoto" className="d-block w-100 h-100"/>

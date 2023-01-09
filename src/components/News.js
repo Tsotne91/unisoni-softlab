@@ -34,7 +34,7 @@ export default function News() {
                 </Row>
 
             </Container>
-            <Container className="newsMobile d-block d-md-none"> {/*horizontal mobile scroll needs to be implemented properly*/}
+            <Container className="newsMobile d-block d-md-none">
                 <h2>სიახლეები</h2>
                 <div className="overflow-scroll">
                     <Row className="d-flex flex-row flex-nowrap">

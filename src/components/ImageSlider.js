@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import '../custom.scss';
 
-
 export default function ImageSlider(){
 
     const sliders = [
@@ -13,7 +12,7 @@ export default function ImageSlider(){
     ];
 
     return (
-        <Carousel interval={50000} className="justify-content-center">
+        <Carousel indicators={false} interval={50000} className="justify-content-center">
                 { sliders.map((photo, index) => (
                         <Carousel.Item key={index} className="carouselItem">
                             <img src={photo.src} alt="sliderPhoto" className="d-block w-100 h-100"/>

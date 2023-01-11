@@ -10,15 +10,17 @@
   src: local("BPGMrgvlovani"), url("../../components/fonts/bpg_nino_mtavruli_normal.ttf") format('truetype');
 }
 
-//body {
-//  background-image: url("../../../public/img/Group 237.svg");
-//}
-//
-//h1 {
-//  font-family: BPGMrgvlovani, sans-serif;
-//  position: relative;
-//  bottom: 4rem;
-//}
+.aboutUsBg {
+  background-image: url("../../../public/img/Group 237.svg");
+  background-color: #f3f1f1;
+
+
+  h1 {
+    font-family: BPGMrgvlovani, sans-serif;
+    position: relative;
+    bottom: 4rem;
+  }
+}
 
 .aboutUsMain {
   font-size: 1.1rem;
@@ -46,6 +48,30 @@
 .mobileYearlyReports {
   h3 {
     font-family: BPGMrgvlovani, sans-serif;
+  }
+}
+
+.desktopYearlyReports {
+  background: white;
+
+  >div>div {
+    box-shadow: 5px 5px 30px #acb7bd;
+  }
+
+  h3 {
+    font-family: BPGMrgvlovani, sans-serif;
+  }
+
+  p {
+    font-size: $smallFont;
+  }
+
+  .downloadReports {
+    button {
+      font-size: $smallFont;
+      background-color: #f8f8f8;
+      border: none;
+    }
   }
 }
 

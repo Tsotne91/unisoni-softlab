@@ -1,6 +1,5 @@
-import Carousel from 'react-bootstrap/Carousel';
+import {Carousel} from 'react-bootstrap';
 import '../custom.scss';
-
 
 export default function ImageSlider() {
 
@@ -20,12 +19,18 @@ export default function ImageSlider() {
                     <Carousel.Caption>
                         <h1 className="my-4">ქონების დაზღვევა</h1>
                         <h5 className="my-4">ყველაზე ხელსაყრელი პირობებით</h5>
-                        <div className="p-2">შეიძინე ონლაინ</div>
+                        <div className="py-2">შეიძინე ონლაინ</div>
                         <img src="./img/insuranceIcons/Path398.svg" alt="redImage"/>
                     </Carousel.Caption>
+                    {/*below not working*/}
+                    {/*<Carousel.Indicators className="custom-indicators-container">*/}
+                    {/*    <li*/}
+                    {/*        className='carousel-indicator custom-indicator'*/}
+                    {/*        data-slide-to={index}*/}
+                    {/*    />*/}
+                    {/*</Carousel.Indicators>*/}
                 </Carousel.Item>
-            ))
-            }
+            ))}
         </Carousel>
     )
 }

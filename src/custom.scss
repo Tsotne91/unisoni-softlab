@@ -225,7 +225,7 @@ body {
   }
 }
 
-.insuranceCardsComponent{
+.insuranceCardsComponent {
   background: url("../public/img/Image 4.png");
 }
 
@@ -239,21 +239,26 @@ body {
   border: none !important;
 }
 
-//.carousel-indicators {
-//  border-color: black;
-//  border-width: 0.4rem;
-//  border-radius: 50%;
-//  position: relative;
-//  right: 30rem;
-//  height: 3rem;
-//  width: 3rem;
-//
-//  button {
-//    border-width: 0.4rem;
-//    border-radius: 50%;
-//    height: 3rem;
-//    width: 3rem;
-//  }
+
+
+.carousel-indicators {
+  width: 40%;
+  left: 50rem !important;
+
+  button {
+    background-color: transparent;
+    border-radius: 50%;
+    height: 1rem !important;
+    width: 1rem !important;
+  }
+}
+
+//.custom-indicator-container {
+//  position: absolute;
+//  right: 0;
+//  bottom: 0;
+//  display: flex;
+//  justify-content: flex-end;
 //}
 
 .faq {
@@ -278,7 +283,6 @@ body {
     font-size: 0.7rem;
   }
 }
-
 
 
 .sideInfoContainer {

@@ -322,7 +322,9 @@ footer {
   }
 
   .card {
-    max-height: inherit;
+    max-height: 30rem;
+    min-height: 30rem;
+    //temporary solution
   }
 }
 

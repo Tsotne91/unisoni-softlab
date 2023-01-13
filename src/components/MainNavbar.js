@@ -88,7 +88,8 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                                                     <Plane className="overlayIcons" fill="#006A9F" width="1.3rem"/>
                                                     <a>სამოგზაურო დაზღვევა</a>
                                                     <img className="rightArrow"
-                                                         src="img/footerIcons/keyboard_arrow_right_black_24dp.svg"/>
+                                                         src="img/footerIcons/keyboard_arrow_right_black_24dp.svg"
+                                                         alt={"icon"}/>
                                                 </div>
                                                 <div className="px-xl-2 px-lg-0"><Person className="overlayIcons"
                                                                                          fill="#006A9F"
@@ -130,7 +131,7 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                     {
                         showButton ? <Button variant="danger"
                                              className="buyOnlineButton text-light d-none d-lg-block align-self-start mx-xl-4 mx-lg-2 mx-md-0 px-xl-2 px-lg-0 rounded-3">
-                            <img src="/img/footerIcons/shopping_cart_black_24dp.svg"/>შეიძინე
+                            <img src="/img/footerIcons/shopping_cart_black_24dp.svg" alt={"icon"} />შეიძინე
                             ონლაინ</Button> : null
                     }
 
@@ -164,7 +165,7 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                 <Offcanvas show={showFirstCanvas} placement="end">
                     <Offcanvas.Header>
                         <Offcanvas.Title>
-                            <img src="img/insuranceIcons/Group2.svg"/>
+                            <img src="img/insuranceIcons/Group2.svg" alt={"icon"}/>
                         </Offcanvas.Title>
                         <CloseButton onClick={handleCloseFirstCanvas}/>
                     </Offcanvas.Header>
@@ -240,24 +241,24 @@ export default function MainNavbar({showButton, className, mobileLogo}) {
                     <Offcanvas.Body>
                         <div className="my-5 mx-4 text-secondary" style={{fontFamily: "BPGArial"}}>
                             <div className="d-flex align-items-start my-3">
-                                <img src="/img/mobileOffcanvasIcons/Group33.svg" className="mx-4"/>
+                                <img src="/img/mobileOffcanvasIcons/Group33.svg" className="mx-4" alt={"icon"}/>
                                 <p className="d-inline-block w-50">ქონების დაზღვევა</p>
                             </div>
                             <div className="d-flex align-items-start my-3">
-                                <img src="/img/mobileOffcanvasIcons/Path30.svg" className="mx-4"/>
+                                <img src="/img/mobileOffcanvasIcons/Path30.svg" className="mx-4" alt={"icon"}/>
                                 <p className="d-inline-block w-50">ინდივიდუალური ჯანმრთელობის დაზღვევა</p>
                             </div>
                             <div className="d-flex align-items-start my-3">
-                                <img src="/img/mobileOffcanvasIcons/Group12.svg" className="mx-4"/>
+                                <img src="/img/mobileOffcanvasIcons/Group12.svg" className="mx-4" alt={"icon"}/>
                                 <p className="d-inline-block w-50">ავტოდაზღვევა - პაკეტები</p>
                             </div>
                             <div className="d-flex align-items-start my-3">
-                                <img src="/img/mobileOffcanvasIcons/Path 36.svg" className="mx-4"/>
+                                <img src="/img/mobileOffcanvasIcons/Path 36.svg" className="mx-4" alt={"icon"}/>
                                 <p className="d-inline-block w-50">მძღოლის პასუხისმგებლობის დაზღვევა</p>
                                 <Arrow className="align-self-center"/>
                             </div>
                             <div className="d-flex align-items-start my-3">
-                                <img src="/img/mobileOffcanvasIcons/Path 29.svg" className="mx-4"/>
+                                <img src="/img/mobileOffcanvasIcons/Path 29.svg" className="mx-4" alt={"icon"}/>
                                 <p className="d-inline-block w-50">სამოგზაურო დაზღვევა</p>
                             </div>
                         </div>

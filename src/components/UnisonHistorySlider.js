@@ -55,7 +55,7 @@ export default function UnisonHistorySlider() {
             imgSrc: "/img/aboutUsPhotos/Rectangle 819.png"
         }
 
-    ]
+]
 
     return (
         <>
@@ -78,7 +78,7 @@ export default function UnisonHistorySlider() {
                             sliderDataArr.map((card, index) => (
                                 <Col xl={3} lg={4} md={6} sm={10} xs={10} className="sliderCardCols mx-xl-3 mx-xs-1" key={index}>
                                     <Card className="sliderCards px-md-2 p-lg-2 border-0 mx-xs-3">
-                                        <p>{card.text}</p>
+                                        <p className="py-4 px-3 bg-light rounded-3">{card.text}</p>
                                         <img src={card.imgSrc} alt="sliderImage" className="my-2"/>
                                     </Card>
                                 </Col>

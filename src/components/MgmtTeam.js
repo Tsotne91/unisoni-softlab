@@ -55,11 +55,10 @@ function MgmtTeam() {
 
     return (
         <Container className="careerMgmtTeam d-none d-md-flex border border-2 bg-light">
-            {/*this has to be fixed*/}
             {
                 arr.map((member, index) => (
                     <Member {...member} key={index} active={index === activeIndex}
-                            onClick={() => setActiveIndex(index)}></Member>
+                            onClick={() => setActiveIndex(index)}/>
                 ))
             }
         </Container>

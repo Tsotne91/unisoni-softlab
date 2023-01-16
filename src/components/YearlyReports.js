@@ -37,7 +37,6 @@ export default function YearlyReports({className}) {
             {/*        <img src="./img/insuranceIcons/file_download_black_24dp.svg" alt="icon" className="downIcon px-2"/>*/}
             {/*    </div>*/}
             {/*</div>*/}
-            {/*DesktopVersion: should disable borders and think how to apply wallpaper to the AboutUs page*/}
             <Container className={`${className} d-none d-md-flex flex-column rounded-5 my-5 py-4`}>
                 <h3 className="text-primary align-self-center">წლიური ანგარიშები</h3>
                 <Form.Select aria-label="yearly-reports"

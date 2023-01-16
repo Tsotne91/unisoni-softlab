@@ -38,7 +38,7 @@ export default function Career() {
     const uploadCv = useRef(null);
     const sliderMobileWrapper = useRef();
 
-    const moveSlider = (dir) => sliderMobileWrapper.current.scrollLeft += dir*395;
+    const moveSlider = (dir) => sliderMobileWrapper.current.scrollLeft += dir * 395;
 
     const changeHandler = (field) => (event) => {
         setFormValues({...formValues, [field]: event.target.value});
@@ -66,13 +66,16 @@ export default function Career() {
                     <h2>კარიერა</h2>
                     <h5 className="my-2">#გახდიუნისონელი</h5>
                     <p>თუ გსურს შემოუერთდე ჩვენ გუნდს, დაგვიტოვე ინფორმაცია</p>
-                    <Button className="p-2 rounded-3">
-                        <img src="/img/insuranceIcons/file_upload_black_24dp.svg"
-                             alt="upload-icon"
-                             className="mx-1"
-                        />
-                        ატვირთეთ CV
-                    </Button>
+                    <Form.Control type="file" ref={uploadCv} onChange={(event) => setFileToUpload(event.target.value)}
+                                  hidden/>
+                            <Button className="p-2 rounded-3" onClick={() => uploadCv.current.click()}>
+                                <img src="/img/insuranceIcons/file_upload_black_24dp.svg"
+                                     alt="upload-icon"
+                                     className="mx-1"
+                                />
+                                ატვირთეთ CV
+                            </Button>
+                    <div>{!fileToUpload ? null : fileToUpload}</div>
                     <p className="my-3"
                        onClick={handleModalShow}
                     >ან
@@ -111,7 +114,7 @@ export default function Career() {
                         და ძალიან პოზიტიური ურთიერთთანამშრომლობა. დაკოპირებულია ირაოდან</p>
                 </div>
             </Container>
-            <MgmtTeam />
+            <MgmtTeam/>
             <Container>
                 <div className="careerMobile d-block d-md-none text-center">
                     <h3>კარიერა</h3>
@@ -170,8 +173,8 @@ export default function Career() {
                 <div className="careerMgmtTeamMobileHeader d-flex d-md-none flex-wrap mx-2">
                     <h4>მენეჯმენტის გუნდი</h4>
                     <div>
-                        <LeftArrow className="sliderArrows mx-2 d-inline" onClick={()=> moveSlider(-1)}/>
-                        <RightArrow className="sliderArrows mx-2 d-inline" onClick={()=> moveSlider(1)}/>
+                        <LeftArrow className="sliderArrows mx-2 d-inline" onClick={() => moveSlider(-1)}/>
+                        <RightArrow className="sliderArrows mx-2 d-inline" onClick={() => moveSlider(1)}/>
                     </div>
                 </div>
                 <div className="careerMgmtTeamMobile d-block d-md-none overflow-scroll" ref={sliderMobileWrapper}>
@@ -185,48 +188,51 @@ export default function Career() {
                                     <p className="text-secondary my-3">
                                         2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
                                         სამართლის ფაკულტეტი.
-                                        ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის
+                                        ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში
+                                        მუშაობის
                                         15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
                                         სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
                                         გამოცდილება. 2004 წლიდან მუშაობს.
                                     </p>
                                 </div>
                             </div>
-                            </Col>
-                            <Col md={4}>
+                        </Col>
+                        <Col md={4}>
+                            <div>
+                                <img src="./img/careerPhotos/mobile/5.jpg" alt="photo"/>
                                 <div>
-                                    <img src="./img/careerPhotos/mobile/5.jpg" alt="photo"/>
-                                    <div>
-                                        <h5>გიორგი გიორგაძე</h5>
-                                        <h6 className="text-secondary">გენერალური დირექტორი</h6>
-                                        <p className="text-secondary my-3">
-                                            2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
-                                            სამართლის ფაკულტეტი.
-                                            ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის
-                                            15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
-                                            სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
-                                            გამოცდილება. 2004 წლიდან მუშაობს.
-                                        </p>
-                                    </div>
+                                    <h5>გიორგი გიორგაძე</h5>
+                                    <h6 className="text-secondary">გენერალური დირექტორი</h6>
+                                    <p className="text-secondary my-3">
+                                        2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
+                                        სამართლის ფაკულტეტი.
+                                        ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში
+                                        მუშაობის
+                                        15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
+                                        სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
+                                        გამოცდილება. 2004 წლიდან მუშაობს.
+                                    </p>
                                 </div>
-                            </Col>
-                            <Col md={4}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div>
+                                <img src="./img/careerPhotos/mobile/6.jpg" alt="photo"/>
                                 <div>
-                                    <img src="./img/careerPhotos/mobile/6.jpg" alt="photo"/>
-                                    <div>
-                                        <h5>გიორგი გიორგაძე</h5>
-                                        <h6 className="text-secondary">გენერალური დირექტორი</h6>
-                                        <p className="text-secondary my-3">
-                                            2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
-                                            სამართლის ფაკულტეტი.
-                                            ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის
-                                            15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
-                                            სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
-                                            გამოცდილება. 2004 წლიდან მუშაობს.
-                                        </p>
-                                    </div>
+                                    <h5>გიორგი გიორგაძე</h5>
+                                    <h6 className="text-secondary">გენერალური დირექტორი</h6>
+                                    <p className="text-secondary my-3">
+                                        2006 წელს დაამთავრა თბილისის სახელმწიფო უნივერსიტეტი-საერთაშორისო
+                                        სამართლის ფაკულტეტი.
+                                        ფლობს საერთაშორისო სამართლის მაგისტრის ხარისხს. აქვს სადაზღვევო სექტორში
+                                        მუშაობის
+                                        15 წლიანი გამოცდილება.2004 წლიდან მუშაობს სადაზღვევო კომპანია ალდაგში,
+                                        სადაც მისი კარიერა კორპორატიული კლიენტების მუშაობის 15 წლიანი
+                                        გამოცდილება. 2004 წლიდან მუშაობს.
+                                    </p>
                                 </div>
-                            </Col>
+                            </div>
+                        </Col>
                     </Row>
                 </div>
                 <CareerMobileOffcanvas
@@ -239,8 +245,10 @@ export default function Career() {
                 <div className="careerInfo my-3">
                     <h5>ინფორმაცია კომპანიის ბენეფიციარების და უშუალო მესაკუთრის შესახებ</h5>
                     <p className="text-secondary">
-                        ინფორმაცია მზღვეველის აქციების 10 პროცენტის ან 10 პროცენტზე მეტის მფლობელი უშუალო მესაკუთრის შესახებ ნახვა შეგიძლიათ <a href="#">ბმულზე.</a><br/>
-                        ინფორმაცია მზღვეველის მნიშვნელოვანი წილის მფლობელი ბენეფიციარი მესაკუთრის შესახებ ნახვა შეგიძლიათ <a href="#">ბმულზე.</a>
+                        ინფორმაცია მზღვეველის აქციების 10 პროცენტის ან 10 პროცენტზე მეტის მფლობელი უშუალო მესაკუთრის
+                        შესახებ ნახვა შეგიძლიათ <a href="#">ბმულზე.</a><br/>
+                        ინფორმაცია მზღვეველის მნიშვნელოვანი წილის მფლობელი ბენეფიციარი მესაკუთრის შესახებ ნახვა
+                        შეგიძლიათ <a href="#">ბმულზე.</a>
                     </p>
                 </div>
             </Container>
